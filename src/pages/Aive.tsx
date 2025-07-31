@@ -251,15 +251,15 @@ const Aive = () => {
       {/* 1. Seção Herói */}
       <section className="py-20 px-4 bg-gradient-to-br from-background via-muted/30 to-primary/5">
         <div className="container mx-auto max-w-6xl text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
-            Venda mais com Aive — a IA de vendas da Climb Up que escala suas vendas 24/7
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary">
+            Venda mais com Aive — a IA da Climb Up que escala suas vendas 24/7.
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
-            Atende, qualifica, registra no CRM, faz follow-up e fecha vendas ou faz agendamentos 24/7.
-            Tudo isso com inteligência, agilidade e escala — enquanto você foca no crescimento.
+            Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
+            Ou, se preferir, passa pro seu time. Tudo 24/7.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="xl" className="animate-pulse">
+            <Button variant="hero" size="xl" className="animate-[pulse_3s_ease-in-out_infinite]">
               Teste agora com Aive
             </Button>
             <Button variant="outline" size="xl">
