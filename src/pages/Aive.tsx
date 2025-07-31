@@ -281,30 +281,39 @@ const Aive = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="p-8 text-center border-destructive/20 bg-destructive/5">
+          <div className="grid md:grid-cols-4 gap-8 mb-12">
+            <Card className="p-8 text-center border-primary/20 bg-primary/5">
               <div className="mb-4">
-                <Clock className="w-12 h-12 mx-auto text-destructive" />
+                <Users className="w-12 h-12 mx-auto text-primary" />
               </div>
-              <p className="text-lg font-medium text-destructive">
+              <p className="text-lg font-medium text-primary">
+                Sua equipe está sobrecarregada, não consegue atender, tem dificuldade em preencher o CRM
+              </p>
+            </Card>
+
+            <Card className="p-8 text-center border-primary/20 bg-primary/5">
+              <div className="mb-4">
+                <Clock className="w-12 h-12 mx-auto text-primary" />
+              </div>
+              <p className="text-lg font-medium text-primary">
                 Os leads ficam horas ou até dias aguardando atendimento
               </p>
             </Card>
             
-            <Card className="p-8 text-center border-destructive/20 bg-destructive/5">
+            <Card className="p-8 text-center border-primary/20 bg-primary/5">
               <div className="mb-4">
-                <AlertCircle className="w-12 h-12 mx-auto text-destructive" />
+                <AlertCircle className="w-12 h-12 mx-auto text-primary" />
               </div>
-              <p className="text-lg font-medium text-destructive">
+              <p className="text-lg font-medium text-primary">
                 Falta tempo para o que realmente importa
               </p>
             </Card>
             
-            <Card className="p-8 text-center border-destructive/20 bg-destructive/5">
+            <Card className="p-8 text-center border-primary/20 bg-primary/5">
               <div className="mb-4">
-                <TrendingDown className="w-12 h-12 mx-auto text-destructive" />
+                <TrendingDown className="w-12 h-12 mx-auto text-primary" />
               </div>
-              <p className="text-lg font-medium text-destructive">
+              <p className="text-lg font-medium text-primary">
                 Sua empresa não consegue escalar com a estrutura atual
               </p>
             </Card>
