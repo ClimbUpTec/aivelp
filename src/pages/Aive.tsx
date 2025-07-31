@@ -252,15 +252,15 @@ const Aive = () => {
       <section className="py-20 px-4 bg-gradient-to-br from-background via-muted/30 to-primary/5">
         <div className="container mx-auto max-w-6xl text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary">
-            Venda mais com Aive — a IA da Climb Up que escala suas vendas 24/7.
+            Venda mais com a AIVE. A IA da Climb Up que escala suas vendas 24/7.
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
             Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
             Ou, se preferir, passa pro seu time. Tudo 24/7.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="xl" className="animate-[pulse_3s_ease-in-out_infinite]">
-              Teste agora com Aive
+            <Button variant="hero" size="xl">
+              Teste agora a Aive
             </Button>
             <Button variant="outline" size="xl">
               Quero escalar com Aive
@@ -273,11 +273,10 @@ const Aive = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            ⏳ A Ampulheta da Jornada — Você decide onde ela atua e quando ela passa o bastão pro seu time humano
+            Você decide onde ela atua e quando ela passa o bastão pro seu time humano.
           </h2>
           <p className="text-lg text-muted-foreground mb-12">
-            Vamos representar a jornada do cliente como uma ampulheta, onde a Aive atua em todos os pontos-chave da conversão, 
-            enquanto a Climb Up dá suporte com estrutura e inteligência.
+            Você não precisa escolher entre a evolução e seu time, eles trabalham juntos e melhoram os resultados da tua empresa.
           </p>
           <JourneyHourglass />
         </div>
