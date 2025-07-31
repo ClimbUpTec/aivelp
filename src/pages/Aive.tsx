@@ -10,7 +10,7 @@ const JourneyHourglass = () => (
     <div className="text-center space-y-6">
       {/* Topo da ampulheta */}
       <div className="relative">
-        <div className="bg-gradient-to-r from-primary/20 to-primary-glow/20 rounded-full p-6 border-2 border-primary/30">
+        <div className="bg-gradient-to-r from-primary/20 to-primary-glow/20 rounded-lg p-6 border-2 border-primary/30">
           <div className="text-center">
             <Target className="w-8 h-8 mx-auto mb-2 text-primary" />
             <p className="text-sm font-medium">Atração do Lead</p>
@@ -50,7 +50,7 @@ const JourneyHourglass = () => (
       {/* Base da ampulheta */}
       <div className="relative">
         <ArrowDown className="w-6 h-6 mx-auto mb-4 text-primary animate-bounce" />
-        <div className="bg-gradient-to-r from-secondary/20 to-accent/20 rounded-full p-6 border-2 border-secondary/30">
+        <div className="bg-gradient-to-r from-secondary/20 to-accent/20 rounded-lg p-6 border-2 border-secondary/30">
           <div className="text-center">
             <TrendingUp className="w-8 h-8 mx-auto mb-2 text-secondary" />
             <p className="text-sm font-medium">🔁 Pós-venda e Retorno</p>
