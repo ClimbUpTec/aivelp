@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowDown, CheckCircle, Star, Users, TrendingUp, Clock, MessageSquare, Bot, Zap, Shield, Target, Sparkles } from "lucide-react";
+import { ArrowDown, CheckCircle, Star, Users, TrendingUp, Clock, MessageSquare, Bot, Zap, Shield, Target, Sparkles, AlertCircle, TrendingDown } from "lucide-react";
 
 // Componente para a ampulheta da jornada
 const JourneyHourglass = () => (
@@ -269,7 +269,59 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 2. A Ampulheta da Jornada */}
+      {/* 2. Seção Dores do Cliente */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Está passando por isso?
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Enfrentando desafios para gerenciar leads e buscando uma solução eficiente para escalar vendas.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <Card className="p-8 text-center border-destructive/20 bg-destructive/5">
+              <div className="mb-4">
+                <Clock className="w-12 h-12 mx-auto text-destructive" />
+              </div>
+              <p className="text-lg font-medium text-destructive">
+                Os leads ficam horas ou até dias aguardando atendimento
+              </p>
+            </Card>
+            
+            <Card className="p-8 text-center border-destructive/20 bg-destructive/5">
+              <div className="mb-4">
+                <AlertCircle className="w-12 h-12 mx-auto text-destructive" />
+              </div>
+              <p className="text-lg font-medium text-destructive">
+                Falta tempo para o que realmente importa
+              </p>
+            </Card>
+            
+            <Card className="p-8 text-center border-destructive/20 bg-destructive/5">
+              <div className="mb-4">
+                <TrendingDown className="w-12 h-12 mx-auto text-destructive" />
+              </div>
+              <p className="text-lg font-medium text-destructive">
+                Sua empresa não consegue escalar com a estrutura atual
+              </p>
+            </Card>
+          </div>
+          
+          <div className="text-center">
+            <div className="inline-flex items-center gap-3 bg-primary/10 px-8 py-4 rounded-full border border-primary/20">
+              <Zap className="w-6 h-6 text-primary" />
+              <p className="text-xl font-semibold text-primary">
+                A solução é turbinar seu WhatsApp e outros canais com AIVE
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. A Ampulheta da Jornada */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
