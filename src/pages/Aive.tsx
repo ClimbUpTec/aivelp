@@ -65,12 +65,8 @@ const JourneyHourglass = () => (
 
 // Componente da apresentação da Aive
 const AivePresentation = () => (
-  <div className="bg-gradient-to-br from-primary/5 to-primary-glow/5 rounded-2xl p-8 border border-primary/20">
+  <div className="p-8">
     <div className="flex items-start gap-6">
-      <Avatar className="w-20 h-20">
-        <AvatarImage src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" alt="Aive" />
-        <AvatarFallback>AI</AvatarFallback>
-      </Avatar>
       <div className="flex-1">
         <h3 className="text-2xl font-bold mb-4 text-primary">
           "Oi! Eu sou a Aive, a IA da Climb Up que escala suas vendas 24/7."
@@ -82,6 +78,10 @@ const AivePresentation = () => (
           Você vende mais, gasta menos e escala com inteligência.
         </p>
       </div>
+      <Avatar className="w-32 h-32 flex-shrink-0">
+        <AvatarImage src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" alt="Aive" />
+        <AvatarFallback>AI</AvatarFallback>
+      </Avatar>
     </div>
   </div>
 );
