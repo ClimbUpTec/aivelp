@@ -248,7 +248,7 @@ const NicheCases = () => {
 const Aive = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* 1. Seção Herói */}
+      {/* 1. Chamada Impactante (Herói) */}
       <section className="py-20 px-4 bg-gradient-to-br from-background via-muted/30 to-primary/5">
         <div className="container mx-auto max-w-6xl text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary">
@@ -269,7 +269,7 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 2. Seção Dores do Cliente */}
+      {/* 2. Está enfrentando isso? */}
       <section 
         className="py-20 px-4 relative"
         style={{
@@ -339,19 +339,6 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 3. A Ampulheta da Jornada */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Você decide onde ela atua e quando ela passa o bastão pro seu time humano.
-          </h2>
-          <p className="text-lg text-muted-foreground mb-12">
-            Você não precisa escolher entre a evolução e seu time, eles trabalham juntos e melhoram os resultados da tua empresa.
-          </p>
-          <JourneyHourglass />
-        </div>
-      </section>
-
       {/* 3. Apresentação da Aive */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-5xl">
@@ -359,74 +346,7 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 4. Antes e Depois da Aive */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Antes da Aive vs. Depois da Aive
-          </h2>
-          <BeforeAfterComparison />
-        </div>
-      </section>
-
-      {/* 5. Funcionalidades que potencializam a Aive */}
-      <section className="py-16 px-4 bg-secondary/5">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Aive + Climb Up = Escalada Real
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              Aive atua como cérebro comercial. A Climb Up é o corpo que executa com estrutura e tecnologia, 
-              a Aive opera, mas você (se quiser) gerencia tudo em tempo real e com relatórios completos.
-            </p>
-          </div>
-          <ClimbUpFeatures />
-        </div>
-      </section>
-
-      {/* 6. Resultados reais com Aive */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            📈 Resultados reais com Aive
-          </h2>
-          <p className="text-center text-lg text-muted-foreground mb-12">
-            Empresas que usam a Aive são mais eficientes no atendimento das conversas, 
-            qualificam sem parecer um robô e vendem mais.
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                metric: "+300%",
-                title: "Atendimentos 24/7",
-                description: "Aumento na quantidade de leads atendidos fora do horário comercial"
-              },
-              {
-                metric: "+250%", 
-                title: "Agendamentos",
-                description: "Crescimento em conversões por disponibilidade total da IA"
-              },
-              {
-                metric: "+180%",
-                title: "Taxa de Conversão",
-                description: "Melhoria no aproveitamento de leads através da qualificação inteligente"
-              }
-            ].map((result, index) => (
-              <Card key={index} className="text-center hover:shadow-elegant transition-all duration-300">
-                <CardContent className="p-8">
-                  <div className="text-4xl font-bold text-primary mb-4">{result.metric}</div>
-                  <h3 className="text-xl font-semibold mb-3">{result.title}</h3>
-                  <p className="text-muted-foreground">{result.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 7. Humanização da IA */}
+      {/* 4. "Mas eu não quero parecer um robô..." */}
       <section className="py-16 px-4 bg-primary/5">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
@@ -462,7 +382,7 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 8. Porque a AIVE é a melhor IA do mercado */}
+      {/* 5. Porque a AIVE é a melhor IA do mercado? */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
@@ -558,7 +478,46 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 9. Aive em Ação: Casos reais por nicho */}
+      {/* 6. Aive + Climb Up = Escalada Real */}
+      <section className="py-16 px-4 bg-secondary/5">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Aive + Climb Up = Escalada Real
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+              Aive atua como cérebro comercial. A Climb Up é o corpo que executa com estrutura e tecnologia, 
+              a Aive opera, mas você (se quiser) gerencia tudo em tempo real e com relatórios completos.
+            </p>
+          </div>
+          <ClimbUpFeatures />
+        </div>
+      </section>
+
+      {/* 7. Você decide onde ela atua e quando ela passa o bastão pro seu time humano. */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Você decide onde ela atua e quando ela passa o bastão pro seu time humano.
+          </h2>
+          <p className="text-lg text-muted-foreground mb-12">
+            Você não precisa escolher entre a evolução e seu time, eles trabalham juntos e melhoram os resultados da tua empresa.
+          </p>
+          <JourneyHourglass />
+        </div>
+      </section>
+
+      {/* 8. Antes vs. Depois da Aive */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            Antes da Aive vs. Depois da Aive
+          </h2>
+          <BeforeAfterComparison />
+        </div>
+      </section>
+
+      {/* 9. Aive em Ação: Exemplos por Nicho */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -568,7 +527,48 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 10. Comparativo com vendedor humano */}
+      {/* 10. Resultados Reais com Aive */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            📈 Resultados reais com Aive
+          </h2>
+          <p className="text-center text-lg text-muted-foreground mb-12">
+            Empresas que usam a Aive são mais eficientes no atendimento das conversas, 
+            qualificam sem parecer um robô e vendem mais.
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                metric: "+300%",
+                title: "Atendimentos 24/7",
+                description: "Aumento na quantidade de leads atendidos fora do horário comercial"
+              },
+              {
+                metric: "+250%", 
+                title: "Agendamentos",
+                description: "Crescimento em conversões por disponibilidade total da IA"
+              },
+              {
+                metric: "+180%",
+                title: "Taxa de Conversão",
+                description: "Melhoria no aproveitamento de leads através da qualificação inteligente"
+              }
+            ].map((result, index) => (
+              <Card key={index} className="text-center hover:shadow-elegant transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="text-4xl font-bold text-primary mb-4">{result.metric}</div>
+                  <h3 className="text-xl font-semibold mb-3">{result.title}</h3>
+                  <p className="text-muted-foreground">{result.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 11. Contratar mais pessoas ou ativar inteligência comercial? */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
@@ -621,7 +621,31 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 11. Linha do tempo de Onboarding */}
+      {/* 12. Valores e Planos */}
+      <section className="py-20 px-4 bg-gradient-to-r from-primary/10 via-primary-glow/5 to-primary/10">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Com a Aive, sua empresa escala de verdade — e começa em até 30 dias.
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8">
+            Pare de perder leads e vendas por falta de atendimento. A Aive trabalha 24/7 
+            para que você tenha mais tempo para focar no que realmente importa: crescer.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button variant="cta" size="xl" className="text-lg">
+              Quero ativar a Aive agora
+            </Button>
+            <Button variant="outline" size="xl" className="text-lg">
+              Falar com especialista
+            </Button>
+          </div>
+          <p className="text-sm text-muted-foreground mt-6">
+            🚀 Setup único de R$ 5.000 + planos a partir de R$ 399,90/mês
+          </p>
+        </div>
+      </section>
+
+      {/* 13. Linha do Tempo de Onboarding (Como Funciona na Prática) */}
       <section className="py-16 px-4 bg-secondary/5">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -696,7 +720,7 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 12. Perguntas Frequentes */}
+      {/* 14. FAQ / Perguntas Frequentes */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -756,30 +780,6 @@ const Aive = () => {
               </AccordionItem>
             ))}
           </Accordion>
-        </div>
-      </section>
-
-      {/* 13. CTA Final */}
-      <section className="py-20 px-4 bg-gradient-to-r from-primary/10 via-primary-glow/5 to-primary/10">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Com a Aive, sua empresa escala de verdade — e começa em até 30 dias.
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Pare de perder leads e vendas por falta de atendimento. A Aive trabalha 24/7 
-            para que você tenha mais tempo para focar no que realmente importa: crescer.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="xl" className="text-lg">
-              Quero ativar a Aive agora
-            </Button>
-            <Button variant="outline" size="xl" className="text-lg">
-              Falar com especialista
-            </Button>
-          </div>
-          <p className="text-sm text-muted-foreground mt-6">
-            🚀 Setup único de R$ 5.000 + planos a partir de R$ 399,90/mês
-          </p>
         </div>
       </section>
     </div>
