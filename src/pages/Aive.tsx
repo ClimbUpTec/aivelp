@@ -496,14 +496,117 @@ const Aive = () => {
 
       {/* 7. Você decide onde ela atua e quando ela passa o bastão pro seu time humano. */}
       <section className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Você decide onde ela atua e quando ela passa o bastão pro seu time humano.
-          </h2>
-          <p className="text-lg text-muted-foreground mb-12">
-            Você não precisa escolher entre a evolução e seu time, eles trabalham juntos e melhoram os resultados da tua empresa.
-          </p>
-          <JourneyHourglass />
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano.
+            </h2>
+            <div className="text-lg text-muted-foreground space-y-2 max-w-4xl mx-auto">
+              <p>A Aive atua em todas as etapas da jornada comercial, do primeiro "oi" até a venda ou repasse para o time humano.</p>
+              <p>Use como apoio estratégico ou como força total da operação.</p>
+              <p className="font-semibold">Ela complementa. Ou lidera. Você decide.</p>
+            </div>
+          </div>
+          
+          {/* Timeline horizontal */}
+          <div className="overflow-x-auto pb-8">
+            <div className="flex items-center justify-center min-w-[1200px] gap-6 px-4">
+              <div className="flex flex-col items-center text-center max-w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                  🎯
+                </div>
+                <h3 className="font-semibold text-sm mb-2">Atração</h3>
+                <p className="text-xs text-muted-foreground">Campanhas, redes sociais, Google Ads ou tráfego direto.</p>
+              </div>
+              
+              <div className="text-2xl text-primary">➡️</div>
+              
+              <div className="flex flex-col items-center text-center max-w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                  🤖
+                </div>
+                <h3 className="font-semibold text-sm mb-2">AIVE ATENDE</h3>
+                <p className="text-xs text-muted-foreground">Responde o lead em tempo real, sem perder timing.</p>
+              </div>
+              
+              <div className="text-2xl text-primary">➡️</div>
+              
+              <div className="flex flex-col items-center text-center max-w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                  📊
+                </div>
+                <h3 className="font-semibold text-sm mb-2">Qualifica</h3>
+                <p className="text-xs text-muted-foreground">Faz as perguntas certas e identifica o perfil do lead.</p>
+              </div>
+              
+              <div className="text-2xl text-primary">➡️</div>
+              
+              <div className="flex flex-col items-center text-center max-w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                  🗂️
+                </div>
+                <h3 className="font-semibold text-sm mb-2">Cria e Preenche o CRM</h3>
+                <p className="text-xs text-muted-foreground">Abre card com dados, anotações e histórico.</p>
+              </div>
+              
+              <div className="text-2xl text-primary">➡️</div>
+              
+              <div className="flex flex-col items-center text-center max-w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                  🔁
+                </div>
+                <h3 className="font-semibold text-sm mb-2">Faz Follow-up</h3>
+                <p className="text-xs text-muted-foreground">Monitora o tempo certo e reativa automaticamente.</p>
+              </div>
+              
+              <div className="text-2xl text-primary">➡️</div>
+              
+              <div className="flex flex-col items-center text-center max-w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                  📅
+                </div>
+                <h3 className="font-semibold text-sm mb-2">Agenda ou Vende</h3>
+                <p className="text-xs text-muted-foreground">Agenda com humano ou finaliza a venda com link direto, orçamento ou checkout.</p>
+              </div>
+              
+              <div className="text-2xl text-primary">➡️</div>
+              
+              <div className="flex flex-col items-center text-center max-w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                  🤝
+                </div>
+                <h3 className="font-semibold text-sm mb-2">Passa o bastão (se você quiser)</h3>
+                <p className="text-xs text-muted-foreground">Se a estratégia pedir, transfere para seu time com o contexto completo.</p>
+              </div>
+              
+              <div className="text-2xl text-primary">➡️</div>
+              
+              <div className="flex flex-col items-center text-center max-w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                  📈
+                </div>
+                <h3 className="font-semibold text-sm mb-2">Pós-venda e Reengajamento</h3>
+                <p className="text-xs text-muted-foreground">Segmenta, dispara campanhas e fideliza com inteligência.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center mt-16">
+            <div className="max-w-3xl mx-auto mb-8">
+              <p className="text-lg text-muted-foreground mb-4">
+                Do primeiro atendimento ao fechamento da venda, a Aive pode cuidar de tudo.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                Ou só das partes que sua operação mais precisa, sem substituir seu time, apenas potencializando seus resultados.
+              </p>
+              <p className="text-lg font-semibold text-primary mt-4">
+                Você está no controle.
+              </p>
+            </div>
+            <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white font-semibold px-8 py-3">
+              Quero escalar com a Aive
+            </Button>
+          </div>
         </div>
       </section>
 
