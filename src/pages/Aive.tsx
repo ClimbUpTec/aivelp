@@ -69,7 +69,7 @@ const AivePresentation = () => (
     <div className="flex items-start gap-6">
       <div className="flex-1">
         <h3 className="text-2xl font-bold mb-4 text-primary">
-          "Oi! Eu sou a Aive, a IA da Climb Up que escala suas vendas 24/7."
+          Oi! Eu sou a Aive, a IA da Climb Up que escala suas vendas 24/7.
         </h3>
         <p className="text-lg leading-relaxed mb-6">
           Atendo seus leads assim que eles chegam, faço perguntas certas pra qualificar, cadastro o leas, crio e movo os cards no CRM, faço anotações, acompanho a negociação e até faço o follow-up. Tudo isso sem cansar, sem atrasar e sem esquecer nenhum detalhe.
@@ -81,7 +81,7 @@ const AivePresentation = () => (
       <img 
         src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" 
         alt="Aive" 
-        className="w-48 h-48 flex-shrink-0 object-contain"
+        className="w-64 h-64 flex-shrink-0 object-contain"
       />
     </div>
   </div>
