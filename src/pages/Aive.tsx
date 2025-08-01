@@ -510,83 +510,195 @@ const Aive = () => {
           
           {/* Timeline horizontal rotativo */}
           <div className="overflow-hidden pb-8">
-            <div className="animate-scroll-horizontal flex items-start justify-center min-w-[1200px] gap-6 px-4">
+            <div className="animate-scroll-horizontal flex items-start justify-center gap-6 px-4" style={{ width: '2400px' }}>
+              {/* Primeiro conjunto */}
               <div className="flex flex-col items-center text-center w-[140px]">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                   🎯
                 </div>
-                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Atração</h3>
-                <p className="text-xs text-muted-foreground h-16 flex items-center">Campanhas, redes sociais, Google Ads ou tráfego direto.</p>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Atração</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Prospecção, tráfego pago ou orgânico trazem novos leads.</p>
               </div>
               
-              <div className="text-2xl text-primary pt-6">➡️</div>
+              <div className="flex flex-col items-center">
+                <div className="text-2xl mt-9">➡️</div>
+              </div>
               
               <div className="flex flex-col items-center text-center w-[140px]">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                   🤖
                 </div>
-                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Aive atende</h3>
-                <p className="text-xs text-muted-foreground h-16 flex items-center">Responde o lead em tempo real, sem perder timing.</p>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Aive</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Responde o lead na hora, com agilidade e precisão.</p>
               </div>
               
-              <div className="text-2xl text-primary pt-6">➡️</div>
+              <div className="flex flex-col items-center">
+                <div className="text-2xl mt-9">➡️</div>
+              </div>
               
               <div className="flex flex-col items-center text-center w-[140px]">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                   📊
                 </div>
-                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Qualifica</h3>
-                <p className="text-xs text-muted-foreground h-16 flex items-center">Faz as perguntas certas e identifica o perfil do lead.</p>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Qualifica</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Faz perguntas inteligentes e entende o perfil.</p>
               </div>
               
-              <div className="text-2xl text-primary pt-6">➡️</div>
+              <div className="flex flex-col items-center">
+                <div className="text-2xl mt-9">➡️</div>
+              </div>
               
               <div className="flex flex-col items-center text-center w-[140px]">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                   🗂️
                 </div>
-                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Preenche o CRM</h3>
-                <p className="text-xs text-muted-foreground h-16 flex items-center">Abre card com dados, anotações e histórico.</p>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Preenche o CRM</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Cadastra o lead, registra dados, histórico e contexto.</p>
               </div>
               
-              <div className="text-2xl text-primary pt-6">➡️</div>
+              <div className="flex flex-col items-center">
+                <div className="text-2xl mt-9">➡️</div>
+              </div>
               
               <div className="flex flex-col items-center text-center w-[140px]">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                   🔁
                 </div>
-                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Faz follow-up</h3>
-                <p className="text-xs text-muted-foreground h-16 flex items-center">Monitora o tempo certo e reativa automaticamente.</p>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Faz Follow-up</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Monitora o tempo certo e retoma o contato sozinho.</p>
               </div>
               
-              <div className="text-2xl text-primary pt-6">➡️</div>
+              <div className="flex flex-col items-center">
+                <div className="text-2xl mt-9">➡️</div>
+              </div>
               
               <div className="flex flex-col items-center text-center w-[140px]">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                   📅
                 </div>
-                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Agenda ou vende</h3>
-                <p className="text-xs text-muted-foreground h-16 flex items-center">Agenda com humano ou finaliza a venda com link direto, orçamento ou checkout.</p>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Agenda ou vende</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Agenda com humano ou finaliza com link de compra.</p>
               </div>
               
-              <div className="text-2xl text-primary pt-6">➡️</div>
+              <div className="flex flex-col items-center">
+                <div className="text-2xl mt-9">➡️</div>
+              </div>
               
               <div className="flex flex-col items-center text-center w-[140px]">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                   🤝
                 </div>
-                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Passa o bastão p/ time</h3>
-                <p className="text-xs text-muted-foreground h-16 flex items-center">Se a estratégia pedir, transfere para seu time com o contexto completo.</p>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Passa o bastão</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Entrega pro time com contexto completo, no momento ideal.</p>
               </div>
               
-              <div className="text-2xl text-primary pt-6">➡️</div>
+              <div className="flex flex-col items-center">
+                <div className="text-2xl mt-9">➡️</div>
+              </div>
               
               <div className="flex flex-col items-center text-center w-[140px]">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                   📈
                 </div>
-                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Pós-venda e remarketing</h3>
-                <p className="text-xs text-muted-foreground h-16 flex items-center">Segmenta, dispara campanhas e fideliza com inteligência.</p>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Pós-venda e remarketing</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Faz o onboarding, suporte e ativa campanhas de remarketing.</p>
+              </div>
+              
+              {/* Segundo conjunto (duplicado para animação contínua) */}
+              <div className="flex flex-col items-center">
+                <div className="text-2xl mt-9">➡️</div>
+              </div>
+              
+              <div className="flex flex-col items-center text-center w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
+                  🎯
+                </div>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Atração</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Prospecção, tráfego pago ou orgânico trazem novos leads.</p>
+              </div>
+              
+              <div className="flex flex-col items-center">
+                <div className="text-2xl mt-9">➡️</div>
+              </div>
+              
+              <div className="flex flex-col items-center text-center w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
+                  🤖
+                </div>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Aive</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Responde o lead na hora, com agilidade e precisão.</p>
+              </div>
+              
+              <div className="flex flex-col items-center">
+                <div className="text-2xl mt-9">➡️</div>
+              </div>
+              
+              <div className="flex flex-col items-center text-center w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
+                  📊
+                </div>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Qualifica</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Faz perguntas inteligentes e entende o perfil.</p>
+              </div>
+              
+              <div className="flex flex-col items-center">
+                <div className="text-2xl mt-9">➡️</div>
+              </div>
+              
+              <div className="flex flex-col items-center text-center w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
+                  🗂️
+                </div>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Preenche o CRM</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Cadastra o lead, registra dados, histórico e contexto.</p>
+              </div>
+              
+              <div className="flex flex-col items-center">
+                <div className="text-2xl mt-9">➡️</div>
+              </div>
+              
+              <div className="flex flex-col items-center text-center w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
+                  🔁
+                </div>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Faz Follow-up</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Monitora o tempo certo e retoma o contato sozinho.</p>
+              </div>
+              
+              <div className="flex flex-col items-center">
+                <div className="text-2xl mt-9">➡️</div>
+              </div>
+              
+              <div className="flex flex-col items-center text-center w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
+                  📅
+                </div>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Agenda ou vende</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Agenda com humano ou finaliza com link de compra.</p>
+              </div>
+              
+              <div className="flex flex-col items-center">
+                <div className="text-2xl mt-9">➡️</div>
+              </div>
+              
+              <div className="flex flex-col items-center text-center w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
+                  🤝
+                </div>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Passa o bastão</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Entrega pro time com contexto completo, no momento ideal.</p>
+              </div>
+              
+              <div className="flex flex-col items-center">
+                <div className="text-2xl mt-9">➡️</div>
+              </div>
+              
+              <div className="flex flex-col items-center text-center w-[140px]">
+                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-6">
+                  📈
+                </div>
+                <h3 className="font-semibold text-sm mb-3 h-8 flex items-center">Pós-venda e remarketing</h3>
+                <p className="text-xs text-muted-foreground h-20 flex items-start leading-relaxed">Faz o onboarding, suporte e ativa campanhas de remarketing.</p>
               </div>
             </div>
           </div>
