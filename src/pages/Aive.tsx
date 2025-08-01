@@ -65,24 +65,16 @@ const JourneyHourglass = () => (
 
 // Componente da apresentação da Aive
 const AivePresentation = () => (
-  <div className="p-8">
-    <div className="flex items-start gap-6">
-      <div className="flex-1">
-        <h3 className="text-2xl font-bold mb-4 text-primary">
-          "Oi! Eu sou a Aive, a IA da Climb Up que escala suas vendas 24/7."
-        </h3>
-        <p className="text-lg leading-relaxed mb-6">
-          Atendo seus leads assim que eles chegam, faço perguntas certas pra qualificar, cadastro o leas, crio e movo os cards no CRM, faço anotações, acompanho a negociação e até faço o follow-up. Tudo isso sem cansar, sem atrasar e sem esquecer nenhum detalhe.
-        </p>
-        <p className="text-xl font-semibold text-primary">
-          Você vende mais, gasta menos e escala com inteligência.
-        </p>
-      </div>
-      <Avatar className="w-32 h-32 flex-shrink-0">
-        <AvatarImage src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" alt="Aive" />
-        <AvatarFallback>AI</AvatarFallback>
-      </Avatar>
-    </div>
+  <div className="bg-gradient-to-br from-primary/5 to-primary-glow/5 rounded-2xl p-8 border border-primary/20">
+    <h3 className="text-2xl font-bold mb-4 text-primary">
+      "Oi! Eu sou a Aive, a IA da Climb Up que escala suas vendas 24/7."
+    </h3>
+    <p className="text-lg leading-relaxed mb-6">
+      Atendo seus leads assim que eles chegam, faço perguntas certas pra qualificar, cadastro o leas, crio e movo os cards no CRM, faço anotações, acompanho a negociação e até faço o follow-up. Tudo isso sem cansar, sem atrasar e sem esquecer nenhum detalhe.
+    </p>
+    <p className="text-xl font-semibold text-primary">
+      Você vende mais, gasta menos e escala com inteligência.
+    </p>
   </div>
 );
 
@@ -342,7 +334,15 @@ const Aive = () => {
       {/* 3. Apresentação da Aive */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-5xl">
-          <AivePresentation />
+          <div className="flex items-start gap-8">
+            <div className="flex-1">
+              <AivePresentation />
+            </div>
+            <Avatar className="w-48 h-48 flex-shrink-0">
+              <AvatarImage src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" alt="Aive" />
+              <AvatarFallback>AI</AvatarFallback>
+            </Avatar>
+          </div>
         </div>
       </section>
 
