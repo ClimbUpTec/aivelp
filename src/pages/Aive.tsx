@@ -291,7 +291,7 @@ const Aive = () => {
           </div>
           
           <div className="grid md:grid-cols-4 gap-8 mb-12">
-            <Card className="p-8 text-center border-white/20 bg-white/10 backdrop-blur-sm">
+            <Card className="p-8 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
               <div className="mb-4">
                 <Users className="w-12 h-12 mx-auto text-white" />
               </div>
@@ -300,7 +300,7 @@ const Aive = () => {
               </p>
             </Card>
 
-            <Card className="p-8 text-center border-white/20 bg-white/10 backdrop-blur-sm">
+            <Card className="p-8 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
               <div className="mb-4">
                 <Clock className="w-12 h-12 mx-auto text-white" />
               </div>
@@ -309,7 +309,7 @@ const Aive = () => {
               </p>
             </Card>
             
-            <Card className="p-8 text-center border-white/20 bg-white/10 backdrop-blur-sm">
+            <Card className="p-8 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
               <div className="mb-4">
                 <AlertCircle className="w-12 h-12 mx-auto text-white" />
               </div>
@@ -318,7 +318,7 @@ const Aive = () => {
               </p>
             </Card>
             
-            <Card className="p-8 text-center border-white/20 bg-white/10 backdrop-blur-sm">
+            <Card className="p-8 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
               <div className="mb-4">
                 <TrendingDown className="w-12 h-12 mx-auto text-white" />
               </div>
