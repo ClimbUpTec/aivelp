@@ -18,9 +18,9 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 212 13% 20%;
 
-    --primary: 28 100% 53%; /* #FF7F11 laranja aberto */
+    --primary: 24 95% 51%; /* #F95B06 laranja principal */
     --primary-foreground: 0 0% 98%;
-    --primary-glow: 30 100% 60%; /* versão mais clara do laranja */
+    --primary-glow: 27 100% 60%; /* versão mais clara do laranja */
 
     --secondary: 184 82% 20%; /* #0F5056 azul escuro */
     --secondary-foreground: 0 0% 98%;
