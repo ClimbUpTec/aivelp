@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { ArrowDown, CheckCircle, Star, Users, TrendingUp, Clock, MessageSquare, Bot, Zap, Shield, Target, Sparkles, AlertCircle, TrendingDown } from "lucide-react";
 
 // Componente para a ampulheta da jornada
@@ -66,17 +67,16 @@ const JourneyHourglass = () => (
 const AivePresentation = () => (
   <div className="bg-gradient-to-br from-primary/5 to-primary-glow/5 rounded-2xl p-8 border border-primary/20">
     <div className="flex items-start gap-6">
-      <div className="bg-primary text-primary-foreground rounded-full p-4 shadow-lg">
-        <Bot className="w-12 h-12" />
-      </div>
+      <Avatar className="w-20 h-20">
+        <AvatarImage src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" alt="Aive" />
+        <AvatarFallback>AI</AvatarFallback>
+      </Avatar>
       <div className="flex-1">
         <h3 className="text-2xl font-bold mb-4 text-primary">
-          "Oi! Eu sou a Aive, a inteligência da Climb Up que transforma conversas em vendas."
+          "Oi! Eu sou a Aive, a IA da Climb Up que escala suas vendas 24/7."
         </h3>
         <p className="text-lg leading-relaxed mb-6">
-          Eu atendo seus leads assim que eles chegam, faço perguntas certas pra qualificar, 
-          crio cards no CRM, faço anotações automáticas, acompanho a negociação com você 
-          e até faço o follow-up no tempo certo. Tudo isso sem cansar, sem atrasar e sem esquecer nenhum detalhe.
+          Atendo seus leads assim que eles chegam, faço perguntas certas pra qualificar, cadastro o leas, crio e movo os cards no CRM, faço anotações, acompanho a negociação e até faço o follow-up. Tudo isso sem cansar, sem atrasar e sem esquecer nenhum detalhe.
         </p>
         <p className="text-xl font-semibold text-primary">
           Você vende mais, gasta menos e escala com inteligência.
