@@ -510,83 +510,83 @@ const Aive = () => {
           
           {/* Timeline horizontal */}
           <div className="overflow-x-auto pb-8">
-            <div className="flex items-center justify-center min-w-[1200px] gap-6 px-4">
-              <div className="flex flex-col items-center text-center max-w-[140px]">
+            <div className="flex items-start justify-center min-w-[1200px] gap-6 px-4">
+              <div className="flex flex-col items-center text-center w-[140px]">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
                   🎯
                 </div>
-                <h3 className="font-semibold text-sm mb-2">Atração</h3>
-                <p className="text-xs text-muted-foreground">Campanhas, redes sociais, Google Ads ou tráfego direto.</p>
+                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Atração</h3>
+                <p className="text-xs text-muted-foreground h-16 flex items-center">Campanhas, redes sociais, Google Ads ou tráfego direto.</p>
               </div>
               
-              <div className="text-2xl text-primary">➡️</div>
+              <div className="text-2xl text-primary pt-6">➡️</div>
               
-              <div className="flex flex-col items-center text-center max-w-[140px]">
+              <div className="flex flex-col items-center text-center w-[140px]">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
                   🤖
                 </div>
-                <h3 className="font-semibold text-sm mb-2">AIVE ATENDE</h3>
-                <p className="text-xs text-muted-foreground">Responde o lead em tempo real, sem perder timing.</p>
+                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">AIVE ATENDE</h3>
+                <p className="text-xs text-muted-foreground h-16 flex items-center">Responde o lead em tempo real, sem perder timing.</p>
               </div>
               
-              <div className="text-2xl text-primary">➡️</div>
+              <div className="text-2xl text-primary pt-6">➡️</div>
               
-              <div className="flex flex-col items-center text-center max-w-[140px]">
+              <div className="flex flex-col items-center text-center w-[140px]">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
                   📊
                 </div>
-                <h3 className="font-semibold text-sm mb-2">Qualifica</h3>
-                <p className="text-xs text-muted-foreground">Faz as perguntas certas e identifica o perfil do lead.</p>
+                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Qualifica</h3>
+                <p className="text-xs text-muted-foreground h-16 flex items-center">Faz as perguntas certas e identifica o perfil do lead.</p>
               </div>
               
-              <div className="text-2xl text-primary">➡️</div>
+              <div className="text-2xl text-primary pt-6">➡️</div>
               
-              <div className="flex flex-col items-center text-center max-w-[140px]">
+              <div className="flex flex-col items-center text-center w-[140px]">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
                   🗂️
                 </div>
-                <h3 className="font-semibold text-sm mb-2">Cria e Preenche o CRM</h3>
-                <p className="text-xs text-muted-foreground">Abre card com dados, anotações e histórico.</p>
+                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Cria e Preenche o CRM</h3>
+                <p className="text-xs text-muted-foreground h-16 flex items-center">Abre card com dados, anotações e histórico.</p>
               </div>
               
-              <div className="text-2xl text-primary">➡️</div>
+              <div className="text-2xl text-primary pt-6">➡️</div>
               
-              <div className="flex flex-col items-center text-center max-w-[140px]">
+              <div className="flex flex-col items-center text-center w-[140px]">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
                   🔁
                 </div>
-                <h3 className="font-semibold text-sm mb-2">Faz Follow-up</h3>
-                <p className="text-xs text-muted-foreground">Monitora o tempo certo e reativa automaticamente.</p>
+                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Faz Follow-up</h3>
+                <p className="text-xs text-muted-foreground h-16 flex items-center">Monitora o tempo certo e reativa automaticamente.</p>
               </div>
               
-              <div className="text-2xl text-primary">➡️</div>
+              <div className="text-2xl text-primary pt-6">➡️</div>
               
-              <div className="flex flex-col items-center text-center max-w-[140px]">
+              <div className="flex flex-col items-center text-center w-[140px]">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
                   📅
                 </div>
-                <h3 className="font-semibold text-sm mb-2">Agenda ou Vende</h3>
-                <p className="text-xs text-muted-foreground">Agenda com humano ou finaliza a venda com link direto, orçamento ou checkout.</p>
+                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Agenda ou Vende</h3>
+                <p className="text-xs text-muted-foreground h-16 flex items-center">Agenda com humano ou finaliza a venda com link direto, orçamento ou checkout.</p>
               </div>
               
-              <div className="text-2xl text-primary">➡️</div>
+              <div className="text-2xl text-primary pt-6">➡️</div>
               
-              <div className="flex flex-col items-center text-center max-w-[140px]">
+              <div className="flex flex-col items-center text-center w-[140px]">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
                   🤝
                 </div>
-                <h3 className="font-semibold text-sm mb-2">Passa o bastão (se você quiser)</h3>
-                <p className="text-xs text-muted-foreground">Se a estratégia pedir, transfere para seu time com o contexto completo.</p>
+                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Passa o bastão (se você quiser)</h3>
+                <p className="text-xs text-muted-foreground h-16 flex items-center">Se a estratégia pedir, transfere para seu time com o contexto completo.</p>
               </div>
               
-              <div className="text-2xl text-primary">➡️</div>
+              <div className="text-2xl text-primary pt-6">➡️</div>
               
-              <div className="flex flex-col items-center text-center max-w-[140px]">
+              <div className="flex flex-col items-center text-center w-[140px]">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
                   📈
                 </div>
-                <h3 className="font-semibold text-sm mb-2">Pós-venda e Reengajamento</h3>
-                <p className="text-xs text-muted-foreground">Segmenta, dispara campanhas e fideliza com inteligência.</p>
+                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Pós-venda e Reengajamento</h3>
+                <p className="text-xs text-muted-foreground h-16 flex items-center">Segmenta, dispara campanhas e fideliza com inteligência.</p>
               </div>
             </div>
           </div>
