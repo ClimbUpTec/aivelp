@@ -508,9 +508,9 @@ const Aive = () => {
             </div>
           </div>
           
-          {/* Timeline horizontal */}
-          <div className="overflow-x-auto pb-8">
-            <div className="flex items-start justify-center min-w-[1200px] gap-6 px-4">
+          {/* Timeline horizontal rotativo */}
+          <div className="overflow-hidden pb-8">
+            <div className="animate-scroll-horizontal flex items-start justify-center min-w-[1200px] gap-6 px-4">
               <div className="flex flex-col items-center text-center w-[140px]">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
                   🎯
@@ -525,7 +525,7 @@ const Aive = () => {
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
                   🤖
                 </div>
-                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">AIVE ATENDE</h3>
+                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Aive atende</h3>
                 <p className="text-xs text-muted-foreground h-16 flex items-center">Responde o lead em tempo real, sem perder timing.</p>
               </div>
               
@@ -545,7 +545,7 @@ const Aive = () => {
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
                   🗂️
                 </div>
-                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Cria e Preenche o CRM</h3>
+                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Preenche o CRM</h3>
                 <p className="text-xs text-muted-foreground h-16 flex items-center">Abre card com dados, anotações e histórico.</p>
               </div>
               
@@ -555,7 +555,7 @@ const Aive = () => {
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
                   🔁
                 </div>
-                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Faz Follow-up</h3>
+                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Faz follow-up</h3>
                 <p className="text-xs text-muted-foreground h-16 flex items-center">Monitora o tempo certo e reativa automaticamente.</p>
               </div>
               
@@ -565,7 +565,7 @@ const Aive = () => {
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
                   📅
                 </div>
-                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Agenda ou Vende</h3>
+                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Agenda ou vende</h3>
                 <p className="text-xs text-muted-foreground h-16 flex items-center">Agenda com humano ou finaliza a venda com link direto, orçamento ou checkout.</p>
               </div>
               
@@ -575,7 +575,7 @@ const Aive = () => {
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
                   🤝
                 </div>
-                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Passa o bastão (se você quiser)</h3>
+                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Passa o bastão p/ time</h3>
                 <p className="text-xs text-muted-foreground h-16 flex items-center">Se a estratégia pedir, transfere para seu time com o contexto completo.</p>
               </div>
               
@@ -585,7 +585,7 @@ const Aive = () => {
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mb-3">
                   📈
                 </div>
-                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Pós-venda e Reengajamento</h3>
+                <h3 className="font-semibold text-sm mb-2 h-8 flex items-center">Pós-venda e remarketing</h3>
                 <p className="text-xs text-muted-foreground h-16 flex items-center">Segmenta, dispara campanhas e fideliza com inteligência.</p>
               </div>
             </div>
