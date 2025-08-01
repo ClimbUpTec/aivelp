@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+
 import { ArrowDown, CheckCircle, Star, Users, TrendingUp, Clock, MessageSquare, Bot, Zap, Shield, Target, Sparkles, AlertCircle, TrendingDown } from "lucide-react";
 
 // Componente para a ampulheta da jornada
@@ -78,10 +78,11 @@ const AivePresentation = () => (
           Você vende mais, gasta menos e escala com inteligência.
         </p>
       </div>
-      <Avatar className="w-32 h-32 flex-shrink-0">
-        <AvatarImage src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" alt="Aive" />
-        <AvatarFallback>AI</AvatarFallback>
-      </Avatar>
+      <img 
+        src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" 
+        alt="Aive" 
+        className="w-48 h-48 flex-shrink-0 object-contain"
+      />
     </div>
   </div>
 );
