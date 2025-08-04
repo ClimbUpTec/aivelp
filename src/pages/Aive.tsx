@@ -88,12 +88,12 @@ const AivePresentation = () => {
   ];
 
   return (
-    <div className="p-9">
+    <div className="py-16 px-9">
       <div className="text-center max-w-5xl mx-auto">
-        <h3 className="text-3xl md:text-4xl font-bold mb-7 text-primary" style={{ transform: 'scale(1.1)' }}>
+        <h3 className="text-3xl md:text-4xl font-bold mb-8 text-primary" style={{ transform: 'scale(1.1)' }}>
           Conheça AIVE, a IA da Climb Up que escala suas vendas 24/7
         </h3>
-        <p className="text-xl text-muted-foreground mb-13 max-w-4xl mx-auto" style={{ transform: 'scale(1.1)' }}>
+        <p className="text-xl text-muted-foreground mb-20 max-w-4xl mx-auto" style={{ transform: 'scale(1.1)' }}>
           Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera. Você decide.
         </p>
         
