@@ -319,7 +319,7 @@ const Aive = () => {
 
       {/* 2. Está enfrentando isso? */}
       <section 
-        className="py-20 px-4 relative"
+        className="py-16 px-4 relative"
         style={{
           backgroundImage: `url('/lovable-uploads/2f44a1ee-3680-412b-8561-da78cea652a2.png')`,
           backgroundSize: 'cover',
@@ -329,7 +329,7 @@ const Aive = () => {
       >
         
         <div className="max-w-6xl mx-auto relative z-10">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Sua empresa está passando por isso?
             </h2>
@@ -338,48 +338,48 @@ const Aive = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-4 gap-8 mb-12">
-            <Card className="p-8 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
-              <div className="mb-4">
-                <Users className="w-12 h-12 mx-auto text-white" />
+          <div className="grid md:grid-cols-4 gap-6 mb-10">
+            <Card className="p-6 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
+              <div className="mb-3">
+                <Users className="w-10 h-10 mx-auto text-white" />
               </div>
-              <p className="text-lg font-medium text-white">
+              <p className="text-base font-medium text-white">
                 Sua equipe está sobrecarregada, não consegue atender, tem dificuldade em preencher o CRM
               </p>
             </Card>
 
-            <Card className="p-8 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
-              <div className="mb-4">
-                <Clock className="w-12 h-12 mx-auto text-white" />
+            <Card className="p-6 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
+              <div className="mb-3">
+                <Clock className="w-10 h-10 mx-auto text-white" />
               </div>
-              <p className="text-lg font-medium text-white">
+              <p className="text-base font-medium text-white">
                 Os leads ficam horas ou até dias aguardando atendimento
               </p>
             </Card>
             
-            <Card className="p-8 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
-              <div className="mb-4">
-                <AlertCircle className="w-12 h-12 mx-auto text-white" />
+            <Card className="p-6 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
+              <div className="mb-3">
+                <AlertCircle className="w-10 h-10 mx-auto text-white" />
               </div>
-              <p className="text-lg font-medium text-white">
+              <p className="text-base font-medium text-white">
                 Falta tempo para o que realmente importa
               </p>
             </Card>
             
-            <Card className="p-8 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
-              <div className="mb-4">
-                <TrendingDown className="w-12 h-12 mx-auto text-white" />
+            <Card className="p-6 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
+              <div className="mb-3">
+                <TrendingDown className="w-10 h-10 mx-auto text-white" />
               </div>
-              <p className="text-lg font-medium text-white">
+              <p className="text-base font-medium text-white">
                 Sua empresa não consegue escalar com a estrutura atual
               </p>
             </Card>
           </div>
           
           <div className="text-center">
-            <div className="inline-flex items-center gap-3 bg-white/10 px-8 py-4 rounded-full border border-white/20 backdrop-blur-sm">
-              <Zap className="w-6 h-6 text-white" />
-              <p className="text-xl font-semibold text-white">
+            <div className="inline-flex items-center gap-3 bg-white/10 px-6 py-3 rounded-full border border-white/20 backdrop-blur-sm">
+              <Zap className="w-5 h-5 text-white" />
+              <p className="text-lg font-semibold text-white">
                 A solução é turbinar seu WhatsApp e outros canais com AIVE
               </p>
             </div>
