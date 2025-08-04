@@ -297,12 +297,21 @@ const Aive = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* 1. Chamada Impactante (Herói) */}
-      <section className="py-20 px-4 bg-gradient-to-br from-background via-muted/30 to-primary/5">
-        <div className="container mx-auto max-w-6xl text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary">
+      <section 
+        className="py-20 px-4 relative"
+        style={{
+          backgroundImage: `url('/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="container mx-auto max-w-6xl text-center relative z-10">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
             Venda mais com a AIVE. A IA da Climb Up que escala suas vendas 24/7.
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
             Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
             Ou, se preferir, passa pro seu time. Tudo 24/7.
           </p>
@@ -310,7 +319,7 @@ const Aive = () => {
             <Button variant="hero" size="xl">
               Teste agora a Aive
             </Button>
-            <Button variant="outline" size="xl">
+            <Button variant="outline" size="xl" className="border-white text-white hover:bg-white hover:text-primary">
               Quero escalar com Aive
             </Button>
           </div>
@@ -386,12 +395,9 @@ const Aive = () => {
           </div>
           
           <div className="text-center">
-            <div className="inline-flex items-center gap-3 bg-white/10 px-6 py-3 rounded-full border border-white/20 backdrop-blur-sm">
-              <Zap className="w-5 h-5 text-white" />
-              <p className="text-lg font-semibold text-white">
-                A solução é turbinar seu WhatsApp e outros canais com AIVE
-              </p>
-            </div>
+            <Button variant="hero" size="lg" className="bg-white text-primary hover:bg-white/90">
+              Resolver com AIVE
+            </Button>
           </div>
         </div>
       </section>
