@@ -7,7 +7,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 import { ArrowDown, CheckCircle, Star, Users, TrendingUp, Clock, MessageSquare, Bot, Zap, Shield, Target, Sparkles, AlertCircle, TrendingDown,
          Phone, UserCheck, UserPlus, ArrowUpRight, Folder, FolderPlus, MoveHorizontal, 
-         Bell, RefreshCw, Calendar, Link, FileText, Settings, Wrench } from "lucide-react";
+         Bell, RefreshCw, Calendar, Link, FileText, Settings, Wrench, X } from "lucide-react";
 
 // Componente para a ampulheta da jornada
 const JourneyHourglass = () => (
@@ -341,25 +341,25 @@ const Aive = () => {
           <div className="grid md:grid-cols-4 gap-6 mb-10">
             <Card className="p-6 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
               <div className="mb-3">
-                <Users className="w-10 h-10 mx-auto text-white" />
+                <X className="w-10 h-10 mx-auto text-white" />
               </div>
               <p className="text-base font-medium text-white">
-                Sua equipe está sobrecarregada, não consegue atender, tem dificuldade em preencher o CRM
+                Equipe sobrecarregada e dificuldade para preencher o CRM
               </p>
             </Card>
 
             <Card className="p-6 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
               <div className="mb-3">
-                <Clock className="w-10 h-10 mx-auto text-white" />
+                <X className="w-10 h-10 mx-auto text-white" />
               </div>
               <p className="text-base font-medium text-white">
-                Os leads ficam horas ou até dias aguardando atendimento
+                Leads aguardam horas ou dias por atendimento
               </p>
             </Card>
             
             <Card className="p-6 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
               <div className="mb-3">
-                <AlertCircle className="w-10 h-10 mx-auto text-white" />
+                <X className="w-10 h-10 mx-auto text-white" />
               </div>
               <p className="text-base font-medium text-white">
                 Falta tempo para o que realmente importa
@@ -368,10 +368,10 @@ const Aive = () => {
             
             <Card className="p-6 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
               <div className="mb-3">
-                <TrendingDown className="w-10 h-10 mx-auto text-white" />
+                <X className="w-10 h-10 mx-auto text-white" />
               </div>
               <p className="text-base font-medium text-white">
-                Sua empresa não consegue escalar com a estrutura atual
+                Impossível escalar com a estrutura atual
               </p>
             </Card>
           </div>
