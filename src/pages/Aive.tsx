@@ -338,13 +338,22 @@ const Aive = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-4 gap-6 mb-10">
+          <div className="grid md:grid-cols-5 gap-6 mb-10">
             <Card className="p-6 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
               <div className="mb-3">
                 <X className="w-10 h-10 mx-auto text-white" />
               </div>
               <p className="text-base font-medium text-white">
-                Equipe sobrecarregada e dificuldade para preencher o CRM
+                Equipe sobrecarregada
+              </p>
+            </Card>
+
+            <Card className="p-6 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
+              <div className="mb-3">
+                <X className="w-10 h-10 mx-auto text-white" />
+              </div>
+              <p className="text-base font-medium text-white">
+                A equipe não preenche o CRM
               </p>
             </Card>
 
