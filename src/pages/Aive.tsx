@@ -66,23 +66,40 @@ const JourneyHourglass = () => (
 // Componente da apresentação da Aive
 const AivePresentation = () => (
   <div className="p-8">
-    <div className="flex items-start gap-6">
-      <div className="flex-1">
-        <h3 className="text-2xl font-bold mb-4 text-primary">
-          Oi! Eu sou a Aive, a IA da Climb Up que escala suas vendas 24/7.
-        </h3>
-        <p className="text-lg leading-relaxed mb-6">
-          Atendo seus leads assim que eles chegam, faço perguntas certas pra qualificar, cadastro o leas, crio e movo os cards no CRM, faço anotações, acompanho a negociação e até faço o follow-up. Tudo isso sem cansar, sem atrasar e sem esquecer nenhum detalhe.
-        </p>
-        <p className="text-xl font-semibold text-primary">
-          Você vende mais, gasta menos e escala com inteligência.
-        </p>
+    <div className="text-center max-w-5xl mx-auto">
+      <h3 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
+        Conheça AIVE, a IA da Climb Up que escala suas vendas 24/7
+      </h3>
+      <p className="text-xl text-muted-foreground mb-12 max-w-4xl mx-auto">
+        Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera. Você decide.
+      </p>
+      
+      {/* Cards rotativos das funcionalidades */}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
+        {[
+          "Atende 24/7",
+          "Múltiplos atendimentos em simultâneo",
+          "Qualificação de lead",
+          "Cadastro do cliente",
+          "Direcionamento para equipes",
+          "Criação de cards no CRM",
+          "Movimentação de cards no CRM",
+          "Follow-up e lembretes",
+          "Reativação de leads parados",
+          "Agendamentos automáticos",
+          "Links de compra",
+          "Geração de orçamentos",
+          "Campanhas segmentadas de remarketing",
+          "Personalizada para cada negócio",
+          "Adaptações constantes"
+        ].map((feature, index) => (
+          <Card key={index} className="p-4 text-center hover:scale-105 transition-transform duration-200 border-primary/20 hover:border-primary/40">
+            <CardContent className="p-0">
+              <p className="text-sm font-medium text-foreground">{feature}</p>
+            </CardContent>
+          </Card>
+        ))}
       </div>
-      <img 
-        src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" 
-        alt="Aive" 
-        className="w-64 h-64 flex-shrink-0 object-contain"
-      />
     </div>
   </div>
 );
