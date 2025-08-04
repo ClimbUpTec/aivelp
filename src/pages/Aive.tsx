@@ -306,7 +306,6 @@ const Aive = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
         <div className="container mx-auto max-w-6xl text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
             Venda mais com a AIVE. A IA da Climb Up que escala suas vendas 24/7.
