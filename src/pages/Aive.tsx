@@ -2,8 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
-import { ArrowDown, CheckCircle, Star, Users, TrendingUp, Clock, MessageSquare, Bot, Zap, Shield, Target, Sparkles, AlertCircle, TrendingDown } from "lucide-react";
+import { ArrowDown, CheckCircle, Star, Users, TrendingUp, Clock, MessageSquare, Bot, Zap, Shield, Target, Sparkles, AlertCircle, TrendingDown,
+         Phone, UserCheck, UserPlus, ArrowUpRight, Folder, FolderPlus, MoveHorizontal, 
+         Bell, RefreshCw, Calendar, Link, FileText, Settings, Wrench } from "lucide-react";
 
 // Componente para a ampulheta da jornada
 const JourneyHourglass = () => (
@@ -64,45 +68,71 @@ const JourneyHourglass = () => (
 );
 
 // Componente da apresentação da Aive
-const AivePresentation = () => (
-  <div className="p-8">
-    <div className="text-center max-w-5xl mx-auto">
-      <h3 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
-        Conheça AIVE, a IA da Climb Up que escala suas vendas 24/7
-      </h3>
-      <p className="text-xl text-muted-foreground mb-12 max-w-4xl mx-auto">
-        Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera. Você decide.
-      </p>
-      
-      {/* Cards rotativos das funcionalidades */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
-        {[
-          "Atende 24/7",
-          "Múltiplos atendimentos em simultâneo",
-          "Qualificação de lead",
-          "Cadastro do cliente",
-          "Direcionamento para equipes",
-          "Criação de cards no CRM",
-          "Movimentação de cards no CRM",
-          "Follow-up e lembretes",
-          "Reativação de leads parados",
-          "Agendamentos automáticos",
-          "Links de compra",
-          "Geração de orçamentos",
-          "Campanhas segmentadas de remarketing",
-          "Personalizada para cada negócio",
-          "Adaptações constantes"
-        ].map((feature, index) => (
-          <Card key={index} className="p-4 text-center hover:scale-105 transition-transform duration-200 border-primary/20 hover:border-primary/40">
-            <CardContent className="p-0">
-              <p className="text-sm font-medium text-foreground">{feature}</p>
-            </CardContent>
-          </Card>
-        ))}
+const AivePresentation = () => {
+  const features = [
+    { name: "Atende 24/7", icon: <Phone className="w-8 h-8" /> },
+    { name: "Múltiplos atendimentos em simultâneo", icon: <Users className="w-8 h-8" /> },
+    { name: "Qualificação de lead", icon: <UserCheck className="w-8 h-8" /> },
+    { name: "Cadastro do cliente", icon: <UserPlus className="w-8 h-8" /> },
+    { name: "Direcionamento para equipes", icon: <ArrowUpRight className="w-8 h-8" /> },
+    { name: "Criação de cards no CRM", icon: <FolderPlus className="w-8 h-8" /> },
+    { name: "Movimentação de cards no CRM", icon: <MoveHorizontal className="w-8 h-8" /> },
+    { name: "Follow-up e lembretes", icon: <Bell className="w-8 h-8" /> },
+    { name: "Reativação de leads parados", icon: <RefreshCw className="w-8 h-8" /> },
+    { name: "Agendamentos automáticos", icon: <Calendar className="w-8 h-8" /> },
+    { name: "Links de compra", icon: <Link className="w-8 h-8" /> },
+    { name: "Geração de orçamentos", icon: <FileText className="w-8 h-8" /> },
+    { name: "Campanhas segmentadas de remarketing", icon: <Target className="w-8 h-8" /> },
+    { name: "Personalizada para cada negócio", icon: <Settings className="w-8 h-8" /> },
+    { name: "Adaptações constantes", icon: <Wrench className="w-8 h-8" /> }
+  ];
+
+  return (
+    <div className="p-8">
+      <div className="text-center max-w-5xl mx-auto">
+        <h3 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
+          Conheça AIVE, a IA da Climb Up que escala suas vendas 24/7
+        </h3>
+        <p className="text-xl text-muted-foreground mb-12 max-w-4xl mx-auto">
+          Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera. Você decide.
+        </p>
+        
+        {/* Carrossel rotativo das funcionalidades */}
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          plugins={[
+            Autoplay({
+              delay: 2000,
+            }),
+          ]}
+          className="w-full max-w-6xl mx-auto"
+        >
+          <CarouselContent className="-ml-2 md:-ml-4">
+            {features.map((feature, index) => (
+              <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                <Card className="h-full hover:scale-105 transition-transform duration-200 border-primary/20 hover:border-primary/40 bg-gradient-to-br from-background to-primary/5">
+                  <CardContent className="flex flex-col items-center justify-center p-6 h-full text-center space-y-3">
+                    <div className="text-primary">
+                      {feature.icon}
+                    </div>
+                    <p className="text-sm font-medium text-foreground leading-tight">
+                      {feature.name}
+                    </p>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 // Componente de comparação Antes vs Depois
 const BeforeAfterComparison = () => (
