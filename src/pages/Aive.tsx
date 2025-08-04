@@ -70,30 +70,30 @@ const JourneyHourglass = () => (
 // Componente da apresentação da Aive
 const AivePresentation = () => {
   const features = [
-    { name: "Atende 24/7", icon: <Phone className="w-6 h-6" /> },
-    { name: "Múltiplos atendimentos em simultâneo", icon: <Users className="w-6 h-6" /> },
-    { name: "Qualificação de lead", icon: <UserCheck className="w-6 h-6" /> },
-    { name: "Cadastro do cliente", icon: <UserPlus className="w-6 h-6" /> },
-    { name: "Direcionamento para equipes", icon: <ArrowUpRight className="w-6 h-6" /> },
-    { name: "Criação de cards no CRM", icon: <FolderPlus className="w-6 h-6" /> },
-    { name: "Movimentação de cards no CRM", icon: <MoveHorizontal className="w-6 h-6" /> },
-    { name: "Follow-up e lembretes", icon: <Bell className="w-6 h-6" /> },
-    { name: "Reativação de leads parados", icon: <RefreshCw className="w-6 h-6" /> },
-    { name: "Agendamentos automáticos", icon: <Calendar className="w-6 h-6" /> },
-    { name: "Links de compra", icon: <Link className="w-6 h-6" /> },
-    { name: "Geração de orçamentos", icon: <FileText className="w-6 h-6" /> },
-    { name: "Campanhas segmentadas de remarketing", icon: <Target className="w-6 h-6" /> },
-    { name: "Personalizada para cada negócio", icon: <Settings className="w-6 h-6" /> },
-    { name: "Adaptações constantes", icon: <Wrench className="w-6 h-6" /> }
+    { name: "Atende 24/7", icon: <Phone className="w-8 h-8" /> },
+    { name: "Múltiplos atendimentos em simultâneo", icon: <Users className="w-8 h-8" /> },
+    { name: "Qualificação de lead", icon: <UserCheck className="w-8 h-8" /> },
+    { name: "Cadastro do cliente", icon: <UserPlus className="w-8 h-8" /> },
+    { name: "Direcionamento para equipes", icon: <ArrowUpRight className="w-8 h-8" /> },
+    { name: "Criação de cards no CRM", icon: <FolderPlus className="w-8 h-8" /> },
+    { name: "Movimentação de cards no CRM", icon: <MoveHorizontal className="w-8 h-8" /> },
+    { name: "Follow-up e lembretes", icon: <Bell className="w-8 h-8" /> },
+    { name: "Reativação de leads parados", icon: <RefreshCw className="w-8 h-8" /> },
+    { name: "Agendamentos automáticos", icon: <Calendar className="w-8 h-8" /> },
+    { name: "Links de compra", icon: <Link className="w-8 h-8" /> },
+    { name: "Geração de orçamentos", icon: <FileText className="w-8 h-8" /> },
+    { name: "Campanhas segmentadas de remarketing", icon: <Target className="w-8 h-8" /> },
+    { name: "Personalizada para cada negócio", icon: <Settings className="w-8 h-8" /> },
+    { name: "Adaptações constantes", icon: <Wrench className="w-8 h-8" /> }
   ];
 
   return (
-    <div className="py-16 px-4">
+    <div className="p-8">
       <div className="text-center max-w-5xl mx-auto">
-        <h3 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
+        <h3 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
           Conheça AIVE, a IA da Climb Up que escala suas vendas 24/7
         </h3>
-        <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto">
+        <p className="text-xl text-muted-foreground mb-12 max-w-4xl mx-auto">
           Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera. Você decide.
         </p>
         
@@ -113,12 +113,12 @@ const AivePresentation = () => {
           <CarouselContent className="-ml-2 md:-ml-4">
             {features.map((feature, index) => (
               <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                <Card className="h-32 hover:scale-105 transition-transform duration-200 border-primary/20 hover:border-primary/40 bg-gradient-to-br from-background to-primary/5">
-                  <CardContent className="flex flex-col items-center justify-center p-4 h-full text-center space-y-2">
+                <Card className="h-full hover:scale-105 transition-transform duration-200 border-primary/20 hover:border-primary/40 bg-gradient-to-br from-background to-primary/5">
+                  <CardContent className="flex flex-col items-center justify-center p-6 h-full text-center space-y-3">
                     <div className="text-primary">
                       {feature.icon}
                     </div>
-                    <p className="text-xs font-medium text-foreground leading-tight">
+                    <p className="text-sm font-medium text-foreground leading-tight">
                       {feature.name}
                     </p>
                   </CardContent>
