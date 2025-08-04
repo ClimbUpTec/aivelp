@@ -353,7 +353,7 @@ const Aive = () => {
                 <X className="w-10 h-10 mx-auto text-white" />
               </div>
               <p className="text-base font-medium text-white">
-                A equipe não preenche o CRM
+                Leads aguardam horas ou dias por atendimento
               </p>
             </Card>
 
@@ -362,7 +362,7 @@ const Aive = () => {
                 <X className="w-10 h-10 mx-auto text-white" />
               </div>
               <p className="text-base font-medium text-white">
-                Leads aguardam horas ou dias por atendimento
+                Equipe não preenche o CRM
               </p>
             </Card>
             
