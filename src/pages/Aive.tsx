@@ -88,7 +88,7 @@ const AivePresentation = () => {
   ];
 
   return (
-    <div className="py-16 px-9">
+    <div className="min-h-screen flex items-center justify-center py-16 px-9">
       <div className="text-center max-w-5xl mx-auto">
         <h3 className="text-3xl md:text-4xl font-bold mb-8 text-primary" style={{ transform: 'scale(1.1)' }}>
           Conheça AIVE, a IA da Climb Up que escala suas vendas 24/7
@@ -298,7 +298,7 @@ const Aive = () => {
     <div className="min-h-screen bg-background">
       {/* 1. Chamada Impactante (Herói) */}
       <section 
-        className="py-20 px-4 relative"
+        className="min-h-screen flex items-center justify-center py-20 px-4 relative"
         style={{
           backgroundImage: `url('/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png')`,
           backgroundSize: 'cover',
@@ -327,7 +327,7 @@ const Aive = () => {
 
       {/* 2. Está enfrentando isso? */}
       <section 
-        className="py-16 px-4 relative"
+        className="min-h-screen flex flex-col justify-center py-16 px-4 relative"
         style={{
           backgroundImage: `url('/lovable-uploads/2f44a1ee-3680-412b-8561-da78cea652a2.png')`,
           backgroundSize: 'cover',
@@ -402,7 +402,7 @@ const Aive = () => {
       </section>
 
       {/* 3. Apresentação da Aive */}
-      <section className="py-16 px-4 bg-muted/30">
+      <section className="min-h-screen flex items-center justify-center py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-5xl">
           <AivePresentation />
         </div>
@@ -446,7 +446,7 @@ const Aive = () => {
 
 
       {/* 6. Aive + Climb Up = Escalada Real */}
-      <section className="py-16 px-4 bg-secondary/5">
+      <section className="min-h-screen flex items-center justify-center py-16 px-4 bg-secondary/5">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -463,7 +463,7 @@ const Aive = () => {
 
 
       {/* 8. Antes vs. Depois da Aive */}
-      <section className="py-16 px-4">
+      <section className="min-h-screen flex items-center justify-center py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Antes da Aive vs. Depois da Aive
@@ -483,7 +483,7 @@ const Aive = () => {
       </section>
 
       {/* 10. Resultados Reais com Aive */}
-      <section className="py-16 px-4">
+      <section className="min-h-screen flex items-center justify-center py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             📈 Resultados reais com Aive
@@ -524,7 +524,7 @@ const Aive = () => {
       </section>
 
       {/* 11. Contratar mais pessoas ou ativar inteligência comercial? */}
-      <section className="py-16 px-4">
+      <section className="min-h-screen flex items-center justify-center py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -577,7 +577,7 @@ const Aive = () => {
       </section>
 
       {/* 12. Valores e Planos */}
-      <section className="py-20 px-4 bg-gradient-to-r from-primary/10 via-primary-glow/5 to-primary/10">
+      <section className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-r from-primary/10 via-primary-glow/5 to-primary/10">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Com a Aive, sua empresa escala de verdade — e começa em até 30 dias.
