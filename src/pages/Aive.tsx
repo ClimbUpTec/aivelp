@@ -88,12 +88,12 @@ const AivePresentation = () => {
   ];
 
   return (
-    <div className="p-8">
+    <div className="p-9">
       <div className="text-center max-w-5xl mx-auto">
-        <h3 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
+        <h3 className="text-3xl md:text-4xl font-bold mb-7 text-primary" style={{ transform: 'scale(1.1)' }}>
           Conheça AIVE, a IA da Climb Up que escala suas vendas 24/7
         </h3>
-        <p className="text-xl text-muted-foreground mb-12 max-w-4xl mx-auto">
+        <p className="text-xl text-muted-foreground mb-13 max-w-4xl mx-auto" style={{ transform: 'scale(1.1)' }}>
           Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera. Você decide.
         </p>
         
@@ -307,10 +307,10 @@ const Aive = () => {
         }}
       >
         <div className="container mx-auto max-w-6xl text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-orange-500">
             Venda mais com a AIVE. A IA da Climb Up que escala suas vendas 24/7.
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
             Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
             Ou, se preferir, passa pro seu time. Tudo 24/7.
           </p>
@@ -444,101 +444,6 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 5. Porque a AIVE é a melhor IA do mercado? */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              🧠 Porque a AIVE é a melhor IA do mercado?
-            </h2>
-            <p className="text-xl text-primary font-semibold mb-6">
-              Enquanto outros oferecem uma IA genérica, a Climb Up entrega um ecossistema inteligente 
-              com múltiplas IAs integradas E VOCÊ PODE ESCOLHER em qual etapa cada IA atua e quando 
-              ela passa o bastão para seu time humano.
-            </p>
-            <p className="text-lg text-muted-foreground">
-              Cada parte da sua operação tem um perfil, uma linguagem e uma etapa de negociação diferente. 
-              A Climb Up entende isso — e por isso, a Aive pode ser dividida por áreas, fluxos e comportamentos.
-            </p>
-          </div>
-
-          {/* Exemplo prático Imobiliária */}
-          <Card className="mb-8">
-            <CardHeader>
-              <h3 className="text-2xl font-bold text-center">🏢 Exemplo: Imobiliária com múltiplas Aives</h3>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {[
-                  {
-                    title: "IA Recepção",
-                    subtitle: "(Aive Recepção)",
-                    description: "Atende leads gerais, identifica a intenção e direciona para a IA ideal. Ex: \"Quero alugar um imóvel\" → redireciona para IA Aluguel."
-                  },
-                  {
-                    title: "IA Aluguel", 
-                    description: "Linguagem mais objetiva, envia opções disponíveis, faz perguntas sobre perfil do inquilino e agenda visita."
-                  },
-                  {
-                    title: "IA Vendas",
-                    description: "Tom mais consultivo e envolvente, envia propostas, simula financiamento, responde dúvidas específicas sobre compra."
-                  },
-                  {
-                    title: "IA Financeiro",
-                    description: "Responde boletos, segunda via, inadimplência, negociações — com segurança e clareza."
-                  }
-                ].map((ia, index) => (
-                  <Card key={index} className="border-primary/20">
-                    <CardHeader className="pb-3">
-                      <h4 className="font-bold text-primary">{ia.title}</h4>
-                      {ia.subtitle && <p className="text-sm text-muted-foreground">{ia.subtitle}</p>}
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-sm">{ia.description}</p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-              <div className="mt-8 p-6 bg-primary/5 rounded-lg">
-                <p className="text-center font-medium">
-                  🔁 Elas se comunicam entre si, entendem o contexto e transferem a conversa com inteligência e fluidez, 
-                  sem que o cliente se perca no meio do caminho.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Benefícios da abordagem */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              "Mais assertividade: cada IA entende profundamente o tipo de atendimento que vai prestar.",
-              "Tom de voz adequado para cada setor: evita parecer genérico ou robótico.",
-              "Menos erros e ruídos: evita que a IA \"viaje\" em temas que não domina.",
-              "Escalabilidade real: você pode expandir para novos setores criando novas Aives especializadas.",
-              "Experiência premium para o cliente: fluidez, clareza e agilidade em qualquer etapa da jornada."
-            ].map((benefit, index) => (
-              <Card key={index} className="border-l-4 border-l-primary">
-                <CardContent className="p-4">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <p className="text-sm">{benefit}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="text-center mt-12 p-8 bg-gradient-to-r from-primary/10 to-primary-glow/10 rounded-2xl">
-            <h3 className="text-2xl font-bold text-primary mb-4">Frases de impacto:</h3>
-            <blockquote className="text-lg font-medium mb-4">
-              "A Aive da Climb Up não é uma assistente genérica, é uma equipe de inteligências treinadas para cada etapa da jornada do seu cliente."
-            </blockquote>
-            <blockquote className="text-lg font-medium">
-              "Enquanto outras IAs falam com todo mundo do mesmo jeito, a Aive adapta o tom, o objetivo e a estratégia conforme o momento da conversa."
-            </blockquote>
-          </div>
-        </div>
-      </section>
 
       {/* 6. Aive + Climb Up = Escalada Real */}
       <section className="py-16 px-4 bg-secondary/5">
