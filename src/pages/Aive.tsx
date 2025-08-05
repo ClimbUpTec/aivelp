@@ -84,7 +84,8 @@ const AivePresentation = () => {
     { name: "Geração de orçamentos", icon: <FileText className="w-8 h-8" /> },
     { name: "Campanhas segmentadas de remarketing", icon: <Target className="w-8 h-8" /> },
     { name: "Personalizada para cada negócio", icon: <Settings className="w-8 h-8" /> },
-    { name: "Adaptações constantes", icon: <Wrench className="w-8 h-8" /> }
+    { name: "Adaptações constantes", icon: <Wrench className="w-8 h-8" /> },
+    { name: "E tem mais...", icon: <Sparkles className="w-8 h-8" /> }
   ];
 
   return (
@@ -216,6 +217,36 @@ const ClimbUpFeatures = () => (
         icon: <Shield className="w-8 h-8" />,
         title: "Relatórios em tempo real",
         description: "Com insights gerados pela Aive"
+      },
+      {
+        icon: <Bot className="w-8 h-8" />,
+        title: "Espie as conversas sem notificar o cliente",
+        description: "E intervenha se necessário"
+      },
+      {
+        icon: <Clock className="w-8 h-8" />,
+        title: "Fila de atendimento gerenciada",
+        description: "E organizada automaticamente"
+      },
+      {
+        icon: <TrendingUp className="w-8 h-8" />,
+        title: "Rastreamento dos Leads",
+        description: "Facebook Ads, Google Ads, Click-to-WhatsApp"
+      },
+      {
+        icon: <Target className="w-8 h-8" />,
+        title: "Gerenciamento de pagamentos",
+        description: "PIX, boleto, cartão dentro da conversa"
+      },
+      {
+        icon: <Settings className="w-8 h-8" />,
+        title: "Integrações nativas",
+        description: "Webhook, API e apps diversos"
+      },
+      {
+        icon: <MessageSquare className="w-8 h-8" />,
+        title: "Chat interno",
+        description: "Para vendedores e setores"
       }
     ].map((feature, index) => (
       <Card key={index} className="text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
@@ -314,11 +345,8 @@ const Aive = () => {
             Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
             Ou, se preferir, passa pro seu time. Tudo 24/7.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button variant="hero" size="xl">
-              Teste agora a Aive
-            </Button>
-            <Button variant="outline" size="xl" className="border-white text-white hover:bg-white hover:text-primary">
               Quero escalar com Aive
             </Button>
           </div>
@@ -327,7 +355,7 @@ const Aive = () => {
 
       {/* 2. Está enfrentando isso? */}
       <section 
-        className="py-16 px-4 relative"
+        className="py-16 px-4 relative bg-gray-100"
         style={{
           backgroundImage: `url('/lovable-uploads/2f44a1ee-3680-412b-8561-da78cea652a2.png')`,
           backgroundSize: 'cover',
@@ -402,19 +430,80 @@ const Aive = () => {
       </section>
 
       {/* 3. Apresentação da Aive */}
-      <section className="py-16 px-4 bg-muted/30">
+      <section className="py-16 px-4 bg-gray-100">
         <div className="container mx-auto max-w-5xl">
           <AivePresentation />
         </div>
       </section>
 
-      {/* 4. "Mas eu não quero parecer um robô..." */}
-      <section className="py-16 px-4 bg-primary/5">
+      {/* 4. Por que a Aive é a melhor IA do mercado? */}
+      <section className="py-16 px-4 bg-gray-100">
+        <div className="container mx-auto max-w-6xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">
+            🔍 Por que a Aive é diferente de tudo que você já viu?
+          </h2>
+          <p className="text-xl text-muted-foreground mb-12 max-w-4xl mx-auto">
+            Enquanto outros oferecem uma IA genérica, a Climb Up entrega um ecossistema inteligente com múltiplas IAs integradas e treinadas para cada etapa da jornada do seu cliente. Elas se comunicam entre si e com seu time humano.
+          </p>
+          
+          <div className="grid md:grid-cols-5 gap-6 mb-12">
+            {[
+              { name: "IA de Atendimento", icon: <MessageSquare className="w-8 h-8" /> },
+              { name: "IA de Qualificação", icon: <UserCheck className="w-8 h-8" /> },
+              { name: "IA de Vendas", icon: <TrendingUp className="w-8 h-8" /> },
+              { name: "IA de Financeiro", icon: <Target className="w-8 h-8" /> },
+              { name: "IA de Suporte", icon: <Shield className="w-8 h-8" /> }
+            ].map((ia, index) => (
+              <Card key={index} className="text-center hover:scale-105 transition-transform duration-200">
+                <CardContent className="p-6">
+                  <div className="text-primary mb-4 flex justify-center">{ia.icon}</div>
+                  <h3 className="font-semibold text-sm">{ia.name}</h3>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 text-left">
+            <div>
+              <h3 className="text-xl font-bold mb-4 text-primary">Por que funciona:</h3>
+              <ul className="space-y-3">
+                {[
+                  "Mais assertividade: cada IA entende profundamente o tipo de atendimento que vai prestar.",
+                  "Tom de voz adequado para cada setor: evita parecer genérico ou robótico.",
+                  "Menos erros e ruídos: evita que a IA alucine em temas aleatórios."
+                ].map((benefit, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-4 text-primary">Benefícios:</h3>
+              <ul className="space-y-3">
+                {[
+                  "Escalabilidade real: você pode expandir para novos setores criando novas Aives especializadas.",
+                  "Experiência premium para o cliente: fluidez, clareza e agilidade em qualquer etapa da jornada."
+                ].map((benefit, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. "Mas eu não quero parecer um robô..." */}
+      <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
             ❓ "Mas eu não quero parecer um robô..."
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
             {[
               {
                 icon: <Sparkles className="w-8 h-8" />,
@@ -430,6 +519,11 @@ const Aive = () => {
                 icon: <Shield className="w-8 h-8" />,
                 title: "Experiência natural",
                 description: "Seus clientes vão se sentir bem atendidos — sem perceber que é IA."
+              },
+              {
+                icon: <FileText className="w-8 h-8" />,
+                title: "Bases de conhecimento",
+                description: "Cada detalhe do seu negócio será memorizado e atualizado constantemente."
               }
             ].map((feature, index) => (
               <Card key={index} className="text-center">
@@ -445,16 +539,16 @@ const Aive = () => {
       </section>
 
 
-      {/* 6. Aive + Climb Up = Escalada Real */}
+      {/* 6. Aive + Climb Up, um ecossistema completo! */}
       <section className="py-16 px-4 bg-secondary/5">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Aive + Climb Up = Escalada Real
+              Aive + Climb Up, um ecossistema completo!
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              Aive atua como cérebro comercial. A Climb Up é o corpo que executa com estrutura e tecnologia, 
-              a Aive opera, mas você (se quiser) gerencia tudo em tempo real e com relatórios completos.
+              Aive atua como cérebro comercial. A Climb Up é o corpo que executa com estrutura e tecnologia. 
+              A Aive opera, mas você (se quiser) gerencia tudo em tempo real e com relatórios completos.
             </p>
           </div>
           <ClimbUpFeatures />
@@ -523,12 +617,12 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 11. Contratar mais pessoas ou ativar inteligência comercial? */}
+      {/* 11. Contratar mais pessoas ou ativar inteligência pra potencializar o time? */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              💰 Contratar mais pessoas ou ativar inteligência comercial?
+              💰 Contratar mais pessoas ou ativar inteligência pra potencializar o time?
             </h2>
             <p className="text-lg text-muted-foreground">
               Veja por que centenas de empresas estão escolhendo a Aive em vez de expandir o time manualmente.
@@ -547,7 +641,7 @@ const Aive = () => {
                 </thead>
                 <tbody>
                   {[
-                    ["Custo mensal médio", "R$ 2.500 a R$ 3.500", "R$ 399,90/mês"],
+                    ["Custo mensal médio", "R$ 2.500 a R$ 3.500", "Menor que 1 salário mínimo"],
                     ["Custo anual médio", "+ de R$ 40.000 (com férias e encargos)", "R$ 4.798,80/ano"],
                     ["Custo de contratação", "Recrutamento, treinamento, estrutura física", "R$ 5.000 (setup único, com entrega pronta)"],
                     ["Disponibilidade", "44h semanais, com pausas, folgas e férias", "24h por dia, 7 dias por semana, sem pausas"],
@@ -576,11 +670,24 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 12. Valores e Planos */}
+      {/* 12. Prova Social + Chamada Final */}
       <section className="py-20 px-4 bg-gradient-to-r from-primary/10 via-primary-glow/5 to-primary/10">
         <div className="container mx-auto max-w-4xl text-center">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {[
+              { metric: "+200", title: "Clientes ativos" },
+              { metric: "+200k", title: "Interações por mês" },
+              { metric: "+2M", title: "Mensagens por mês" }
+            ].map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-4xl font-bold text-primary mb-2">{stat.metric}</div>
+                <p className="text-lg font-medium">{stat.title}</p>
+              </div>
+            ))}
+          </div>
+          
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Com a Aive, sua empresa escala de verdade — e começa em até 30 dias.
+            Com a Aive, sua empresa escala de verdade
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
             Pare de perder leads e vendas por falta de atendimento. A Aive trabalha 24/7 
@@ -594,89 +701,129 @@ const Aive = () => {
               Falar com especialista
             </Button>
           </div>
-          <p className="text-sm text-muted-foreground mt-6">
-            🚀 Setup único de R$ 5.000 + planos a partir de R$ 399,90/mês
-          </p>
         </div>
       </section>
 
-      {/* 13. Linha do Tempo de Onboarding (Como Funciona na Prática) */}
+      {/* 13. Linha do Tempo de Onboarding (visual horizontal) */}
       <section className="py-16 px-4 bg-secondary/5">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             ⏱️ Linha do tempo de Onboarding Aive
           </h2>
           <p className="text-center text-lg text-muted-foreground mb-12">
-            De 10 a 30 dias (ajustável conforme urgência e estrutura do cliente)
+            De 10 a 30 dias (ajustável conforme urgência)
           </p>
 
-          <div className="space-y-8">
-            {[
-              {
-                phase: "Fase 1",
-                title: "Diagnóstico",
-                days: "Dia 1 a 5",
-                items: [
-                  "Reunião para entender estrutura, público e modelo de vendas",
-                  "Levantamento de canais, integrações e tipos de atendimento"
-                ]
-              },
-              {
-                phase: "Fase 2", 
-                title: "Criação de scripts",
-                days: "Dia 5 a 15",
-                items: [
-                  "Desenvolvimento dos fluxos de conversa",
-                  "Definição do tom de voz e regras de qualificação",
-                  "Aprovação do cliente"
-                ]
-              },
-              {
-                phase: "Fase 3",
-                title: "Testes e ajustes", 
-                days: "Dia 15 a 25",
-                items: [
-                  "Aive entra em ambiente de testes reais",
-                  "Ajustes finos com base no comportamento real do público",
-                  "Validação final com o cliente"
-                ]
-              },
-              {
-                phase: "Fase 4",
-                title: "Ativação",
-                days: "Dia 25 a 30", 
-                items: [
-                  "IA publicada oficialmente",
-                  "Relatórios automáticos ativados",
-                  "Treinamento da equipe interna (se necessário)"
-                ]
-              }
-            ].map((phase, index) => (
-              <Card key={index} className="relative overflow-hidden">
-                <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
-                <CardContent className="p-6 pl-8">
-                  <div className="flex items-center gap-4 mb-4">
-                    <Badge className="bg-primary/10 text-primary border-primary">{phase.phase}</Badge>
-                    <h3 className="text-xl font-bold">{phase.title}</h3>
-                    <Badge variant="outline">{phase.days}</Badge>
+          <div className="relative">
+            {/* Linha horizontal conectora */}
+            <div className="absolute top-12 left-0 right-0 h-0.5 bg-primary/30 hidden md:block"></div>
+            
+            <div className="grid md:grid-cols-4 gap-8">
+              {[
+                {
+                  phase: "1",
+                  title: "Diagnóstico",
+                  days: "Dia 1 a 5",
+                  items: [
+                    "Reunião para entender estrutura, público e modelo de vendas",
+                    "Levantamento de canais, integrações e tipos de atendimentos"
+                  ]
+                },
+                {
+                  phase: "2", 
+                  title: "Criação de scripts",
+                  days: "Dia 5 a 15",
+                  items: [
+                    "Desenvolvimento dos fluxos de conversa",
+                    "Desenvolvimento de base de conhecimento",
+                    "Definição do tom de voz e regras gerais",
+                    "Aprovação do cliente"
+                  ]
+                },
+                {
+                  phase: "3",
+                  title: "Testes e ajustes", 
+                  days: "Dia 15 a 25",
+                  items: [
+                    "Testes reais com leads",
+                    "Ajustes finos com base no comportamento do público",
+                    "Validação final com o cliente"
+                  ]
+                },
+                {
+                  phase: "4",
+                  title: "Ativação",
+                  days: "Dia 25 a 30", 
+                  items: [
+                    "IA publicada oficialmente",
+                    "Treinamento da equipe interna (se necessário)"
+                  ]
+                }
+              ].map((phase, index) => (
+                <div key={index} className="relative">
+                  {/* Ícone circular numerado */}
+                  <div className="relative z-10 mb-6">
+                    <div className="w-24 h-24 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto">
+                      {phase.phase}
+                    </div>
                   </div>
-                  <ul className="space-y-2">
-                    {phase.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
+                  
+                  <Card className="text-center h-full">
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-bold mb-2">{phase.title}</h3>
+                      <Badge variant="outline" className="mb-4">{phase.days}</Badge>
+                      <ul className="space-y-2 text-sm text-left">
+                        {phase.items.map((item, itemIndex) => (
+                          <li key={itemIndex} className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 14. FAQ / Perguntas Frequentes */}
+      {/* 14. Formulário de Captação */}
       <section className="py-16 px-4">
+        <div className="container mx-auto max-w-md">
+          <Card>
+            <CardHeader className="text-center">
+              <h2 className="text-2xl font-bold">Quero conhecer a Aive</h2>
+              <p className="text-muted-foreground">Preencha os campos abaixo e nossa equipe entrará em contato</p>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div>
+                <label className="text-sm font-medium">Nome completo</label>
+                <input type="text" className="w-full p-3 border rounded-lg mt-1" placeholder="Seu nome" />
+              </div>
+              <div>
+                <label className="text-sm font-medium">Email</label>
+                <input type="email" className="w-full p-3 border rounded-lg mt-1" placeholder="seu@email.com" />
+              </div>
+              <div>
+                <label className="text-sm font-medium">WhatsApp</label>
+                <input type="tel" className="w-full p-3 border rounded-lg mt-1" placeholder="(11) 99999-9999" />
+              </div>
+              <div>
+                <label className="text-sm font-medium">Empresa</label>
+                <input type="text" className="w-full p-3 border rounded-lg mt-1" placeholder="Nome da empresa" />
+              </div>
+              <Button className="w-full" size="lg">
+                Enviar contato
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* 15. FAQ / Perguntas Frequentes */}
+      <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             ❓ Perguntas Frequentes
@@ -737,6 +884,55 @@ const Aive = () => {
           </Accordion>
         </div>
       </section>
+
+      {/* 16. Rodapé */}
+      <footer className="py-12 px-4 bg-gray-900 text-white">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold mb-4">O futuro está a uma mensagem de distância.</h3>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <h4 className="font-bold mb-4">Endereço</h4>
+              <p className="text-sm text-gray-300">
+                Climb Up<br />
+                Av. Padre Cacique, 122/702 – Praia de Belas<br />
+                Porto Alegre (Ed. Park Offices)<br />
+                CNPJ: 40.328.259/0001-80
+              </p>
+            </div>
+            
+            <div>
+              <h4 className="font-bold mb-4">Nos acompanhe</h4>
+              <div className="flex space-x-4">
+                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                  <Users className="w-6 h-6" />
+                </a>
+                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                  <MessageSquare className="w-6 h-6" />
+                </a>
+                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                  <Target className="w-6 h-6" />
+                </a>
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="font-bold mb-4">Contato</h4>
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900">
+                Falar com especialista
+              </Button>
+            </div>
+          </div>
+          
+          <div className="border-t border-gray-700 pt-8 text-center">
+            <p className="text-sm text-gray-400">
+              Copyright 2024 © Climb Up. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
