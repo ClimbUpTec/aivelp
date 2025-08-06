@@ -91,9 +91,12 @@ const AivePresentation = () => {
   return (
     <div className="py-16 px-9">
       <div className="text-center max-w-5xl mx-auto">
-        <h3 className="text-3xl md:text-4xl font-bold mb-8 text-primary" style={{ transform: 'scale(1.1)' }}>
-          Conheça AIVE, a IA da Climb Up que escala suas vendas 24/7
-        </h3>
+         <div className="flex items-center justify-center gap-3 mb-8">
+           <img src="/lovable-uploads/93fac938-d53c-4030-878a-71acd62dd653.png" alt="Climb Up Icon" className="h-10 w-10" />
+           <h3 className="text-3xl md:text-4xl font-bold text-primary" style={{ transform: 'scale(1.1)' }}>
+             Conheça AIVE, a IA da Climb Up que escala suas vendas 24/7
+           </h3>
+         </div>
         <p className="text-xl text-muted-foreground mb-20 max-w-4xl mx-auto" style={{ transform: 'scale(1.1)' }}>
           Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera. Você decide.
         </p>
@@ -331,7 +334,7 @@ const Aive = () => {
       <header className="py-4 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <div className="flex justify-center">
-            <img src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" alt="Climb Up" className="h-12" />
+            <img src="/lovable-uploads/8a13c650-dd25-48f3-b333-4cf156097463.png" alt="Climb Up" className="h-12" />
           </div>
         </div>
       </header>
@@ -501,9 +504,12 @@ const Aive = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Aive + Climb Up, um ecossistema completo!
-            </h2>
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <img src="/lovable-uploads/de4c279a-8969-47ca-9a96-f80cc25c1312.png" alt="Climb Up Logo" className="h-12" />
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Aive + Climb Up, um ecossistema completo!
+              </h2>
+            </div>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
               Aive atua como cérebro. A Climb Up é o corpo que executa com estrutura e tecnologia. A Aive opera e faz todo trabalho repetitivo, seu time foca no que importa, e você espia e gerencia tudo em tempo real.
             </p>
@@ -717,9 +723,12 @@ const Aive = () => {
                 ))}
               </div>
               
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Com a Aive, sua empresa escala de verdade
-              </h2>
+               <div className="flex items-center gap-3 mb-6">
+                <img src="/lovable-uploads/93fac938-d53c-4030-878a-71acd62dd653.png" alt="Climb Up Icon" className="h-8 w-8" />
+                <h2 className="text-3xl md:text-4xl font-bold">
+                  Com a Aive, sua empresa escala de verdade
+                </h2>
+              </div>
               <p className="text-xl text-muted-foreground mb-8">
                 Pare de perder leads e vendas por falta de atendimento. A Aive trabalha 24/7 
                 para que você tenha mais tempo para focar no que realmente importa: crescer.
@@ -736,10 +745,10 @@ const Aive = () => {
               {/* Carousel de logos de clientes */}
               <div className="mt-12">
                 <p className="text-sm text-muted-foreground mb-6">Empresas que confiam na Climb Up:</p>
-                <div className="flex items-center justify-center md:justify-start space-x-8 opacity-60">
-                  <div className="w-20 h-8 bg-gray-300 rounded flex items-center justify-center text-xs">Logo 1</div>
-                  <div className="w-20 h-8 bg-gray-300 rounded flex items-center justify-center text-xs">Logo 2</div>
-                  <div className="w-20 h-8 bg-gray-300 rounded flex items-center justify-center text-xs">Logo 3</div>
+                 <div className="flex items-center justify-center md:justify-start space-x-8 opacity-60">
+                  <img src="/lovable-uploads/de4c279a-8969-47ca-9a96-f80cc25c1312.png" alt="Cliente 1" className="h-8 grayscale opacity-70" />
+                  <img src="/lovable-uploads/9d5a96f4-256f-45c2-be07-c296cf145fb2.png" alt="Cliente 2" className="h-8 grayscale opacity-70" />
+                  <img src="/lovable-uploads/93fac938-d53c-4030-878a-71acd62dd653.png" alt="Cliente 3" className="h-8 grayscale opacity-70" />
                 </div>
               </div>
             </div>
@@ -747,8 +756,11 @@ const Aive = () => {
             {/* Lado direito: Formulário */}
             <div>
               <Card>
-                <CardHeader className="text-center">
-                  <h3 className="text-2xl font-bold">O futuro está a uma mensagem de distância.</h3>
+                 <CardHeader className="text-center">
+                  <div className="flex items-center justify-center gap-2 mb-4">
+                    <img src="/lovable-uploads/93fac938-d53c-4030-878a-71acd62dd653.png" alt="Climb Up Icon" className="h-6 w-6" />
+                    <h3 className="text-2xl font-bold">O futuro está a uma mensagem de distância.</h3>
+                  </div>
                   <p className="text-muted-foreground">Invista em conversas que vendem e escale com a Climb Up.</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -930,7 +942,7 @@ const Aive = () => {
       <footer className="py-12 px-4 bg-orange-500 text-white">
         <div className="container mx-auto max-w-6xl">
           <div className="flex justify-center mb-8">
-            <img src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" alt="Climb Up" className="h-12 brightness-0 invert" />
+            <img src="/lovable-uploads/b6be5d2e-869c-4875-8764-39a3640600e6.png" alt="Climb Up" className="h-12" />
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 mb-8">
