@@ -153,7 +153,7 @@ const BeforeAfterComparison = () => (
           "Vendas manuais e limitadas ao horário comercial"
         ].map((item, index) => (
           <div key={index} className="flex items-center gap-3">
-            <div className="w-2 h-2 bg-destructive rounded-full flex-shrink-0" />
+            <X className="w-5 h-5 text-destructive flex-shrink-0" />
             <p className="text-sm">{item}</p>
           </div>
         ))}
@@ -327,9 +327,18 @@ const NicheCases = () => {
 const Aive = () => {
   return (
     <div className="min-h-screen bg-background">
+      {/* Cabeçalho com logo da Climb Up */}
+      <header className="py-4 px-4 bg-background">
+        <div className="container mx-auto max-w-6xl">
+          <div className="flex justify-center">
+            <img src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" alt="Climb Up" className="h-12" />
+          </div>
+        </div>
+      </header>
+
       {/* 1. Chamada Impactante (Herói) */}
       <section 
-        className="py-20 px-4 relative"
+        className="py-32 px-4 relative"
         style={{
           backgroundImage: `url('/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png')`,
           backgroundSize: 'cover',
@@ -354,68 +363,59 @@ const Aive = () => {
       </section>
 
       {/* 2. Está enfrentando isso? */}
-      <section 
-        className="py-16 px-4 relative bg-gray-100"
-        style={{
-          backgroundImage: `url('/lovable-uploads/2f44a1ee-3680-412b-8561-da78cea652a2.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        
+      <section className="py-16 px-4 relative bg-gray-100">
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
               Sua empresa está passando por isso?
             </h2>
-            <p className="text-xl text-white max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Enfrentando desafios para gerenciar leads e buscando uma solução eficiente para escalar vendas.
             </p>
           </div>
           
           <div className="grid md:grid-cols-5 gap-6 mb-10">
-            <Card className="p-6 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
+            <Card className="p-6 text-center border-gray-300 bg-white">
               <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-white" />
+                <X className="w-10 h-10 mx-auto text-gray-800" />
               </div>
-              <p className="text-base font-medium text-white">
+              <p className="text-base font-medium text-gray-800">
                 Equipe sobrecarregada
               </p>
             </Card>
 
-            <Card className="p-6 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
+            <Card className="p-6 text-center border-gray-300 bg-white">
               <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-white" />
+                <X className="w-10 h-10 mx-auto text-gray-800" />
               </div>
-              <p className="text-base font-medium text-white">
+              <p className="text-base font-medium text-gray-800">
                 Leads aguardam horas ou dias por atendimento
               </p>
             </Card>
 
-            <Card className="p-6 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
+            <Card className="p-6 text-center border-gray-300 bg-white">
               <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-white" />
+                <X className="w-10 h-10 mx-auto text-gray-800" />
               </div>
-              <p className="text-base font-medium text-white">
+              <p className="text-base font-medium text-gray-800">
                 Equipe não preenche o CRM
               </p>
             </Card>
             
-            <Card className="p-6 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
+            <Card className="p-6 text-center border-gray-300 bg-white">
               <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-white" />
+                <X className="w-10 h-10 mx-auto text-gray-800" />
               </div>
-              <p className="text-base font-medium text-white">
+              <p className="text-base font-medium text-gray-800">
                 Falta tempo para o que realmente importa
               </p>
             </Card>
             
-            <Card className="p-6 text-center border-primary/30 bg-primary/20 backdrop-blur-sm">
+            <Card className="p-6 text-center border-gray-300 bg-white">
               <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-white" />
+                <X className="w-10 h-10 mx-auto text-gray-800" />
               </div>
-              <p className="text-base font-medium text-white">
+              <p className="text-base font-medium text-gray-800">
                 Impossível escalar com a estrutura atual
               </p>
             </Card>
@@ -497,11 +497,97 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 5. "Mas eu não quero parecer um robô..." */}
+      {/* 5. Aive + Climb Up, um ecossistema completo! */}
       <section className="py-16 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Aive + Climb Up, um ecossistema completo!
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
+              Aive atua como cérebro. A Climb Up é o corpo que executa com estrutura e tecnologia. A Aive opera e faz todo trabalho repetitivo, seu time foca no que importa, e você espia e gerencia tudo em tempo real.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                icon: <MessageSquare className="w-8 h-8" />,
+                title: "Chatbot",
+                description: "Fluxogramas completos"
+              },
+              {
+                icon: <Users className="w-8 h-8" />,
+                title: "CRM inteligente", 
+                description: "Para Aive, você e SEU TIME registrar e acompanhar negociações"
+              },
+              {
+                icon: <Zap className="w-8 h-8" />,
+                title: "Campanhas em massa no WhatsApp",
+                description: "Para dobrar as vendas com remarketing estratégico"
+              },
+              {
+                icon: <TrendingUp className="w-8 h-8" />,
+                title: "Relatórios em tempo real",
+                description: "De atendimentos, de vendas ao tráfego, não perca nenhuma informação"
+              },
+              {
+                icon: <Shield className="w-8 h-8" />,
+                title: "Fila de atendimento e Rodízio de leads",
+                description: "Distribui e organizada automaticamente"
+              },
+              {
+                icon: <Bot className="w-8 h-8" />,
+                title: "Gerenciamento de pagamentos",
+                description: "PIX, boleto, cartão de crédito direto na conversa"
+              },
+              {
+                icon: <Clock className="w-8 h-8" />,
+                title: "Integrações nativas",
+                description: "Webhook, API, N8N, Make, etc."
+              },
+              {
+                icon: <TrendingUp className="w-8 h-8" />,
+                title: "Rastreamento dos Leads",
+                description: "Facebook Ads, Google Ads, Click-to-WhatsApp"
+              },
+              {
+                icon: <Target className="w-8 h-8" />,
+                title: "Distribuição automática de conversas",
+                description: "Para o time humano complementar a IA"
+              },
+              {
+                icon: <Settings className="w-8 h-8" />,
+                title: "Espie as conversas sem notificar o cliente",
+                description: "E intervenha se necessário"
+              },
+              {
+                icon: <MessageSquare className="w-8 h-8" />,
+                title: "Central de atendimento",
+                description: "Múltiplos canais → Aive → Equipes"
+              },
+              {
+                icon: <Wrench className="w-8 h-8" />,
+                title: "Chat interno",
+                description: "Para vendedores e setores"
+              }
+            ].map((feature, index) => (
+              <Card key={index} className="text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <CardContent className="p-6">
+                  <div className="text-primary mb-4 flex justify-center">{feature.icon}</div>
+                  <h3 className="font-semibold mb-2">{feature.title}</h3>
+                  <p className="text-sm text-muted-foreground">{feature.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6. "Mas eu não quero parecer um robô..." */}
+      <section className="py-16 px-4 bg-gray-100">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            ❓ "Mas eu não quero parecer um robô..."
+            "Mas eu não quero parecer um robô..."
           </h2>
           <div className="grid md:grid-cols-4 gap-6">
             {[
@@ -539,24 +625,7 @@ const Aive = () => {
       </section>
 
 
-      {/* 6. Aive + Climb Up, um ecossistema completo! */}
-      <section className="py-16 px-4 bg-secondary/5">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Aive + Climb Up, um ecossistema completo!
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              Aive atua como cérebro comercial. A Climb Up é o corpo que executa com estrutura e tecnologia. 
-              A Aive opera, mas você (se quiser) gerencia tudo em tempo real e com relatórios completos.
-            </p>
-          </div>
-          <ClimbUpFeatures />
-        </div>
-      </section>
-
-
-      {/* 8. Antes vs. Depois da Aive */}
+      {/* 7. Antes vs. Depois da Aive */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -566,7 +635,7 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 9. Aive em Ação: Exemplos por Nicho */}
+      {/* 8. Aive em Ação: Exemplos por Nicho */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -576,53 +645,12 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 10. Resultados Reais com Aive */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            📈 Resultados reais com Aive
-          </h2>
-          <p className="text-center text-lg text-muted-foreground mb-12">
-            Empresas que usam a Aive são mais eficientes no atendimento das conversas, 
-            qualificam sem parecer um robô e vendem mais.
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                metric: "+300%",
-                title: "Atendimentos 24/7",
-                description: "Aumento na quantidade de leads atendidos fora do horário comercial"
-              },
-              {
-                metric: "+250%", 
-                title: "Agendamentos",
-                description: "Crescimento em conversões por disponibilidade total da IA"
-              },
-              {
-                metric: "+180%",
-                title: "Taxa de Conversão",
-                description: "Melhoria no aproveitamento de leads através da qualificação inteligente"
-              }
-            ].map((result, index) => (
-              <Card key={index} className="text-center hover:shadow-elegant transition-all duration-300">
-                <CardContent className="p-8">
-                  <div className="text-4xl font-bold text-primary mb-4">{result.metric}</div>
-                  <h3 className="text-xl font-semibold mb-3">{result.title}</h3>
-                  <p className="text-muted-foreground">{result.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 11. Contratar mais pessoas ou ativar inteligência pra potencializar o time? */}
+      {/* 9. Contratar mais pessoas ou ativar inteligência pra potencializar o time? */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              💰 Contratar mais pessoas ou ativar inteligência pra potencializar o time?
+              Contratar mais pessoas ou ativar inteligência pra potencializar o time?
             </h2>
             <p className="text-lg text-muted-foreground">
               Veja por que centenas de empresas estão escolhendo a Aive em vez de expandir o time manualmente.
@@ -641,9 +669,9 @@ const Aive = () => {
                 </thead>
                 <tbody>
                   {[
-                    ["Custo mensal médio", "R$ 2.500 a R$ 3.500", "Menor que 1 salário mínimo"],
-                    ["Custo anual médio", "+ de R$ 40.000 (com férias e encargos)", "R$ 4.798,80/ano"],
-                    ["Custo de contratação", "Recrutamento, treinamento, estrutura física", "R$ 5.000 (setup único, com entrega pronta)"],
+                    ["Custo mensal médio", "Salário + encargos", "Menor que 1 salário mínimo"],
+                    ["Custo anual médio", "13º, férias, encargos", "Custo fixo anual"],
+                    ["Custo de contratação", "Recrutamento, treinamento, estrutura física", "Setup único, com entrega pronta"],
                     ["Disponibilidade", "44h semanais, com pausas, folgas e férias", "24h por dia, 7 dias por semana, sem pausas"],
                     ["Follow-up automático", "❌ Não (depende do humor ou rotina)", "✅ Sim (estratégico e no tempo certo)"],
                     ["Organização no CRM", "❌ Falhas comuns no preenchimento", "✅ Criação automática e anotações inteligentes"],
@@ -663,52 +691,98 @@ const Aive = () => {
 
           <div className="mt-8 text-center p-6 bg-primary/5 rounded-lg">
             <p className="text-lg font-semibold text-primary">
-              💡 Com o valor de 1 mês de salário, você ativa uma inteligência que vende o ano inteiro — 
+              Com o valor de 1 mês de salário, você ativa uma inteligência que vende o ano inteiro, 
               sem comissão, sem pausa e sem erro.
             </p>
           </div>
         </div>
       </section>
 
-      {/* 12. Prova Social + Chamada Final */}
+      {/* 10. Prova Social + Chamada Final + Formulário */}
       <section className="py-20 px-4 bg-gradient-to-r from-primary/10 via-primary-glow/5 to-primary/10">
-        <div className="container mx-auto max-w-4xl text-center">
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {[
-              { metric: "+200", title: "Clientes ativos" },
-              { metric: "+200k", title: "Interações por mês" },
-              { metric: "+2M", title: "Mensagens por mês" }
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">{stat.metric}</div>
-                <p className="text-lg font-medium">{stat.title}</p>
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Lado esquerdo: Prova Social */}
+            <div className="text-center md:text-left">
+              <div className="grid grid-cols-3 gap-8 mb-12">
+                {[
+                  { metric: "+2000", title: "Clientes ativos" },
+                  { metric: "+200k", title: "Interações por mês" },
+                  { metric: "+2M", title: "Mensagens por mês" }
+                ].map((stat, index) => (
+                  <div key={index} className="text-center">
+                    <div className="text-3xl font-bold text-primary mb-2">{stat.metric}</div>
+                    <p className="text-sm font-medium">{stat.title}</p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-          
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Com a Aive, sua empresa escala de verdade
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Pare de perder leads e vendas por falta de atendimento. A Aive trabalha 24/7 
-            para que você tenha mais tempo para focar no que realmente importa: crescer.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="cta" size="xl" className="text-lg">
-              Quero ativar a Aive agora
-            </Button>
-            <Button variant="outline" size="xl" className="text-lg">
-              Falar com especialista
-            </Button>
+              
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Com a Aive, sua empresa escala de verdade
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8">
+                Pare de perder leads e vendas por falta de atendimento. A Aive trabalha 24/7 
+                para que você tenha mais tempo para focar no que realmente importa: crescer.
+              </p>
+              <div className="flex flex-col gap-4">
+                <Button variant="outline" size="xl" className="text-lg">
+                  Quero ativar a Aive agora
+                </Button>
+                <Button variant="outline" size="xl" className="text-lg">
+                  Falar com especialista
+                </Button>
+              </div>
+
+              {/* Carousel de logos de clientes */}
+              <div className="mt-12">
+                <p className="text-sm text-muted-foreground mb-6">Empresas que confiam na Climb Up:</p>
+                <div className="flex items-center justify-center md:justify-start space-x-8 opacity-60">
+                  <div className="w-20 h-8 bg-gray-300 rounded flex items-center justify-center text-xs">Logo 1</div>
+                  <div className="w-20 h-8 bg-gray-300 rounded flex items-center justify-center text-xs">Logo 2</div>
+                  <div className="w-20 h-8 bg-gray-300 rounded flex items-center justify-center text-xs">Logo 3</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Lado direito: Formulário */}
+            <div>
+              <Card>
+                <CardHeader className="text-center">
+                  <h3 className="text-2xl font-bold">O futuro está a uma mensagem de distância.</h3>
+                  <p className="text-muted-foreground">Invista em conversas que vendem e escale com a Climb Up.</p>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div>
+                    <label className="text-sm font-medium">Nome completo</label>
+                    <input type="text" className="w-full p-3 border rounded-lg mt-1" placeholder="Seu nome" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium">Email</label>
+                    <input type="email" className="w-full p-3 border rounded-lg mt-1" placeholder="seu@email.com" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium">WhatsApp</label>
+                    <input type="tel" className="w-full p-3 border rounded-lg mt-1" placeholder="(11) 99999-9999" />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium">Empresa</label>
+                    <input type="text" className="w-full p-3 border rounded-lg mt-1" placeholder="Nome da empresa" />
+                  </div>
+                  <Button className="w-full" size="lg">
+                    Quero conhecer a Aive
+                  </Button>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 13. Linha do Tempo de Onboarding (visual horizontal) */}
+      {/* 11. Linha do Tempo de Onboarding (visual horizontal) */}
       <section className="py-16 px-4 bg-secondary/5">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            ⏱️ Linha do tempo de Onboarding Aive
+            Linha do tempo de Onboarding Aive
           </h2>
           <p className="text-center text-lg text-muted-foreground mb-12">
             De 10 a 30 dias (ajustável conforme urgência)
@@ -789,40 +863,7 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 14. Formulário de Captação */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-md">
-          <Card>
-            <CardHeader className="text-center">
-              <h2 className="text-2xl font-bold">Quero conhecer a Aive</h2>
-              <p className="text-muted-foreground">Preencha os campos abaixo e nossa equipe entrará em contato</p>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div>
-                <label className="text-sm font-medium">Nome completo</label>
-                <input type="text" className="w-full p-3 border rounded-lg mt-1" placeholder="Seu nome" />
-              </div>
-              <div>
-                <label className="text-sm font-medium">Email</label>
-                <input type="email" className="w-full p-3 border rounded-lg mt-1" placeholder="seu@email.com" />
-              </div>
-              <div>
-                <label className="text-sm font-medium">WhatsApp</label>
-                <input type="tel" className="w-full p-3 border rounded-lg mt-1" placeholder="(11) 99999-9999" />
-              </div>
-              <div>
-                <label className="text-sm font-medium">Empresa</label>
-                <input type="text" className="w-full p-3 border rounded-lg mt-1" placeholder="Nome da empresa" />
-              </div>
-              <Button className="w-full" size="lg">
-                Enviar contato
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* 15. FAQ / Perguntas Frequentes */}
+      {/* 12. FAQ / Perguntas Frequentes */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -885,17 +926,17 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 16. Rodapé */}
-      <footer className="py-12 px-4 bg-gray-900 text-white">
+      {/* 13. Rodapé */}
+      <footer className="py-12 px-4 bg-orange-500 text-white">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-4">O futuro está a uma mensagem de distância.</h3>
+          <div className="flex justify-center mb-8">
+            <img src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" alt="Climb Up" className="h-12 brightness-0 invert" />
           </div>
           
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <h4 className="font-bold mb-4">Endereço</h4>
-              <p className="text-sm text-gray-300">
+              <p className="text-sm text-white/90">
                 Climb Up<br />
                 Av. Padre Cacique, 122/702 – Praia de Belas<br />
                 Porto Alegre (Ed. Park Offices)<br />
@@ -906,13 +947,13 @@ const Aive = () => {
             <div>
               <h4 className="font-bold mb-4">Nos acompanhe</h4>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="#" className="text-white/80 hover:text-white transition-colors">
                   <Users className="w-6 h-6" />
                 </a>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="#" className="text-white/80 hover:text-white transition-colors">
                   <MessageSquare className="w-6 h-6" />
                 </a>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <a href="#" className="text-white/80 hover:text-white transition-colors">
                   <Target className="w-6 h-6" />
                 </a>
               </div>
@@ -920,14 +961,15 @@ const Aive = () => {
             
             <div>
               <h4 className="font-bold mb-4">Contato</h4>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900">
+              <p className="text-sm text-white/90 mb-2">(51) 98143-5937</p>
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-orange-500">
                 Falar com especialista
               </Button>
             </div>
           </div>
           
-          <div className="border-t border-gray-700 pt-8 text-center">
-            <p className="text-sm text-gray-400">
+          <div className="border-t border-white/20 pt-8 text-center">
+            <p className="text-sm text-white/80">
               Copyright 2024 © Climb Up. Todos os direitos reservados.
             </p>
           </div>
