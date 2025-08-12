@@ -134,7 +134,7 @@ const AivePresentation = () => {
         {/* Botão CTA */}
         <div className="text-center mt-12">
           <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
-            Quero transformar meu atendimento com AIVE
+            Quero AIVE
           </Button>
         </div>
       </div>
@@ -528,7 +528,7 @@ const Aive = () => {
           {/* Botão CTA */}
           <div className="text-center mt-12">
             <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
-              Descobrir como a AIVE pode revolucionar meu negócio
+              Quero AIVE
             </Button>
           </div>
         </div>
@@ -555,7 +555,7 @@ const Aive = () => {
               {
                 icon: <Users className="w-8 h-8" />,
                 title: "CRM inteligente", 
-                description: "Para Aive, você e SEU TIME registrar e acompanhar negociações"
+                description: "Para Aive, você e seu time registrar e acompanhar negociações"
               },
               {
                 icon: <Zap className="w-8 h-8" />,
@@ -621,7 +621,7 @@ const Aive = () => {
           {/* Botão CTA */}
           <div className="text-center mt-12">
             <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
-              Quero conhecer o ecossistema completo
+              Quero AIVE
             </Button>
           </div>
         </div>
@@ -633,7 +633,7 @@ const Aive = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
             "Mas eu não quero parecer um robô..."
           </h2>
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
               {
                 icon: <Sparkles className="w-8 h-8" />,
@@ -644,11 +644,6 @@ const Aive = () => {
                 icon: <Users className="w-8 h-8" />,
                 title: "Fluxos personalizados",
                 description: "Cada fluxo é escrito à mão, com contexto real do seu atendimento, como se fosse um membro da equipe."
-              },
-              {
-                icon: <Shield className="w-8 h-8" />,
-                title: "Experiência natural",
-                description: "Seus clientes vão se sentir bem atendidos — sem perceber que é IA."
               },
               {
                 icon: <FileText className="w-8 h-8" />,
@@ -669,7 +664,7 @@ const Aive = () => {
           {/* Botão CTA */}
           <div className="text-center mt-12">
             <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
-              Quero um atendimento humanizado com IA
+              Quero AIVE
             </Button>
           </div>
         </div>
@@ -687,7 +682,7 @@ const Aive = () => {
           {/* Botão CTA */}
           <div className="text-center mt-12">
             <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
-              Transformar meu atendimento agora
+              Quero AIVE
             </Button>
           </div>
         </div>
@@ -704,7 +699,7 @@ const Aive = () => {
           {/* Botão CTA */}
           <div className="text-center mt-12">
             <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
-              Ver como a AIVE funciona no meu nicho
+              Quero AIVE
             </Button>
           </div>
         </div>
@@ -738,8 +733,8 @@ const Aive = () => {
                     ["Custo anual médio", "13º, férias, encargos", "Custo fixo anual"],
                     ["Custo de contratação", "Recrutamento, treinamento, estrutura física", "Setup único, com entrega pronta"],
                     ["Disponibilidade", "44h semanais, com pausas, folgas e férias", "24h por dia, 7 dias por semana, sem pausas"],
-                    ["Follow-up automático", "❌ Não (depende do humor ou rotina)", "✅ Sim (estratégico e no tempo certo)"],
-                    ["Organização no CRM", "❌ Falhas comuns no preenchimento", "✅ Criação automática e anotações inteligentes"],
+                    ["Follow-up automático", "Não (depende do humor ou rotina)", "Sim (estratégico e no tempo certo)"],
+                    ["Organização no CRM", "Falhas comuns no preenchimento", "Criação automática e anotações inteligentes"],
                     ["Capacidade de atender", "Limitado ao tempo e carga de trabalho", "Ilimitado — atende todos os leads em tempo real"],
                     ["Treinamento", "Mensal, contínuo e sujeito a turnover", "100% treinada por nossa equipe e validada por você"]
                   ].map(([feature, human, ai], index) => (
@@ -764,7 +759,7 @@ const Aive = () => {
           {/* Botão CTA */}
           <div className="text-center mt-8">
             <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
-              Ativar minha inteligência de vendas agora
+              Quero AIVE
             </Button>
           </div>
         </div>
@@ -798,10 +793,10 @@ const Aive = () => {
               </p>
               <div className="flex flex-col gap-4">
                 <Button onClick={redirectToWhatsApp} variant="outline" size="xl" className="text-lg">
-                  Quero ativar a Aive agora
+                  Quero AIVE
                 </Button>
                 <Button onClick={redirectToWhatsApp} variant="outline" size="xl" className="text-lg">
-                  Falar com especialista
+                  Falar agora
                 </Button>
               </div>
 
@@ -841,7 +836,7 @@ const Aive = () => {
                     <input type="text" className="w-full p-3 border rounded-lg mt-1" placeholder="Nome da empresa" />
                   </div>
                   <Button onClick={redirectToWhatsApp} className="w-full" size="lg">
-                    Quero conhecer a Aive
+                    Quero AIVE
                   </Button>
                 </CardContent>
               </Card>
@@ -936,7 +931,7 @@ const Aive = () => {
           {/* Botão CTA */}
           <div className="text-center mt-12">
             <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
-              Começar meu onboarding agora
+              Quero AIVE
             </Button>
           </div>
         </div>
@@ -1006,7 +1001,7 @@ const Aive = () => {
           {/* Botão CTA */}
           <div className="text-center mt-12">
             <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
-              Tirar minhas dúvidas com um especialista
+              Quero AIVE
             </Button>
           </div>
         </div>
@@ -1049,7 +1044,7 @@ const Aive = () => {
               <h4 className="font-bold mb-4">Contato</h4>
               <p className="text-sm text-white/90 mb-2">(51) 98143-5937</p>
               <Button onClick={redirectToWhatsApp} variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
-                Falar com especialista
+                Falar agora
               </Button>
             </div>
           </div>
