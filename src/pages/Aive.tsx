@@ -762,7 +762,7 @@ const Aive = () => {
         style={{
           backgroundImage: `url('/lovable-uploads/993d177c-77dd-4ff6-8175-06d7eb568c64.png')`,
           backgroundSize: 'cover',
-          backgroundPosition: 'left center',
+          backgroundPosition: 'right center',
           backgroundRepeat: 'no-repeat'
         }}
       >
