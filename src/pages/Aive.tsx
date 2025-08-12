@@ -636,9 +636,6 @@ const Aive = () => {
             <h3 className="text-xl md:text-2xl font-semibold mb-8 text-foreground">
               Atende e vende como uma equipe completa, mas sem salário, férias, folgas ou encargos.
             </h3>
-            <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              Centenas de empresas já trocaram a expansão da equipe por uma inteligência que vende o ano inteiro, sem pausas e sem erro.
-            </p>
           </div>
 
           <div className="mb-8">
@@ -697,8 +694,11 @@ const Aive = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
-              Clientes Ativos e Empresas que Confiam
+              Empresas que confiam na Climb Up
             </h2>
+            <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto">
+              Centenas de empresas já trocaram a expansão da equipe por uma inteligência que vende o ano inteiro, sem pausas e com um ecossistema robusto.
+            </p>
             
             {/* Métricas de clientes */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-12">
@@ -718,7 +718,6 @@ const Aive = () => {
 
             {/* Logos das empresas */}
             <div>
-              <p className="text-lg text-muted-foreground mb-8">Empresas que confiam na Climb Up:</p>
               <div className="flex flex-wrap items-center justify-center gap-8 opacity-70">
                 <div className="w-24 h-12 bg-gray-300 rounded flex items-center justify-center text-sm font-medium">
                   Empresa 1
@@ -748,8 +747,11 @@ const Aive = () => {
       <section className="py-20 px-4 bg-gradient-to-r from-primary/10 via-primary-glow/5 to-primary/10">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Lado esquerdo: Chamada Final */}
+            {/* Lado esquerdo: Logo e Chamada Final */}
             <div className="text-center md:text-left">
+              <div className="mb-8 flex justify-center md:justify-start">
+                <img src="/lovable-uploads/ec1d8e37-e645-4307-aa1e-2fa8c176c340.png" alt="Climb Up" className="h-16" />
+              </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 O futuro está a uma mensagem de distância.
               </h2>
@@ -770,8 +772,8 @@ const Aive = () => {
             <div>
               <Card>
                 <CardHeader className="text-center">
-                  <h3 className="text-2xl font-bold">O futuro está a uma mensagem de distância.</h3>
-                  <p className="text-muted-foreground">Invista em conversas que vendem e escale com a Climb Up.</p>
+                  <h3 className="text-2xl font-bold">Entre em contato</h3>
+                  <p className="text-muted-foreground">Preencha o formulário e nossa equipe entrará em contato</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
@@ -963,7 +965,7 @@ const Aive = () => {
       </section>
 
       {/* 13. Rodapé */}
-      <footer className="py-12 px-4 bg-orange-500 text-white">
+      <footer className="py-12 px-4 text-white" style={{ backgroundColor: '#FF5B04' }}>
         <div className="container mx-auto max-w-6xl">
           <div className="flex justify-center mb-8">
             <img src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" alt="Climb Up" className="h-12 brightness-0 invert" />
