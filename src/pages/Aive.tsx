@@ -267,69 +267,6 @@ const ClimbUpFeatures = () => (
   </div>
 );
 
-// Componente dos casos por nicho
-const NicheCases = () => {
-  const cases = [
-    {
-      icon: "🍽️",
-      title: "Restaurantes / Pizzarias",
-      before: "Muitos pedidos por WhatsApp, mas leads demoravam a ser atendidos ou não recebiam retorno.",
-      after: "Atende o cliente assim que ele chama, envia o cardápio, sugere promoções do dia e envia o link do pedido ou carrinho pronto — tudo de forma natural e personalizada.",
-      conversion: "Link direto de pedido, cupom ou checkout via delivery próprio ou iFood."
-    },
-    {
-      icon: "🚛", 
-      title: "Distribuidoras",
-      before: "O vendedor precisava atender cada cliente individualmente, calcular frete, confirmar estoque e fazer follow-up manual.",
-      after: "Recebe o pedido, valida o CNPJ, confirma disponibilidade de produtos, gera o orçamento automático, envia para aprovação e já agenda o follow-up de fechamento.",
-      conversion: "Geração de pedido formal ou envio de orçamento automatizado via WhatsApp."
-    },
-    {
-      icon: "🧑‍⚕️",
-      title: "Clínicas Estéticas e Médicas", 
-      before: "Demora no atendimento, agendamentos perdidos e falta de follow-up com clientes que sumiam.",
-      after: "Responde prontamente, oferece os serviços certos com base no interesse do lead, envia o link de agendamento online, lembra do horário e até pergunta se deseja remarcar em caso de falta.",
-      conversion: "Link para agendamento, confirmação automática e lembrete."
-    },
-    {
-      icon: "📦",
-      title: "E-commerce",
-      before: "Leads entravam no WhatsApp com dúvidas sobre produto, frete ou pedido e sumiam sem resposta.",
-      after: "Responde dúvidas comuns automaticamente, coleta interesse, envia links diretos de produto e faz remarketing com quem não finalizou a compra.",
-      conversion: "Checkout direto, carrinho recuperado ou cupom exclusivo no WhatsApp."
-    }
-  ];
-
-  return (
-    <div className="grid md:grid-cols-2 gap-8">
-      {cases.map((caseItem, index) => (
-        <Card key={index} className="hover:shadow-lg transition-all duration-300">
-          <CardHeader>
-            <div className="flex items-center gap-3">
-              <span className="text-3xl">{caseItem.icon}</span>
-              <h3 className="text-xl font-bold">{caseItem.title}</h3>
-            </div>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div>
-              <Badge variant="destructive" className="mb-2">Antes</Badge>
-              <p className="text-sm text-muted-foreground">{caseItem.before}</p>
-            </div>
-            <div>
-              <Badge className="mb-2">Com Aive</Badge>
-              <p className="text-sm">{caseItem.after}</p>
-            </div>
-            <div className="bg-primary/5 p-3 rounded-lg">
-              <Badge variant="outline" className="mb-2 border-primary text-primary">🔁 Conversão</Badge>
-              <p className="text-sm font-medium">{caseItem.conversion}</p>
-            </div>
-          </CardContent>
-        </Card>
-      ))}
-    </div>
-  );
-};
-
 // Função para redirecionar para WhatsApp
 const redirectToWhatsApp = () => {
   const phoneNumber = "5551981435937"; // (51) 98143-5937
@@ -688,24 +625,7 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 8. Aive em Ação: Exemplos por Nicho */}
-      <section className="py-16 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            🧩 Aive em Ação: Casos reais por nicho
-          </h2>
-          <NicheCases />
-          
-          {/* Botão CTA */}
-          <div className="text-center mt-12">
-            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
-              Quero AIVE
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* 9. Contratar mais pessoas ou ativar inteligência pra potencializar o time? */}
+      {/* 8. Contratar mais pessoas ou ativar inteligência pra potencializar o time? */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
@@ -765,49 +685,77 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 10. Prova Social + Chamada Final + Formulário */}
+      {/* 9. Clientes Ativos e Empresas que Confiam */}
+      <section className="py-16 px-4 bg-muted/20">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+              Clientes Ativos e Empresas que Confiam
+            </h2>
+            
+            {/* Métricas de clientes */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-12">
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">+2000</div>
+                <p className="text-muted-foreground">Clientes ativos</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">+200k</div>
+                <p className="text-muted-foreground">Interações por mês</p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">98%</div>
+                <p className="text-muted-foreground">Taxa de satisfação</p>
+              </div>
+            </div>
+
+            {/* Logos das empresas */}
+            <div>
+              <p className="text-lg text-muted-foreground mb-8">Empresas que confiam na Climb Up:</p>
+              <div className="flex flex-wrap items-center justify-center gap-8 opacity-70">
+                <div className="w-24 h-12 bg-gray-300 rounded flex items-center justify-center text-sm font-medium">
+                  Empresa 1
+                </div>
+                <div className="w-24 h-12 bg-gray-300 rounded flex items-center justify-center text-sm font-medium">
+                  Empresa 2
+                </div>
+                <div className="w-24 h-12 bg-gray-300 rounded flex items-center justify-center text-sm font-medium">
+                  Empresa 3
+                </div>
+                <div className="w-24 h-12 bg-gray-300 rounded flex items-center justify-center text-sm font-medium">
+                  Empresa 4
+                </div>
+                <div className="w-24 h-12 bg-gray-300 rounded flex items-center justify-center text-sm font-medium">
+                  Empresa 5
+                </div>
+                <div className="w-24 h-12 bg-gray-300 rounded flex items-center justify-center text-sm font-medium">
+                  Empresa 6
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 10. Formulário */}
       <section className="py-20 px-4 bg-gradient-to-r from-primary/10 via-primary-glow/5 to-primary/10">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Lado esquerdo: Prova Social */}
+            {/* Lado esquerdo: Chamada Final */}
             <div className="text-center md:text-left">
-              <div className="grid grid-cols-3 gap-8 mb-12">
-                {[
-                  { metric: "+2000", title: "Clientes ativos" },
-                  { metric: "+200k", title: "Interações por mês" },
-                  { metric: "+2M", title: "Mensagens por mês" }
-                ].map((stat, index) => (
-                  <div key={index} className="text-center">
-                    <div className="text-3xl font-bold text-primary mb-2">{stat.metric}</div>
-                    <p className="text-sm font-medium">{stat.title}</p>
-                  </div>
-                ))}
-              </div>
-              
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Com a Aive, sua empresa escala de verdade
+                O futuro está a uma mensagem de distância.
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Pare de perder leads e vendas por falta de atendimento. A Aive trabalha 24/7 
-                para que você tenha mais tempo para focar no que realmente importa: crescer.
+                Invista em conversas que vendem e escale com a Climb Up.
               </p>
-              <div className="flex flex-col gap-4">
-                <Button onClick={redirectToWhatsApp} variant="outline" size="xl" className="text-lg">
+              <div className="flex flex-col md:flex-row gap-4">
+                <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
                   Quero AIVE
                 </Button>
-                <Button onClick={redirectToWhatsApp} variant="outline" size="xl" className="text-lg">
+                <Button onClick={redirectToWhatsApp} variant="outline" size="lg">
                   Falar agora
                 </Button>
-              </div>
-
-              {/* Carousel de logos de clientes */}
-              <div className="mt-12">
-                <p className="text-sm text-muted-foreground mb-6">Empresas que confiam na Climb Up:</p>
-                <div className="flex items-center justify-center md:justify-start space-x-8 opacity-60">
-                  <div className="w-20 h-8 bg-gray-300 rounded flex items-center justify-center text-xs">Logo 1</div>
-                  <div className="w-20 h-8 bg-gray-300 rounded flex items-center justify-center text-xs">Logo 2</div>
-                  <div className="w-20 h-8 bg-gray-300 rounded flex items-center justify-center text-xs">Logo 3</div>
-                </div>
               </div>
             </div>
 
