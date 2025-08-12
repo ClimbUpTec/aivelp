@@ -177,7 +177,7 @@ const BeforeAfterComparison = () => (
           "Qualificação e priorização automáticas",
           "CRM atualizado em tempo real, sem esforço", 
           "Follow-up estratégico sempre no momento ideal",
-          "Vendas e ativações automáticas, mesmo enquanto você dorme"
+          "Vendas mesmo enquanto você dorme"
         ].map((item, index) => (
           <div key={index} className="flex items-center gap-3">
             <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
@@ -640,9 +640,9 @@ const Aive = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
               Produtividade de um time inteiro pelo valor de 1 colaborador júnior
             </h2>
-            <h3 className="text-xl md:text-2xl font-semibold mb-8 text-foreground">
+            <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto">
               Atende e vende como uma equipe completa, mas sem salário, férias, folgas ou encargos.
-            </h3>
+            </p>
           </div>
 
           <div className="mb-8">
@@ -663,12 +663,12 @@ const Aive = () => {
                 </thead>
                 <tbody>
                   {[
-                    ["Custo", "Salário + encargos", "valor fixo muito menor que contratar mais um funcionário"],
+                    ["Custo", "Salário + encargos", "Valor fixo e menor que contratar mais um funcionário"],
                     ["Disponibilidade", "44h semanais", "24h/dia, 7 dias por semana"],
-                    ["Follow-up", "Depende de rotina", "sempre no timing certo"],
-                    ["Organização", "Falhas no CRM", "atualização automática e inteligente"],
-                    ["Atendimentos", "Limitado à carga de trabalho", "ilimitado e imediato"],
-                    ["Treinamento", "Mensal e sujeito a turnover", "pronto e validado pela sua equipe"]
+                    ["Follow-up", "Depende de rotina", "Sempre no timing certo"],
+                    ["Organização", "Falhas no CRM", "Atualização automática e inteligente"],
+                    ["Atendimentos", "Limitado à carga de trabalho", "Ilimitado e imediato"],
+                    ["Treinamento", "Mensal e sujeito a turnover", "Pronto e validado pela sua equipe"]
                   ].map(([feature, human, ai], index) => (
                     <tr key={index} className={index % 2 === 0 ? "bg-muted/30" : "bg-background"}>
                       <td className="p-4 font-medium">{feature}</td>
