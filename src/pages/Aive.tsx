@@ -327,25 +327,27 @@ const NicheCases = () => {
 const Aive = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Cabeçalho com logo da Climb Up */}
-      <header className="py-4 px-4 bg-background">
-        <div className="container mx-auto max-w-6xl">
-          <div className="flex justify-center">
-            <img src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" alt="Climb Up" className="h-12" />
-          </div>
-        </div>
-      </header>
-
       {/* 1. Chamada Impactante (Herói) */}
       <section 
-        className="py-32 px-4 relative"
+        className="py-32 px-4 relative overflow-hidden"
         style={{
           backgroundImage: `url('/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png')`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'calc(center + 5cm) center',
           backgroundRepeat: 'no-repeat'
         }}
       >
+        {/* Botão Contratar Agora - Superior Esquerdo */}
+        <div className="absolute top-8 left-8 z-30">
+          <Button variant="outline" size="lg" className="bg-white/90 backdrop-blur-sm hover:bg-white">
+            Contratar agora
+          </Button>
+        </div>
+
+        {/* Logo Climb Up - Superior Direito */}
+        <div className="absolute top-8 right-8 z-30">
+          <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="h-12" />
+        </div>
         <div className="container mx-auto max-w-6xl text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-orange-500">
             Venda mais com a AIVE. A IA da Climb Up que escala suas vendas 24/7.
