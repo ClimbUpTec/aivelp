@@ -89,7 +89,7 @@ const AivePresentation = () => {
   ];
 
   return (
-    <div className="py-16 px-9">
+    <div className="py-16 px-9 bg-muted">
       <div className="text-center max-w-5xl mx-auto">
         <h3 className="text-3xl md:text-4xl font-bold mb-8 text-primary" style={{ transform: 'scale(1.1)' }}>
           Conheça AIVE, a IA da Climb Up que escala suas vendas 24/7
@@ -439,7 +439,7 @@ const Aive = () => {
       </section>
 
       {/* 4. Por que a Aive é a melhor IA do mercado? */}
-      <section className="py-16 px-4 bg-gray-100">
+      <section className="py-16 px-4 bg-muted">
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
             🔍 Por que a Aive é diferente de tudo que você já viu?
@@ -500,7 +500,7 @@ const Aive = () => {
       </section>
 
       {/* 5. Aive + Climb Up, um ecossistema completo! */}
-      <section className="py-16 px-4 bg-slate-100">
+      <section className="py-16 px-4 bg-muted">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -586,9 +586,9 @@ const Aive = () => {
       </section>
 
       {/* 6. "Mas eu não quero parecer um robô..." */}
-      <section className="py-16 px-4 bg-gray-100">
+      <section className="py-16 px-4 bg-gradient-to-br from-orange-secondary/20 to-orange-secondary/10">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
             "Mas eu não quero parecer um robô..."
           </h2>
           <div className="grid md:grid-cols-4 gap-6">

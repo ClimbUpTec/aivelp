@@ -18,14 +18,17 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 212 13% 20%;
 
-    --primary: 24 95% 51%; /* #F95B06 laranja principal */
+    --primary: 21 100% 51%; /* #FF5B04 laranja principal Pantone */
     --primary-foreground: 0 0% 98%;
     --primary-glow: 27 100% 60%; /* versão mais clara do laranja */
+    
+    --orange-secondary: 28 100% 53%; /* #FF7F11 laranja secundário wheel */
+    --section-bg: 220 14% 96%; /* #F3F4F6 fundo das seções */
 
     --secondary: 184 82% 20%; /* #0F5056 azul escuro */
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96%;
+    --muted: 220 14% 96%; /* #F3F4F6 fundo das seções */
     --muted-foreground: 215 16% 47%;
 
     --accent: 212 13% 20%; /* #233038 texto escuro */
