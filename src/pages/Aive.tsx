@@ -626,16 +626,25 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 8. Contratar mais pessoas ou ativar inteligência pra potencializar o time? */}
+      {/* 8. Produtividade de um time inteiro pelo valor de 1 colaborador júnior */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Contratar mais pessoas ou ativar inteligência pra potencializar o time?
+              Produtividade de um time inteiro pelo valor de 1 colaborador júnior
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Veja por que centenas de empresas estão escolhendo a Aive em vez de expandir o time manualmente.
+            <p className="text-lg text-muted-foreground mb-6">
+              Atende e vende como uma equipe completa, mas sem salário, férias, folgas ou encargos.
             </p>
+            <p className="text-lg text-muted-foreground">
+              Centenas de empresas já trocaram a expansão da equipe por uma inteligência que vende o ano inteiro, sem pausas e sem erro.
+            </p>
+          </div>
+
+          <div className="mb-8">
+            <h3 className="text-2xl font-bold text-center mb-8">
+              Vendedor humano (1 pessoa) vs. Aive (IA de vendas 24/7)
+            </h3>
           </div>
 
           <Card className="overflow-hidden">
@@ -650,14 +659,12 @@ const Aive = () => {
                 </thead>
                 <tbody>
                   {[
-                    ["Custo mensal médio", "Salário + encargos", "Menor que 1 salário mínimo"],
-                    ["Custo anual médio", "13º, férias, encargos", "Custo fixo anual"],
-                    ["Custo de contratação", "Recrutamento, treinamento, estrutura física", "Setup único, com entrega pronta"],
-                    ["Disponibilidade", "44h semanais, com pausas, folgas e férias", "24h por dia, 7 dias por semana, sem pausas"],
-                    ["Follow-up automático", "Não (depende do humor ou rotina)", "Sim (estratégico e no tempo certo)"],
-                    ["Organização no CRM", "Falhas comuns no preenchimento", "Criação automática e anotações inteligentes"],
-                    ["Capacidade de atender", "Limitado ao tempo e carga de trabalho", "Ilimitado — atende todos os leads em tempo real"],
-                    ["Treinamento", "Mensal, contínuo e sujeito a turnover", "100% treinada por nossa equipe e validada por você"]
+                    ["Custo", "Salário + encargos", "valor fixo muito menor que contratar mais um funcionário"],
+                    ["Disponibilidade", "44h semanais", "24h/dia, 7 dias por semana"],
+                    ["Follow-up", "Depende de rotina", "sempre no timing certo"],
+                    ["Organização", "Falhas no CRM", "atualização automática e inteligente"],
+                    ["Atendimentos", "Limitado à carga de trabalho", "ilimitado e imediato"],
+                    ["Treinamento", "Mensal e sujeito a turnover", "pronto e validado pela sua equipe"]
                   ].map(([feature, human, ai], index) => (
                     <tr key={index} className={index % 2 === 0 ? "bg-muted/30" : "bg-background"}>
                       <td className="p-4 font-medium">{feature}</td>
@@ -672,8 +679,7 @@ const Aive = () => {
 
           <div className="mt-8 text-center p-6 bg-primary/5 rounded-lg">
             <p className="text-lg font-semibold text-primary">
-              Com o valor de 1 mês de salário, você ativa uma inteligência que vende o ano inteiro, 
-              sem comissão, sem pausa e sem erro.
+              💡 Com o valor de um único colaborador júnior por mês, você ativa a Aive, que entrega a produtividade ilimitada, o ano inteiro, sem comissão e sem erro.
             </p>
           </div>
           
