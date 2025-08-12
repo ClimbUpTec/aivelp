@@ -76,7 +76,7 @@ const AivePresentation = () => {
     { name: "Cadastro do cliente", icon: <UserPlus className="w-8 h-8" /> },
     { name: "Direcionamento para equipes", icon: <ArrowUpRight className="w-8 h-8" /> },
     { name: "Criação de cards no CRM", icon: <FolderPlus className="w-8 h-8" /> },
-    { name: "Movimentação de cards no CRM", icon: <MoveHorizontal className="w-8 h-8" /> },
+    { name: "Insere resumos nos cards no CRM", icon: <MoveHorizontal className="w-8 h-8" /> },
     { name: "Follow-up e lembretes", icon: <Bell className="w-8 h-8" /> },
     { name: "Reativação de leads parados", icon: <RefreshCw className="w-8 h-8" /> },
     { name: "Agendamentos automáticos", icon: <Calendar className="w-8 h-8" /> },
@@ -85,14 +85,14 @@ const AivePresentation = () => {
     { name: "Campanhas segmentadas de remarketing", icon: <Target className="w-8 h-8" /> },
     { name: "Personalizada para cada negócio", icon: <Settings className="w-8 h-8" /> },
     { name: "Adaptações constantes", icon: <Wrench className="w-8 h-8" /> },
-    { name: "E tem mais...", icon: <Sparkles className="w-8 h-8" /> }
+    
   ];
 
   return (
     <div className="py-16 px-9 bg-muted">
       <div className="text-center max-w-5xl mx-auto">
         <h3 className="text-3xl md:text-4xl font-bold mb-8 text-primary" style={{ transform: 'scale(1.1)' }}>
-          Conheça AIVE, a IA da Climb Up que escala suas vendas 24/7
+          Conheça a AIVE, a IA da Climb Up que vai transformar a forma como você atende e vende
         </h3>
         <p className="text-xl text-muted-foreground mb-20 max-w-4xl mx-auto" style={{ transform: 'scale(1.1)' }}>
           Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera. Você decide.
