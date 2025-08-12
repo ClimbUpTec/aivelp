@@ -815,11 +815,11 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 11. Linha do Tempo de Onboarding (visual horizontal) */}
+      {/* 11. Ciclo de implementação da Aive (visual horizontal) */}
       <section className="py-16 px-4 bg-secondary/5 pb-24">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Linha do tempo de Onboarding Aive
+            Ciclo de implementação da Aive
           </h2>
           <p className="text-center text-lg text-muted-foreground mb-12">
             De 10 a 30 dias (ajustável conforme urgência)
@@ -837,7 +837,8 @@ const Aive = () => {
                   days: "Dia 1 a 5",
                   items: [
                     "Reunião para entender estrutura, público e modelo de vendas",
-                    "Levantamento de canais, integrações e tipos de atendimentos"
+                    "Levantamento de canais, integrações e tipos de atendimento",
+                    "Aprovação de estrutura pelo cliente"
                   ]
                 },
                 {
@@ -845,10 +846,9 @@ const Aive = () => {
                   title: "Criação de scripts",
                   days: "Dia 5 a 15",
                   items: [
-                    "Desenvolvimento dos fluxos de conversa",
-                    "Desenvolvimento de base de conhecimento",
-                    "Definição do tom de voz e regras gerais",
-                    "Aprovação do cliente"
+                    "Desenvolvimento de fluxos de conversa e base de conhecimento",
+                    "Definição de tom de voz e regras gerais",
+                    "Aprovação final de estrutura pelo cliente"
                   ]
                 },
                 {
@@ -857,8 +857,8 @@ const Aive = () => {
                   days: "Dia 15 a 25",
                   items: [
                     "Testes reais com leads",
-                    "Ajustes finos com base no comportamento do público",
-                    "Validação final com o cliente"
+                    "Ajustes com base no comportamento do público",
+                    "Aprovação com o cliente da IA"
                   ]
                 },
                 {
@@ -866,8 +866,9 @@ const Aive = () => {
                   title: "Ativação",
                   days: "Dia 25 a 30", 
                   items: [
-                    "IA publicada oficialmente",
-                    "Treinamento da equipe interna (se necessário)"
+                    "Publicação oficial da IA",
+                    "Treinamento da equipe (se necessário)",
+                    "Início do acompanhamento de performance"
                   ]
                 }
               ].map((phase, index) => (
@@ -896,13 +897,6 @@ const Aive = () => {
                 </div>
               ))}
             </div>
-          </div>
-          
-          {/* Botão CTA */}
-          <div className="text-center mt-16">
-            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
-              Quero AIVE
-            </Button>
           </div>
         </div>
       </section>
