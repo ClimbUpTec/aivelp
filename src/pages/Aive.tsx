@@ -152,12 +152,11 @@ const BeforeAfterComparison = () => (
       </CardHeader>
       <CardContent className="p-6 space-y-4">
         {[
-          "Vendedor sobrecarregado com atendimentos",
+          "Vendedores sobrecarregados e improdutivos",
           "Leads esquecidos ou mal qualificados", 
-          "CRM desatualizado",
-          "Sem follow-up ou perda de timing",
-          "Baixo aproveitamento da base",
-          "Vendas manuais e limitadas ao horário comercial"
+          "CRM incompleto ou desatualizado",
+          "Falta de follow-up no timing certo",
+          "Perda de vendas fora do horário comercial"
         ].map((item, index) => (
           <div key={index} className="flex items-center gap-3">
             <X className="w-5 h-5 text-destructive flex-shrink-0" />
@@ -174,12 +173,11 @@ const BeforeAfterComparison = () => (
       </CardHeader>
       <CardContent className="p-6 space-y-4">
         {[
-          "Aive atende todos os leads em tempo real",
-          "Aive qualifica e prioriza leads automaticamente",
-          "Aive preenche cards e atualiza etapas sozinha", 
-          "Aive faz o follow-up na hora certa, sempre",
-          "Aive ativa clientes antigos com campanhas automáticas",
-          "Aive vende por você 24h por dia, 7 dias por semana"
+          "Atendimento imediato a todos os leads, 24/7",
+          "Qualificação e priorização automáticas",
+          "CRM atualizado em tempo real, sem esforço", 
+          "Follow-up estratégico sempre no momento ideal",
+          "Vendas e ativações automáticas, mesmo enquanto você dorme"
         ].map((item, index) => (
           <div key={index} className="flex items-center gap-3">
             <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
