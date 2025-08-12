@@ -7,7 +7,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 import { ArrowDown, CheckCircle, Star, Users, TrendingUp, Clock, MessageSquare, Bot, Zap, Shield, Target, Sparkles, AlertCircle, TrendingDown,
          Phone, UserCheck, UserPlus, ArrowUpRight, Folder, FolderPlus, MoveHorizontal, 
-         Bell, RefreshCw, Calendar, Link, FileText, Settings, Wrench, X } from "lucide-react";
+         Bell, RefreshCw, Calendar, Link, FileText, Settings, Wrench, X, MessageCircle } from "lucide-react";
 
 // Componente para a ampulheta da jornada
 const JourneyHourglass = () => (
@@ -130,6 +130,13 @@ const AivePresentation = () => {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
+        
+        {/* Botão CTA */}
+        <div className="text-center mt-12">
+          <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+            Quero transformar meu atendimento com AIVE
+          </Button>
+        </div>
       </div>
     </div>
   );
@@ -323,6 +330,27 @@ const NicheCases = () => {
   );
 };
 
+// Função para redirecionar para WhatsApp
+const redirectToWhatsApp = () => {
+  const phoneNumber = "5551981435937"; // (51) 98143-5937
+  const message = "Olá! Gostaria de conhecer mais sobre a AIVE e como ela pode transformar meu atendimento e vendas.";
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, '_blank');
+};
+
+// Componente do botão flutuante do WhatsApp
+const FloatingWhatsAppButton = () => (
+  <div className="fixed bottom-6 right-6 z-50">
+    <button
+      onClick={redirectToWhatsApp}
+      className="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-all duration-300 hover:scale-110"
+      aria-label="Falar no WhatsApp"
+    >
+      <MessageCircle className="w-6 h-6" />
+    </button>
+  </div>
+);
+
 // Componente principal da página
 const Aive = () => {
   return (
@@ -344,7 +372,7 @@ const Aive = () => {
 
         {/* Botão Contratar Agora - Superior Direito */}
         <div className="absolute top-8 right-8 z-30">
-          <Button size="lg" className="bg-orange-500 text-white hover:bg-orange-600">
+          <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary text-white hover:bg-primary/90">
             Contratar agora
           </Button>
         </div>
@@ -357,7 +385,7 @@ const Aive = () => {
             Ou, se preferir, passa pro seu time. Tudo 24/7.
           </p>
           <div className="flex justify-center">
-            <Button variant="hero" size="xl">
+            <Button onClick={redirectToWhatsApp} variant="hero" size="xl">
               Quero escalar com Aive
             </Button>
           </div>
@@ -424,7 +452,7 @@ const Aive = () => {
           </div>
           
           <div className="text-center">
-            <Button size="lg" className="bg-orange-500 text-white hover:bg-orange-600">
+            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary text-white hover:bg-primary/90">
               Resolver com AIVE
             </Button>
           </div>
@@ -495,6 +523,13 @@ const Aive = () => {
                 ))}
               </ul>
             </div>
+          </div>
+          
+          {/* Botão CTA */}
+          <div className="text-center mt-12">
+            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+              Descobrir como a AIVE pode revolucionar meu negócio
+            </Button>
           </div>
         </div>
       </section>
@@ -582,6 +617,13 @@ const Aive = () => {
               </Card>
             ))}
           </div>
+          
+          {/* Botão CTA */}
+          <div className="text-center mt-12">
+            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+              Quero conhecer o ecossistema completo
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -623,6 +665,13 @@ const Aive = () => {
               </Card>
             ))}
           </div>
+          
+          {/* Botão CTA */}
+          <div className="text-center mt-12">
+            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+              Quero um atendimento humanizado com IA
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -634,6 +683,13 @@ const Aive = () => {
             Antes da Aive vs. Depois da Aive
           </h2>
           <BeforeAfterComparison />
+          
+          {/* Botão CTA */}
+          <div className="text-center mt-12">
+            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+              Transformar meu atendimento agora
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -644,6 +700,13 @@ const Aive = () => {
             🧩 Aive em Ação: Casos reais por nicho
           </h2>
           <NicheCases />
+          
+          {/* Botão CTA */}
+          <div className="text-center mt-12">
+            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+              Ver como a AIVE funciona no meu nicho
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -697,6 +760,13 @@ const Aive = () => {
               sem comissão, sem pausa e sem erro.
             </p>
           </div>
+          
+          {/* Botão CTA */}
+          <div className="text-center mt-8">
+            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+              Ativar minha inteligência de vendas agora
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -727,10 +797,10 @@ const Aive = () => {
                 para que você tenha mais tempo para focar no que realmente importa: crescer.
               </p>
               <div className="flex flex-col gap-4">
-                <Button variant="outline" size="xl" className="text-lg">
+                <Button onClick={redirectToWhatsApp} variant="outline" size="xl" className="text-lg">
                   Quero ativar a Aive agora
                 </Button>
-                <Button variant="outline" size="xl" className="text-lg">
+                <Button onClick={redirectToWhatsApp} variant="outline" size="xl" className="text-lg">
                   Falar com especialista
                 </Button>
               </div>
@@ -770,7 +840,7 @@ const Aive = () => {
                     <label className="text-sm font-medium">Empresa</label>
                     <input type="text" className="w-full p-3 border rounded-lg mt-1" placeholder="Nome da empresa" />
                   </div>
-                  <Button className="w-full" size="lg">
+                  <Button onClick={redirectToWhatsApp} className="w-full" size="lg">
                     Quero conhecer a Aive
                   </Button>
                 </CardContent>
@@ -862,6 +932,13 @@ const Aive = () => {
               ))}
             </div>
           </div>
+          
+          {/* Botão CTA */}
+          <div className="text-center mt-12">
+            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+              Começar meu onboarding agora
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -925,6 +1002,13 @@ const Aive = () => {
               </AccordionItem>
             ))}
           </Accordion>
+          
+          {/* Botão CTA */}
+          <div className="text-center mt-12">
+            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+              Tirar minhas dúvidas com um especialista
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -964,7 +1048,7 @@ const Aive = () => {
             <div>
               <h4 className="font-bold mb-4">Contato</h4>
               <p className="text-sm text-white/90 mb-2">(51) 98143-5937</p>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-orange-500">
+              <Button onClick={redirectToWhatsApp} variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
                 Falar com especialista
               </Button>
             </div>
@@ -977,6 +1061,9 @@ const Aive = () => {
           </div>
         </div>
       </footer>
+      
+      {/* Botão flutuante do WhatsApp */}
+      <FloatingWhatsAppButton />
     </div>
   );
 };
