@@ -7,7 +7,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 import { ArrowDown, CheckCircle, Star, Users, TrendingUp, Clock, MessageSquare, Bot, Zap, Shield, Target, Sparkles, AlertCircle, TrendingDown,
          Phone, UserCheck, UserPlus, ArrowUpRight, Folder, FolderPlus, MoveHorizontal, 
-         Bell, RefreshCw, Calendar, Link, FileText, Settings, Wrench, X, MessageCircle } from "lucide-react";
+         Bell, RefreshCw, Calendar, Link, FileText, Settings, Wrench, X, MessageCircle, Linkedin, Instagram, Facebook, Globe } from "lucide-react";
 
 // Componente para a ampulheta da jornada
 const JourneyHourglass = () => (
@@ -974,12 +974,11 @@ const Aive = () => {
       {/* 13. Rodapé */}
       <footer className="py-12 px-4 text-white" style={{ backgroundColor: '#FF5B04' }}>
         <div className="container mx-auto max-w-6xl">
-          <div className="flex justify-center mb-8">
-            <img src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" alt="Climb Up" className="h-12 brightness-0 invert" />
-          </div>
-          
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
+              <div className="mb-6">
+                <img src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" alt="Climb Up" className="h-12 brightness-0 invert" />
+              </div>
               <h4 className="font-bold mb-4">Endereço</h4>
               <p className="text-sm text-white/90">
                 Climb Up<br />
@@ -992,14 +991,20 @@ const Aive = () => {
             <div>
               <h4 className="font-bold mb-4">Nos acompanhe</h4>
               <div className="flex space-x-4">
-                <a href="#" className="text-white/80 hover:text-white transition-colors">
-                  <Users className="w-6 h-6" />
+                <a href="#" className="text-white/80 hover:text-white transition-colors" aria-label="LinkedIn">
+                  <Linkedin className="w-6 h-6" />
                 </a>
-                <a href="#" className="text-white/80 hover:text-white transition-colors">
-                  <MessageSquare className="w-6 h-6" />
+                <a href="#" className="text-white/80 hover:text-white transition-colors" aria-label="Instagram">
+                  <Instagram className="w-6 h-6" />
                 </a>
-                <a href="#" className="text-white/80 hover:text-white transition-colors">
-                  <Target className="w-6 h-6" />
+                <a href="#" className="text-white/80 hover:text-white transition-colors" aria-label="Facebook">
+                  <Facebook className="w-6 h-6" />
+                </a>
+                <a href="#" className="text-white/80 hover:text-white transition-colors" aria-label="Blog">
+                  <FileText className="w-6 h-6" />
+                </a>
+                <a href="#" className="text-white/80 hover:text-white transition-colors" aria-label="Site">
+                  <Globe className="w-6 h-6" />
                 </a>
               </div>
             </div>
@@ -1007,9 +1012,7 @@ const Aive = () => {
             <div>
               <h4 className="font-bold mb-4">Contato</h4>
               <p className="text-sm text-white/90 mb-2">(51) 98143-5937</p>
-              <Button onClick={redirectToWhatsApp} variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
-                Falar agora
-              </Button>
+              <p className="text-sm text-white/90">contato@climbup.com.br</p>
             </div>
           </div>
           
