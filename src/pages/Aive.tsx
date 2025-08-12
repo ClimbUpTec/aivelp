@@ -726,14 +726,30 @@ const Aive = () => {
             {/* Logos das empresas */}
             <div>
               <div className="flex flex-wrap items-center justify-center gap-8">
-                <img src="/lovable-uploads/b50cf148-a9f5-4926-ae36-c0513e64ce37.png" alt="Comfy Pizza Napoletana" className="h-12 w-auto" />
-                <img src="/lovable-uploads/a886ce68-444c-48dc-b4ce-dc29c234dc87.png" alt="Litifica Geologia e Meio Ambiente" className="h-12 w-auto" />
-                <img src="/lovable-uploads/9ea355fc-e40f-41f6-83f7-a490d2c881b7.png" alt="Alligator Parts" className="h-12 w-auto" />
-                <img src="/lovable-uploads/bc88886d-9bb1-41f0-a8fb-de885822381c.png" alt="Garantepay" className="h-12 w-auto" />
-                <img src="/lovable-uploads/e3b12e63-ee54-425d-81e0-30ecce94145e.png" alt="Economize em Energia" className="h-12 w-auto" />
-                <img src="/lovable-uploads/0372ad6c-da31-44c3-b412-db19d6252ca0.png" alt="Bike Line" className="h-12 w-auto" />
-                <img src="/lovable-uploads/84467682-d5ad-4c9c-a68c-95c2ae6da1cd.png" alt="Anhanguera" className="h-12 w-auto" />
-                <img src="/lovable-uploads/bbcfdba9-f4d0-444c-b8fe-b3f2ecc9f833.png" alt="Oito Gestão Tributária" className="h-12 w-auto" />
+                <div className="h-16 w-20 flex items-center justify-center">
+                  <img src="/lovable-uploads/b50cf148-a9f5-4926-ae36-c0513e64ce37.png" alt="Comfy Pizza Napoletana" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-16 w-20 flex items-center justify-center">
+                  <img src="/lovable-uploads/a886ce68-444c-48dc-b4ce-dc29c234dc87.png" alt="Litifica Geologia e Meio Ambiente" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-16 w-20 flex items-center justify-center">
+                  <img src="/lovable-uploads/9ea355fc-e40f-41f6-83f7-a490d2c881b7.png" alt="Alligator Parts" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-16 w-20 flex items-center justify-center">
+                  <img src="/lovable-uploads/bc88886d-9bb1-41f0-a8fb-de885822381c.png" alt="Garantepay" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-16 w-20 flex items-center justify-center">
+                  <img src="/lovable-uploads/e3b12e63-ee54-425d-81e0-30ecce94145e.png" alt="Economize em Energia" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-16 w-20 flex items-center justify-center">
+                  <img src="/lovable-uploads/0372ad6c-da31-44c3-b412-db19d6252ca0.png" alt="Bike Line" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-16 w-20 flex items-center justify-center">
+                  <img src="/lovable-uploads/84467682-d5ad-4c9c-a68c-95c2ae6da1cd.png" alt="Anhanguera" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-16 w-20 flex items-center justify-center">
+                  <img src="/lovable-uploads/bbcfdba9-f4d0-444c-b8fe-b3f2ecc9f833.png" alt="Oito Gestão Tributária" className="max-h-full max-w-full object-contain" />
+                </div>
               </div>
             </div>
           </div>
