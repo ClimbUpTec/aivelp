@@ -726,24 +726,14 @@ const Aive = () => {
             {/* Logos das empresas */}
             <div>
               <div className="flex flex-wrap items-center justify-center gap-8 opacity-70">
-                <div className="w-24 h-12 bg-gray-300 rounded flex items-center justify-center text-sm font-medium">
-                  Empresa 1
-                </div>
-                <div className="w-24 h-12 bg-gray-300 rounded flex items-center justify-center text-sm font-medium">
-                  Empresa 2
-                </div>
-                <div className="w-24 h-12 bg-gray-300 rounded flex items-center justify-center text-sm font-medium">
-                  Empresa 3
-                </div>
-                <div className="w-24 h-12 bg-gray-300 rounded flex items-center justify-center text-sm font-medium">
-                  Empresa 4
-                </div>
-                <div className="w-24 h-12 bg-gray-300 rounded flex items-center justify-center text-sm font-medium">
-                  Empresa 5
-                </div>
-                <div className="w-24 h-12 bg-gray-300 rounded flex items-center justify-center text-sm font-medium">
-                  Empresa 6
-                </div>
+                <img src="/lovable-uploads/b50cf148-a9f5-4926-ae36-c0513e64ce37.png" alt="Comfy Pizza Napoletana" className="h-12 w-auto" />
+                <img src="/lovable-uploads/a886ce68-444c-48dc-b4ce-dc29c234dc87.png" alt="Litifica Geologia e Meio Ambiente" className="h-12 w-auto" />
+                <img src="/lovable-uploads/9ea355fc-e40f-41f6-83f7-a490d2c881b7.png" alt="Alligator Parts" className="h-12 w-auto" />
+                <img src="/lovable-uploads/bc88886d-9bb1-41f0-a8fb-de885822381c.png" alt="Garantepay" className="h-12 w-auto" />
+                <img src="/lovable-uploads/e3b12e63-ee54-425d-81e0-30ecce94145e.png" alt="Economize em Energia" className="h-12 w-auto" />
+                <img src="/lovable-uploads/a21a868d-5fdc-4b78-a400-3e64f8cc67d5.png" alt="Bike Line" className="h-12 w-auto" />
+                <img src="/lovable-uploads/8b2b5876-b729-4bee-9757-56e04899be2d.png" alt="Anhanguera" className="h-12 w-auto" />
+                <img src="/lovable-uploads/bbcfdba9-f4d0-444c-b8fe-b3f2ecc9f833.png" alt="Oito Gestão Tributária" className="h-12 w-auto" />
               </div>
             </div>
           </div>
@@ -754,11 +744,8 @@ const Aive = () => {
       <section className="py-20 px-4 bg-gradient-to-r from-primary/10 via-primary-glow/5 to-primary/10">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Lado esquerdo: Logo e Chamada Final */}
+            {/* Lado esquerdo: Chamada Final */}
             <div className="text-center md:text-left">
-              <div className="mb-8 flex justify-center md:justify-start">
-                <img src="/lovable-uploads/ec1d8e37-e645-4307-aa1e-2fa8c176c340.png" alt="Climb Up" className="h-16" />
-              </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 O futuro está a uma mensagem de distância.
               </h2>
@@ -779,6 +766,9 @@ const Aive = () => {
             <div>
               <Card>
                 <CardHeader className="text-center">
+                  <div className="mb-4 flex justify-center">
+                    <img src="/lovable-uploads/ec1d8e37-e645-4307-aa1e-2fa8c176c340.png" alt="Climb Up" className="h-12" />
+                  </div>
                   <h3 className="text-2xl font-bold">Entre em contato</h3>
                   <p className="text-muted-foreground">Preencha o formulário e nossa equipe entrará em contato</p>
                 </CardHeader>
@@ -810,7 +800,7 @@ const Aive = () => {
       </section>
 
       {/* 11. Linha do Tempo de Onboarding (visual horizontal) */}
-      <section className="py-16 px-4 bg-secondary/5">
+      <section className="py-16 px-4 bg-secondary/5 pb-24">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Linha do tempo de Onboarding Aive
@@ -893,7 +883,7 @@ const Aive = () => {
           </div>
           
           {/* Botão CTA */}
-          <div className="text-center mt-12">
+          <div className="text-center mt-16">
             <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
               Quero AIVE
             </Button>
