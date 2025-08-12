@@ -93,7 +93,7 @@ const AivePresentation = () => {
     <div className="py-16 px-9 bg-muted">
       <div className="text-center max-w-5xl mx-auto">
         <h3 className="text-3xl md:text-4xl font-bold mb-8 text-primary" style={{ transform: 'scale(1.1)' }}>
-          Conheça a AIVE, a IA da <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-12 md:h-14 mx-2" /> que vai transformar a forma como você atende e vende
+          Conheça a AIVE, a IA da <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-14 md:h-16 mx-2" />
         </h3>
         <p className="text-xl text-muted-foreground mb-20 max-w-4xl mx-auto" style={{ transform: 'scale(1.1)' }}>
           Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera. Você decide.
@@ -307,18 +307,18 @@ const Aive = () => {
       >
         {/* Logo Climb Up - Superior Esquerdo */}
         <div className="absolute top-8 left-8 z-30 flex items-center">
-          <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="h-20" />
+          <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="h-12" />
         </div>
 
         {/* Botão Contratar Agora - Superior Direito */}
         <div className="absolute top-8 right-8 z-30 flex items-center">
-          <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary text-white hover:bg-primary/90 h-20">
+          <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary text-white hover:bg-primary/90">
             Contratar agora
           </Button>
         </div>
         <div className="container mx-auto max-w-6xl text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: '#FF5B04' }}>
-            Venda mais com a AIVE. A IA da <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-16 md:h-20 mx-2" /> que escala suas vendas 24/7.
+            Venda mais com a AIVE. A IA da Climb Up que escala suas vendas 24/7.
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
             Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
@@ -489,7 +489,7 @@ const Aive = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Aive + Climb Up, um ecossistema completo!
+              Aive + <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-12 md:h-14 mx-2" />, um ecossistema completo!
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
               Aive atua como cérebro. A Climb Up é o corpo que executa com estrutura e tecnologia. A Aive opera e faz todo trabalho repetitivo, seu time foca no que importa, e você espia e gerencia tudo em tempo real.
@@ -650,11 +650,6 @@ const Aive = () => {
             </p>
           </div>
 
-          <div className="mb-8">
-            <h3 className="text-2xl font-bold text-center mb-8">
-              Vendedor humano (1 pessoa) vs. <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-8 mx-2" /> (IA de vendas 24/7)
-            </h3>
-          </div>
 
           <Card className="overflow-hidden">
             <div className="overflow-x-auto">
@@ -663,7 +658,7 @@ const Aive = () => {
                   <tr className="bg-primary text-primary-foreground">
                     <th className="p-4 text-left"></th>
                     <th className="p-4 text-center">Vendedor humano (1 pessoa)</th>
-                    <th className="p-4 text-center">Aive (IA de vendas 24/7)</th>
+                    <th className="p-4 text-center"><img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-6 mx-2" /> (IA de vendas 24/7)</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -706,7 +701,7 @@ const Aive = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
-              Empresas que confiam na <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-12 md:h-14 mx-2" />
+              Empresas que confiam na <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-14 md:h-16 mx-2" />
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto">
               Centenas de empresas já trocaram a expansão da equipe por uma inteligência que vende o ano inteiro, sem pausas e com um ecossistema robusto.
@@ -885,7 +880,7 @@ const Aive = () => {
                     </div>
                   </div>
                   
-                  <Card className="text-center h-full">
+                  <Card className="text-center">
                     <CardContent className="p-6">
                       <h3 className="text-xl font-bold mb-2">{phase.title}</h3>
                       <Badge variant="outline" className="mb-4">{phase.days}</Badge>
@@ -910,7 +905,7 @@ const Aive = () => {
       <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            ❓ Perguntas Frequentes
+            Perguntas Frequentes
           </h2>
           
           <Accordion type="single" collapsible className="space-y-4">
@@ -992,7 +987,7 @@ const Aive = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="mb-6">
-                <img src="/lovable-uploads/671ce0d1-2127-4a4a-b6aa-63942b30965c.png" alt="Climb Up" className="h-24" />
+                <img src="/lovable-uploads/671ce0d1-2127-4a4a-b6aa-63942b30965c.png" alt="Climb Up" className="h-48" />
               </div>
               <h4 className="font-bold mb-4">Endereço:</h4>
               <p className="text-sm text-white/90">
