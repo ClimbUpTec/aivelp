@@ -333,20 +333,20 @@ const Aive = () => {
         style={{
           backgroundImage: `url('/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png')`,
           backgroundSize: 'cover',
-          backgroundPosition: 'calc(center + 5cm) center',
+          backgroundPosition: 'calc(center - 5cm) center',
           backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Botão Contratar Agora - Superior Esquerdo */}
+        {/* Logo Climb Up - Superior Esquerdo */}
         <div className="absolute top-8 left-8 z-30">
-          <Button variant="outline" size="lg" className="bg-white/90 backdrop-blur-sm hover:bg-white">
-            Contratar agora
-          </Button>
+          <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="h-16" />
         </div>
 
-        {/* Logo Climb Up - Superior Direito */}
+        {/* Botão Contratar Agora - Superior Direito */}
         <div className="absolute top-8 right-8 z-30">
-          <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="h-12" />
+          <Button size="lg" className="bg-orange-500 text-white hover:bg-orange-600">
+            Contratar agora
+          </Button>
         </div>
         <div className="container mx-auto max-w-6xl text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-orange-500">
