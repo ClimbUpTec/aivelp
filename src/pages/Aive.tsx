@@ -977,9 +977,9 @@ const Aive = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="mb-6">
-                <img src="/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png" alt="Climb Up" className="h-12 brightness-0 invert" />
+                <img src="/lovable-uploads/671ce0d1-2127-4a4a-b6aa-63942b30965c.png" alt="Climb Up" className="h-12" />
               </div>
-              <h4 className="font-bold mb-4">Endereço</h4>
+              <h4 className="font-bold mb-4">Endereço:</h4>
               <p className="text-sm text-white/90">
                 Climb Up<br />
                 Av. Padre Cacique, 122/702 – Praia de Belas<br />
@@ -989,7 +989,7 @@ const Aive = () => {
             </div>
             
             <div>
-              <h4 className="font-bold mb-4">Nos acompanhe</h4>
+              <h4 className="font-bold mb-4">Nos acompanhe:</h4>
               <div className="flex space-x-4">
                 <a href="#" className="text-white/80 hover:text-white transition-colors" aria-label="LinkedIn">
                   <Linkedin className="w-6 h-6" />
@@ -1010,7 +1010,7 @@ const Aive = () => {
             </div>
             
             <div>
-              <h4 className="font-bold mb-4">Contato</h4>
+              <h4 className="font-bold mb-4">Contato:</h4>
               <p className="text-sm text-white/90 mb-2">(51) 98143-5937</p>
               <p className="text-sm text-white/90">contato@climbup.com.br</p>
             </div>
