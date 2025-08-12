@@ -404,10 +404,10 @@ const Aive = () => {
       </section>
 
       {/* 4. Por que a Aive é a melhor IA do mercado? */}
-      <section className="py-16 px-4 bg-muted">
+      <section className="py-8 px-4 bg-muted">
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            🔍 Por que a Aive é diferente de tudo que você já viu?
+            Por que a Aive é diferente de tudo que você já viu?
           </h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-4xl mx-auto">
             Enquanto outros oferecem uma IA genérica, a Climb Up entrega um ecossistema inteligente com múltiplas IAs integradas e treinadas para cada etapa da jornada do seu cliente. Elas se comunicam entre si e com seu time humano.
@@ -451,7 +451,8 @@ const Aive = () => {
               <ul className="space-y-3">
                 {[
                   "Escalabilidade real: você pode expandir para novos setores criando novas Aives especializadas.",
-                  "Experiência premium para o cliente: fluidez, clareza e agilidade em qualquer etapa da jornada."
+                  "Experiência premium para o cliente: fluidez, clareza e agilidade em qualquer etapa da jornada.",
+                  "Uma equipe inteira que trabalha sem folgas, pra você e seus clientes."
                 ].map((benefit, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
