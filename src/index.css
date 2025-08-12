@@ -8,40 +8,47 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Climb Up Design System Colors */
+    /* Climb Up Brand Colors */
     --background: 0 0% 100%;
-    --foreground: 212 13% 20%; /* #233038 texto escuro */
+    --foreground: 0 0% 14%; /* #232323 Eerie Black */
 
     --card: 0 0% 100%;
-    --card-foreground: 212 13% 20%;
+    --card-foreground: 0 0% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 212 13% 20%;
+    --popover-foreground: 0 0% 14%;
 
-    --primary: 24 95% 51%; /* #F95B06 laranja principal */
-    --primary-foreground: 0 0% 98%;
-    --primary-glow: 27 100% 60%; /* versão mais clara do laranja */
+    /* Orange (Pantone) - Principal */
+    --primary: 21 100% 51%; /* #FF5B04 */
+    --primary-foreground: 0 0% 100%;
+    
+    /* Orange (wheel) - Apoio */
+    --primary-light: 34 100% 53%; /* #FF7F11 */
+    
+    /* Gunmetal */
+    --secondary: 208 23% 18%; /* #233038 */
+    --secondary-foreground: 0 0% 100%;
 
-    --secondary: 184 82% 20%; /* #0F5056 azul escuro */
-    --secondary-foreground: 0 0% 98%;
+    /* Platinum - Cor de apoio */
+    --muted: 192 11% 85%; /* #D3DDDE */
+    --muted-foreground: 0 0% 14%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
-
-    --accent: 212 13% 20%; /* #233038 texto escuro */
-    --accent-foreground: 0 0% 98%;
+    /* Midnight green */
+    --accent: 184 85% 18%; /* #075056 */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 212 13% 20%;
+    --border: 192 11% 85%;
+    --input: 192 11% 85%;
+    --ring: 21 100% 51%;
 
     --radius: 0.5rem;
     
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-platinum: linear-gradient(135deg, hsl(var(--muted)), hsl(192 11% 90%));
     --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.3);
     --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
