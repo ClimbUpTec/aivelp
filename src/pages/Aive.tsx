@@ -368,7 +368,7 @@ const Aive = () => {
       <section className="py-16 px-4 relative bg-gradient-to-br from-orange-400 to-orange-600">
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-orange-500">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Sua empresa está passando por isso?
             </h2>
             <p className="text-xl text-white max-w-3xl mx-auto">
@@ -377,47 +377,47 @@ const Aive = () => {
           </div>
           
           <div className="grid md:grid-cols-5 gap-6 mb-10">
-            <Card className="p-6 text-center border-white/20 bg-white/10 backdrop-blur-sm">
+            <Card className="p-6 text-center border-gray-300 bg-white">
               <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-orange-500" />
+                <X className="w-10 h-10 mx-auto text-red-500" />
               </div>
-              <p className="text-base font-medium text-white">
+              <p className="text-base font-medium text-red-500">
                 Equipe sobrecarregada
               </p>
             </Card>
 
-            <Card className="p-6 text-center border-white/20 bg-white/10 backdrop-blur-sm">
+            <Card className="p-6 text-center border-gray-300 bg-white">
               <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-orange-500" />
+                <X className="w-10 h-10 mx-auto text-red-500" />
               </div>
-              <p className="text-base font-medium text-white">
+              <p className="text-base font-medium text-red-500">
                 Leads aguardam horas ou dias por atendimento
               </p>
             </Card>
 
-            <Card className="p-6 text-center border-white/20 bg-white/10 backdrop-blur-sm">
+            <Card className="p-6 text-center border-gray-300 bg-white">
               <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-orange-500" />
+                <X className="w-10 h-10 mx-auto text-red-500" />
               </div>
-              <p className="text-base font-medium text-white">
+              <p className="text-base font-medium text-red-500">
                 Equipe não preenche o CRM
               </p>
             </Card>
             
-            <Card className="p-6 text-center border-white/20 bg-white/10 backdrop-blur-sm">
+            <Card className="p-6 text-center border-gray-300 bg-white">
               <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-orange-500" />
+                <X className="w-10 h-10 mx-auto text-red-500" />
               </div>
-              <p className="text-base font-medium text-white">
+              <p className="text-base font-medium text-red-500">
                 Falta tempo para o que realmente importa
               </p>
             </Card>
             
-            <Card className="p-6 text-center border-white/20 bg-white/10 backdrop-blur-sm">
+            <Card className="p-6 text-center border-gray-300 bg-white">
               <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-orange-500" />
+                <X className="w-10 h-10 mx-auto text-red-500" />
               </div>
-              <p className="text-base font-medium text-white">
+              <p className="text-base font-medium text-red-500">
                 Impossível escalar com a estrutura atual
               </p>
             </Card>
