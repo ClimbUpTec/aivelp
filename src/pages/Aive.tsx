@@ -762,7 +762,7 @@ const Aive = () => {
         style={{
           backgroundImage: `url('/lovable-uploads/993d177c-77dd-4ff6-8175-06d7eb568c64.png')`,
           backgroundSize: 'cover',
-          backgroundPosition: 'right center',
+          backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       >
@@ -793,7 +793,7 @@ const Aive = () => {
                   <div className="mb-4 flex justify-center">
                     <img src="/lovable-uploads/ec1d8e37-e645-4307-aa1e-2fa8c176c340.png" alt="Climb Up" className="h-12" />
                   </div>
-                  <h3 className="text-2xl font-bold">Entre em contato</h3>
+                  <h3 className="text-2xl font-bold">Formulário de Contato</h3>
                   <p className="text-muted-foreground">Preencha o formulário e nossa equipe entrará em contato</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
