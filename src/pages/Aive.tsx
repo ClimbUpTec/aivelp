@@ -337,11 +337,29 @@ const Aive = () => {
               Sua empresa está passando por isso?
             </h2>
             <p className="text-xl text-white max-w-3xl mx-auto">
-              Enfrentando desafios para gerenciar leads e buscando uma solução eficiente para escalar vendas.
+              Enfrentando dificuldades para gerar vendas e manter a operação no ritmo que o mercado exige?
             </p>
           </div>
           
-          <div className="grid md:grid-cols-5 gap-6 mb-10">
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6 mb-10">
+            <Card className="p-6 text-center border-gray-300 bg-white">
+              <div className="mb-3">
+                <X className="w-10 h-10 mx-auto text-red-500" />
+              </div>
+              <p className="text-base font-medium text-red-500">
+                Leads esperando por resposta
+              </p>
+            </Card>
+
+            <Card className="p-6 text-center border-gray-300 bg-white">
+              <div className="mb-3">
+                <X className="w-10 h-10 mx-auto text-red-500" />
+              </div>
+              <p className="text-base font-medium text-red-500">
+                Falta de follow-up
+              </p>
+            </Card>
+
             <Card className="p-6 text-center border-gray-300 bg-white">
               <div className="mb-3">
                 <X className="w-10 h-10 mx-auto text-red-500" />
@@ -350,22 +368,13 @@ const Aive = () => {
                 Equipe sobrecarregada
               </p>
             </Card>
-
+            
             <Card className="p-6 text-center border-gray-300 bg-white">
               <div className="mb-3">
                 <X className="w-10 h-10 mx-auto text-red-500" />
               </div>
               <p className="text-base font-medium text-red-500">
-                Leads aguardam horas ou dias por atendimento
-              </p>
-            </Card>
-
-            <Card className="p-6 text-center border-gray-300 bg-white">
-              <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-red-500" />
-              </div>
-              <p className="text-base font-medium text-red-500">
-                Equipe não preenche o CRM
+                CRM desatualizado
               </p>
             </Card>
             
@@ -374,16 +383,16 @@ const Aive = () => {
                 <X className="w-10 h-10 mx-auto text-red-500" />
               </div>
               <p className="text-base font-medium text-red-500">
-                Falta tempo para o que realmente importa
+                Crescimento travado
               </p>
             </Card>
-            
+
             <Card className="p-6 text-center border-gray-300 bg-white">
               <div className="mb-3">
                 <X className="w-10 h-10 mx-auto text-red-500" />
               </div>
               <p className="text-base font-medium text-red-500">
-                Impossível escalar com a estrutura atual
+                Perdendo vendas p/ concorrentes
               </p>
             </Card>
           </div>
