@@ -307,7 +307,7 @@ const Aive = () => {
       >
         {/* Logo Climb Up - Superior Esquerdo */}
         <div className="absolute top-8 left-8 z-30 flex items-center">
-          <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="h-12" />
+          <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="h-16" />
         </div>
 
         {/* Botão Contratar Agora - Superior Direito */}
@@ -498,11 +498,6 @@ const Aive = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                icon: <MessageSquare className="w-8 h-8" />,
-                title: "Chatbot",
-                description: "Fluxogramas completos"
-              },
-              {
                 icon: <Users className="w-8 h-8" />,
                 title: "CRM inteligente", 
                 description: "Para Aive, você e seu time registrar e acompanhar negociações"
@@ -556,6 +551,11 @@ const Aive = () => {
                 icon: <Wrench className="w-8 h-8" />,
                 title: "Chat interno",
                 description: "Para vendedores e setores"
+              },
+              {
+                icon: <MessageSquare className="w-8 h-8" />,
+                title: "Chatbot + IA",
+                description: "Fluxogramas completos"
               }
             ].map((feature, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
@@ -658,7 +658,7 @@ const Aive = () => {
                   <tr className="bg-primary text-primary-foreground">
                     <th className="p-4 text-left"></th>
                     <th className="p-4 text-center">Vendedor humano (1 pessoa)</th>
-                    <th className="p-4 text-center"><img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-6 mx-2" /> (IA de vendas 24/7)</th>
+                    <th className="p-4 text-center"><img src="/lovable-uploads/3ca28316-d1d1-4c3d-8066-a40e8a89e409.png" alt="IA de vendas" className="inline h-6 mx-2" /> (IA de vendas 24/7)</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -701,7 +701,7 @@ const Aive = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
-              Empresas que confiam na <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-14 md:h-16 mx-2" />
+              Empresas que confiam na <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-16 md:h-18 mx-2" />
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto">
               Centenas de empresas já trocaram a expansão da equipe por uma inteligência que vende o ano inteiro, sem pausas e com um ecossistema robusto.
@@ -880,11 +880,11 @@ const Aive = () => {
                     </div>
                   </div>
                   
-                  <Card className="text-center">
-                    <CardContent className="p-6">
+                  <Card className="text-center h-80">
+                    <CardContent className="p-6 h-full flex flex-col">
                       <h3 className="text-xl font-bold mb-2">{phase.title}</h3>
-                      <Badge variant="outline" className="mb-4">{phase.days}</Badge>
-                      <ul className="space-y-2 text-sm text-left">
+                      <Badge variant="outline" className="mb-4 mx-auto">{phase.days}</Badge>
+                      <ul className="space-y-2 text-sm text-left flex-1">
                         {phase.items.map((item, itemIndex) => (
                           <li key={itemIndex} className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
@@ -987,7 +987,7 @@ const Aive = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="mb-6">
-                <img src="/lovable-uploads/671ce0d1-2127-4a4a-b6aa-63942b30965c.png" alt="Climb Up" className="h-48" />
+                <img src="/lovable-uploads/671ce0d1-2127-4a4a-b6aa-63942b30965c.png" alt="Climb Up" className="h-24" />
               </div>
               <h4 className="font-bold mb-4">Endereço:</h4>
               <p className="text-sm text-white/90">
