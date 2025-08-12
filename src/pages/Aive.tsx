@@ -630,13 +630,13 @@ const Aive = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
               Produtividade de um time inteiro pelo valor de 1 colaborador júnior
             </h2>
-            <p className="text-lg text-muted-foreground mb-6">
+            <h3 className="text-xl md:text-2xl font-semibold mb-8 text-foreground">
               Atende e vende como uma equipe completa, mas sem salário, férias, folgas ou encargos.
-            </p>
-            <p className="text-lg text-muted-foreground">
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
               Centenas de empresas já trocaram a expansão da equipe por uma inteligência que vende o ano inteiro, sem pausas e sem erro.
             </p>
           </div>
