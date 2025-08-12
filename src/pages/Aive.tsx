@@ -432,16 +432,16 @@ const Aive = () => {
       </section>
 
       {/* 3. Apresentação da Aive */}
-      <section className="py-16 px-4 bg-muted">
+      <section className="py-16 px-4 bg-gray-100">
         <div className="container mx-auto max-w-5xl">
           <AivePresentation />
         </div>
       </section>
 
       {/* 4. Por que a Aive é a melhor IA do mercado? */}
-      <section className="py-16 px-4 bg-muted">
+      <section className="py-16 px-4 bg-gray-100">
         <div className="container mx-auto max-w-6xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">
             🔍 Por que a Aive é diferente de tudo que você já viu?
           </h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-4xl mx-auto">
@@ -500,10 +500,10 @@ const Aive = () => {
       </section>
 
       {/* 5. Aive + Climb Up, um ecossistema completo! */}
-      <section className="py-16 px-4 bg-muted">
+      <section className="py-16 px-4 bg-slate-100">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Aive + Climb Up, um ecossistema completo!
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
@@ -586,9 +586,9 @@ const Aive = () => {
       </section>
 
       {/* 6. "Mas eu não quero parecer um robô..." */}
-      <section className="py-16 px-4 bg-gradient-to-br from-primary to-primary-light">
+      <section className="py-16 px-4 bg-gray-100">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">
             "Mas eu não quero parecer um robô..."
           </h2>
           <div className="grid md:grid-cols-4 gap-6">
@@ -614,11 +614,11 @@ const Aive = () => {
                 description: "Cada detalhe do seu negócio será memorizado e atualizado constantemente."
               }
             ].map((feature, index) => (
-              <Card key={index} className="text-center bg-white">
+              <Card key={index} className="text-center">
                 <CardContent className="p-6">
-                  <div className="text-white mb-4 flex justify-center">{feature.icon}</div>
-                  <h3 className="font-semibold mb-2 text-white">{feature.title}</h3>
-                  <p className="text-sm text-white/90">{feature.description}</p>
+                  <div className="text-primary mb-4 flex justify-center">{feature.icon}</div>
+                  <h3 className="font-semibold mb-2">{feature.title}</h3>
+                  <p className="text-sm text-muted-foreground">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -628,9 +628,9 @@ const Aive = () => {
 
 
       {/* 7. Antes vs. Depois da Aive */}
-      <section className="py-16 px-4 bg-secondary">
+      <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Antes da Aive vs. Depois da Aive
           </h2>
           <BeforeAfterComparison />
@@ -638,9 +638,9 @@ const Aive = () => {
       </section>
 
       {/* 8. Aive em Ação: Exemplos por Nicho */}
-      <section className="py-16 px-4 bg-accent">
+      <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             🧩 Aive em Ação: Casos reais por nicho
           </h2>
           <NicheCases />
@@ -648,10 +648,10 @@ const Aive = () => {
       </section>
 
       {/* 9. Contratar mais pessoas ou ativar inteligência pra potencializar o time? */}
-      <section className="py-16 px-4 bg-background">
+      <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Contratar mais pessoas ou ativar inteligência pra potencializar o time?
             </h2>
             <p className="text-lg text-muted-foreground">
