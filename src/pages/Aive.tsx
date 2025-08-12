@@ -757,7 +757,15 @@ const Aive = () => {
       </section>
 
       {/* 10. Formulário */}
-      <section className="py-20 px-4 bg-gradient-to-r from-primary/10 via-primary-glow/5 to-primary/10">
+      <section 
+        className="py-20 px-4 relative"
+        style={{
+          backgroundImage: `url('/lovable-uploads/993d177c-77dd-4ff6-8175-06d7eb568c64.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Lado esquerdo: Chamada Final */}
