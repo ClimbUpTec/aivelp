@@ -760,7 +760,7 @@ const Aive = () => {
       <section 
         className="py-20 px-4 relative"
         style={{
-          backgroundImage: `url('/lovable-uploads/993d177c-77dd-4ff6-8175-06d7eb568c64.png')`,
+          backgroundImage: `url('/lovable-uploads/7a43f6b3-98fd-461c-a035-91ddd81194c6.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
