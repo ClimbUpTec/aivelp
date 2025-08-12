@@ -329,7 +329,7 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 2. Sua empresa está passando por isso? */}
+      {/* 2. Está enfrentando isso? */}
       <section className="py-16 px-4 relative bg-gradient-to-br from-orange-400 to-orange-600">
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-12">
@@ -337,54 +337,54 @@ const Aive = () => {
               Sua empresa está passando por isso?
             </h2>
             <p className="text-xl text-white max-w-3xl mx-auto">
-              Enfrentando dificuldades para gerar vendas e manter a operação no ritmo que o mercado exige?
+              Enfrentando desafios para gerenciar leads e buscando uma solução eficiente para escalar vendas.
             </p>
           </div>
           
-          <div className="space-y-6 mb-10 max-w-4xl mx-auto">
-            <Card className="p-6 border-gray-300 bg-white">
-              <div className="flex items-start gap-4">
-                <X className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
-                <p className="text-lg font-medium text-gray-800">
-                  Clientes e leads aguardam horas (ou dias) por resposta
-                </p>
+          <div className="grid md:grid-cols-5 gap-6 mb-10">
+            <Card className="p-6 text-center border-gray-300 bg-white">
+              <div className="mb-3">
+                <X className="w-10 h-10 mx-auto text-red-500" />
               </div>
+              <p className="text-base font-medium text-red-500">
+                Equipe sobrecarregada
+              </p>
             </Card>
 
-            <Card className="p-6 border-gray-300 bg-white">
-              <div className="flex items-start gap-4">
-                <X className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
-                <p className="text-lg font-medium text-gray-800">
-                  Oportunidades esfriam por falta de follow-up
-                </p>
+            <Card className="p-6 text-center border-gray-300 bg-white">
+              <div className="mb-3">
+                <X className="w-10 h-10 mx-auto text-red-500" />
               </div>
+              <p className="text-base font-medium text-red-500">
+                Leads aguardam horas ou dias por atendimento
+              </p>
             </Card>
 
-            <Card className="p-6 border-gray-300 bg-white">
-              <div className="flex items-start gap-4">
-                <X className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
-                <p className="text-lg font-medium text-gray-800">
-                  Equipe sobrecarregada com tarefas repetitivas
-                </p>
+            <Card className="p-6 text-center border-gray-300 bg-white">
+              <div className="mb-3">
+                <X className="w-10 h-10 mx-auto text-red-500" />
               </div>
+              <p className="text-base font-medium text-red-500">
+                Equipe não preenche o CRM
+              </p>
             </Card>
             
-            <Card className="p-6 border-gray-300 bg-white">
-              <div className="flex items-start gap-4">
-                <X className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
-                <p className="text-lg font-medium text-gray-800">
-                  CRM desatualizado e informações perdidas
-                </p>
+            <Card className="p-6 text-center border-gray-300 bg-white">
+              <div className="mb-3">
+                <X className="w-10 h-10 mx-auto text-red-500" />
               </div>
+              <p className="text-base font-medium text-red-500">
+                Falta tempo para o que realmente importa
+              </p>
             </Card>
             
-            <Card className="p-6 border-gray-300 bg-white">
-              <div className="flex items-start gap-4">
-                <X className="w-6 h-6 text-red-500 flex-shrink-0 mt-1" />
-                <p className="text-lg font-medium text-gray-800">
-                  Difícil escalar sem aumentar custo e contratar mais gente
-                </p>
+            <Card className="p-6 text-center border-gray-300 bg-white">
+              <div className="mb-3">
+                <X className="w-10 h-10 mx-auto text-red-500" />
               </div>
+              <p className="text-base font-medium text-red-500">
+                Impossível escalar com a estrutura atual
+              </p>
             </Card>
           </div>
           
