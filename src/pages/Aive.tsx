@@ -100,21 +100,23 @@ const AivePresentation = () => {
         </p>
         
         {/* Carrossel rotativo das funcionalidades */}
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          plugins={[
-            Autoplay({
-              delay: 2000,
-            }),
-          ]}
-          className="w-full max-w-6xl mx-auto"
-        >
-          <CarouselContent className="-ml-2 md:-ml-4">
-            {features.map((feature, index) => (
-              <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 2000,
+                stopOnInteraction: false,
+                stopOnMouseEnter: false,
+              }),
+            ]}
+            className="w-full max-w-6xl mx-auto"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {features.map((feature, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
                 <Card className="h-full hover:scale-105 transition-transform duration-200 border-primary/20 hover:border-primary/40 bg-gradient-to-br from-background to-primary/5">
                   <CardContent className="flex flex-col items-center justify-center p-6 h-full text-center space-y-3">
                     <div className="text-primary">
@@ -489,7 +491,7 @@ const Aive = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Aive + <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-12 md:h-14 mx-2" />, um ecossistema completo!
+              Aive + <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-12 md:h-14 mx-2" /> um ecossistema completo!
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
               Aive atua como cérebro. A Climb Up é o corpo que executa com estrutura e tecnologia. A Aive opera e faz todo trabalho repetitivo, seu time foca no que importa, e você espia e gerencia tudo em tempo real.
