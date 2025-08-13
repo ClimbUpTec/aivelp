@@ -498,145 +498,197 @@ const Aive = () => {
               Aive atua como cérebro. A Climb Up é o corpo que executa com estrutura e tecnologia. A Aive opera e faz todo trabalho repetitivo, seu time foca no que importa, e você espia e gerencia tudo em tempo real.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            {[
-              {
-                icon: <Users className="w-8 h-8" />,
-                title: "CRM inteligente", 
-                description: "Para Aive, você e seu time registrar e acompanhar negociações",
-                image: "/lovable-uploads/0372ad6c-da31-44c3-b412-db19d6252ca0.png",
-                caption: "Interface do CRM com gestão completa de leads e negociações"
-              },
-              {
-                icon: <Zap className="w-8 h-8" />,
-                title: "Campanhas em massa no WhatsApp",
-                description: "Para dobrar as vendas com remarketing estratégico",
-                image: "/lovable-uploads/2f44a1ee-3680-412b-8561-da78cea652a2.png",
-                caption: "Central de campanhas com disparo automatizado no WhatsApp"
-              },
-              {
-                icon: <TrendingUp className="w-8 h-8" />,
-                title: "Relatórios em tempo real",
-                description: "De atendimentos, de vendas ao tráfego, não perca nenhuma informação",
-                image: "/lovable-uploads/3ca28316-d1d1-4c3d-8066-a40e8a89e409.png",
-                caption: "Dashboard com métricas e relatórios detalhados em tempo real"
-              },
-              {
-                icon: <Shield className="w-8 h-8" />,
-                title: "Fila de atendimento e Rodízio de leads",
-                description: "Distribui e organizada automaticamente",
-                image: "/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png",
-                caption: "Sistema inteligente de distribuição e gerenciamento de filas"
-              },
-              {
-                icon: <Bot className="w-8 h-8" />,
-                title: "Gerenciamento de pagamentos",
-                description: "PIX, boleto, cartão de crédito direto na conversa",
-                image: "/lovable-uploads/671ce0d1-2127-4a4a-b6aa-63942b30965c.png",
-                caption: "Gateway de pagamentos integrado com múltiplas opções"
-              },
-              {
-                icon: <Clock className="w-8 h-8" />,
-                title: "Integrações nativas",
-                description: "Webhook, API, N8N, Make, etc.",
-                image: "/lovable-uploads/84467682-d5ad-4c9c-a68c-95c2ae6da1cd.png",
-                caption: "Central de integrações com APIs e automações"
-              },
-              {
-                icon: <TrendingUp className="w-8 h-8" />,
-                title: "Rastreamento dos Leads",
-                description: "Facebook Ads, Google Ads, Click-to-WhatsApp",
-                image: "/lovable-uploads/8b2b5876-b729-4bee-9757-56e04899be2d.png",
-                caption: "Rastreamento completo da origem até conversão dos leads"
-              },
-              {
-                icon: <Target className="w-8 h-8" />,
-                title: "Distribuição automática de conversas",
-                description: "Para o time humano complementar a IA",
-                image: "/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png",
-                caption: "Sistema de roteamento inteligente de conversas"
-              },
-              {
-                icon: <Settings className="w-8 h-8" />,
-                title: "Espie as conversas sem notificar o cliente",
-                description: "E intervenha se necessário",
-                image: "/lovable-uploads/993d177c-77dd-4ff6-8175-06d7eb568c64.png",
-                caption: "Monitoramento discreto com possibilidade de intervenção"
-              },
-              {
-                icon: <MessageSquare className="w-8 h-8" />,
-                title: "Central de atendimento",
-                description: "Múltiplos canais → Aive → Equipes",
-                image: "/lovable-uploads/9ea355fc-e40f-41f6-83f7-a490d2c881b7.png",
-                caption: "Hub centralizado para gestão de todos os canais"
-              },
-              {
-                icon: <Wrench className="w-8 h-8" />,
-                title: "Chat interno",
-                description: "Para vendedores e setores",
-                image: "/lovable-uploads/a21a868d-5fdc-4b78-a400-3e64f8cc67d5.png",
-                caption: "Comunicação interna entre equipes e departamentos"
-              },
-              {
-                icon: <MessageSquare className="w-8 h-8" />,
-                title: "Chatbot + IA",
-                description: "Fluxogramas completos",
-                image: "/lovable-uploads/a886ce68-444c-48dc-b4ce-dc29c234dc87.png",
-                caption: "Constructor de fluxos inteligentes para atendimento automatizado"
-              }
-            ].map((feature, index) => (
-              <Card 
-                key={index} 
-                className="text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer hover:border-primary/40"
-                onMouseEnter={() => setActiveFeatureImage(index)}
-              >
-                <CardContent className="p-6">
-                  <div className="text-primary mb-4 flex justify-center">{feature.icon}</div>
-                  <h3 className="font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-sm text-muted-foreground">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          {/* Layout flexível para cards + preview lado a lado */}
+          <div className="lg:flex lg:gap-8 lg:items-start">
+            {/* Cards compactos */}
+            <div className="lg:w-1/2">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-3 mb-6 lg:mb-0">
+                {[
+                  {
+                    icon: <Users className="w-6 h-6" />,
+                    title: "CRM inteligente", 
+                    description: "Para Aive, você e seu time registrar e acompanhar negociações",
+                    image: "/lovable-uploads/0372ad6c-da31-44c3-b412-db19d6252ca0.png",
+                    caption: "CRM inteligente para gestão completa de leads e negociações. A Aive registra automaticamente todas as interações e seu time pode acompanhar o progresso em tempo real."
+                  },
+                  {
+                    icon: <Zap className="w-6 h-6" />,
+                    title: "Campanhas WhatsApp",
+                    description: "Para dobrar as vendas com remarketing estratégico",
+                    image: "/lovable-uploads/2f44a1ee-3680-412b-8561-da78cea652a2.png",
+                    caption: "Central de campanhas com disparo automatizado no WhatsApp. Crie sequências de remarketing que dobram suas vendas com mensagens personalizadas."
+                  },
+                  {
+                    icon: <TrendingUp className="w-6 h-6" />,
+                    title: "Relatórios",
+                    description: "De atendimentos, de vendas ao tráfego, não perca nenhuma informação",
+                    image: "/lovable-uploads/3ca28316-d1d1-4c3d-8066-a40e8a89e409.png",
+                    caption: "Dashboard com métricas e relatórios detalhados em tempo real. Acompanhe vendas, atendimentos, tráfego e performance da sua equipe."
+                  },
+                  {
+                    icon: <Shield className="w-6 h-6" />,
+                    title: "Fila inteligente",
+                    description: "Distribui e organizada automaticamente",
+                    image: "/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png",
+                    caption: "Sistema inteligente de distribuição e gerenciamento de filas. A Aive organiza automaticamente a fila de atendimento e distribui leads por performance."
+                  },
+                  {
+                    icon: <Bot className="w-6 h-6" />,
+                    title: "Pagamentos",
+                    description: "PIX, boleto, cartão de crédito direto na conversa",
+                    image: "/lovable-uploads/671ce0d1-2127-4a4a-b6aa-63942b30965c.png",
+                    caption: "Gateway de pagamentos integrado com múltiplas opções. Receba pagamentos via PIX, boleto e cartão diretamente na conversa do WhatsApp."
+                  },
+                  {
+                    icon: <Clock className="w-6 h-6" />,
+                    title: "Integrações",
+                    description: "Webhook, API, N8N, Make, etc.",
+                    image: "/lovable-uploads/84467682-d5ad-4c9c-a68c-95c2ae6da1cd.png",
+                    caption: "Central de integrações com APIs e automações. Conecte com N8N, Make, Zapier e centenas de outras ferramentas via webhook."
+                  },
+                  {
+                    icon: <TrendingUp className="w-6 h-6" />,
+                    title: "Rastreamento",
+                    description: "Facebook Ads, Google Ads, Click-to-WhatsApp",
+                    image: "/lovable-uploads/8b2b5876-b729-4bee-9757-56e04899be2d.png",
+                    caption: "Rastreamento completo da origem até conversão dos leads. Veja quais anúncios geram mais vendas com UTMs automáticos."
+                  },
+                  {
+                    icon: <Target className="w-6 h-6" />,
+                    title: "Distribuição auto",
+                    description: "Para o time humano complementar a IA",
+                    image: "/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png",
+                    caption: "Sistema de roteamento inteligente de conversas. A Aive decide quando transferir para humanos e qual vendedor recebe cada lead."
+                  },
+                  {
+                    icon: <Settings className="w-6 h-6" />,
+                    title: "Espionagem",
+                    description: "E intervenha se necessário",
+                    image: "/lovable-uploads/993d177c-77dd-4ff6-8175-06d7eb568c64.png",
+                    caption: "Monitoramento discreto com possibilidade de intervenção. Acompanhe conversas em tempo real sem que o cliente saiba e intervenha quando necessário."
+                  },
+                  {
+                    icon: <MessageSquare className="w-6 h-6" />,
+                    title: "Central",
+                    description: "Múltiplos canais → Aive → Equipes",
+                    image: "/lovable-uploads/9ea355fc-e40f-41f6-83f7-a490d2c881b7.png",
+                    caption: "Hub centralizado para gestão de todos os canais. Instagram, Facebook, site, landing pages - tudo converge para um só lugar."
+                  },
+                  {
+                    icon: <Wrench className="w-6 h-6" />,
+                    title: "Chat interno",
+                    description: "Para vendedores e setores",
+                    image: "/lovable-uploads/a21a868d-5fdc-4b78-a400-3e64f8cc67d5.png",
+                    caption: "Comunicação interna entre equipes e departamentos. Mantenha toda a equipe alinhada com chat interno integrado à plataforma."
+                  },
+                  {
+                    icon: <MessageSquare className="w-6 h-6" />,
+                    title: "Chatbot + IA",
+                    description: "Fluxogramas completos",
+                    image: "/lovable-uploads/a886ce68-444c-48dc-b4ce-dc29c234dc87.png",
+                    caption: "Constructor de fluxos inteligentes para atendimento automatizado. Crie chatbots avançados que se comportam como vendedores experientes."
+                  }
+                ].map((feature, index) => (
+                  <Card 
+                    key={index} 
+                    className={`text-center transition-all duration-300 cursor-pointer p-3 ${
+                      activeFeatureImage === index 
+                        ? 'ring-2 ring-primary bg-primary/5 scale-105' 
+                        : 'hover:shadow-md hover:scale-102'
+                    }`}
+                    onMouseEnter={() => setActiveFeatureImage(index)}
+                  >
+                    <CardContent className="p-3">
+                      <div className="text-primary mb-2 flex justify-center">{feature.icon}</div>
+                      <h3 className="font-semibold text-sm leading-tight">{feature.title}</h3>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
 
-          {/* Preview de Imagem */}
-          <div className="bg-background rounded-lg border p-6 mb-8">
-            <div className="relative overflow-hidden rounded-lg">
-              <img 
-                src={[
-                  { image: "/lovable-uploads/0372ad6c-da31-44c3-b412-db19d6252ca0.png", caption: "Interface do CRM com gestão completa de leads e negociações" },
-                  { image: "/lovable-uploads/2f44a1ee-3680-412b-8561-da78cea652a2.png", caption: "Central de campanhas com disparo automatizado no WhatsApp" },
-                  { image: "/lovable-uploads/3ca28316-d1d1-4c3d-8066-a40e8a89e409.png", caption: "Dashboard com métricas e relatórios detalhados em tempo real" },
-                  { image: "/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png", caption: "Sistema inteligente de distribuição e gerenciamento de filas" },
-                  { image: "/lovable-uploads/671ce0d1-2127-4a4a-b6aa-63942b30965c.png", caption: "Gateway de pagamentos integrado com múltiplas opções" },
-                  { image: "/lovable-uploads/84467682-d5ad-4c9c-a68c-95c2ae6da1cd.png", caption: "Central de integrações com APIs e automações" },
-                  { image: "/lovable-uploads/8b2b5876-b729-4bee-9757-56e04899be2d.png", caption: "Rastreamento completo da origem até conversão dos leads" },
-                  { image: "/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png", caption: "Sistema de roteamento inteligente de conversas" },
-                  { image: "/lovable-uploads/993d177c-77dd-4ff6-8175-06d7eb568c64.png", caption: "Monitoramento discreto com possibilidade de intervenção" },
-                  { image: "/lovable-uploads/9ea355fc-e40f-41f6-83f7-a490d2c881b7.png", caption: "Hub centralizado para gestão de todos os canais" },
-                  { image: "/lovable-uploads/a21a868d-5fdc-4b78-a400-3e64f8cc67d5.png", caption: "Comunicação interna entre equipes e departamentos" },
-                  { image: "/lovable-uploads/a886ce68-444c-48dc-b4ce-dc29c234dc87.png", caption: "Constructor de fluxos inteligentes para atendimento automatizado" }
-                ][activeFeatureImage].image}
-                alt="Preview da plataforma"
-                className="w-full h-96 object-cover rounded-lg transition-all duration-500 animate-fade-in"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-                <p className="text-white text-sm font-medium animate-fade-in">
-                  {[
-                    { image: "/lovable-uploads/0372ad6c-da31-44c3-b412-db19d6252ca0.png", caption: "Interface do CRM com gestão completa de leads e negociações" },
-                    { image: "/lovable-uploads/2f44a1ee-3680-412b-8561-da78cea652a2.png", caption: "Central de campanhas com disparo automatizado no WhatsApp" },
-                    { image: "/lovable-uploads/3ca28316-d1d1-4c3d-8066-a40e8a89e409.png", caption: "Dashboard com métricas e relatórios detalhados em tempo real" },
-                    { image: "/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png", caption: "Sistema inteligente de distribuição e gerenciamento de filas" },
-                    { image: "/lovable-uploads/671ce0d1-2127-4a4a-b6aa-63942b30965c.png", caption: "Gateway de pagamentos integrado com múltiplas opções" },
-                    { image: "/lovable-uploads/84467682-d5ad-4c9c-a68c-95c2ae6da1cd.png", caption: "Central de integrações com APIs e automações" },
-                    { image: "/lovable-uploads/8b2b5876-b729-4bee-9757-56e04899be2d.png", caption: "Rastreamento completo da origem até conversão dos leads" },
-                    { image: "/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png", caption: "Sistema de roteamento inteligente de conversas" },
-                    { image: "/lovable-uploads/993d177c-77dd-4ff6-8175-06d7eb568c64.png", caption: "Monitoramento discreto com possibilidade de intervenção" },
-                    { image: "/lovable-uploads/9ea355fc-e40f-41f6-83f7-a490d2c881b7.png", caption: "Hub centralizado para gestão de todos os canais" },
-                    { image: "/lovable-uploads/a21a868d-5fdc-4b78-a400-3e64f8cc67d5.png", caption: "Comunicação interna entre equipes e departamentos" },
-                    { image: "/lovable-uploads/a886ce68-444c-48dc-b4ce-dc29c234dc87.png", caption: "Constructor de fluxos inteligentes para atendimento automatizado" }
-                  ][activeFeatureImage].caption}
-                </p>
+            {/* Preview de Imagem - fixo no lado direito */}
+            <div className="lg:w-1/2 lg:sticky lg:top-8">
+              <div className="bg-background rounded-lg border overflow-hidden">
+                <div className="relative">
+                  <img 
+                    src={[
+                      { image: "/lovable-uploads/0372ad6c-da31-44c3-b412-db19d6252ca0.png", caption: "CRM inteligente para gestão completa de leads e negociações. A Aive registra automaticamente todas as interações e seu time pode acompanhar o progresso em tempo real." },
+                      { image: "/lovable-uploads/2f44a1ee-3680-412b-8561-da78cea652a2.png", caption: "Central de campanhas com disparo automatizado no WhatsApp. Crie sequências de remarketing que dobram suas vendas com mensagens personalizadas." },
+                      { image: "/lovable-uploads/3ca28316-d1d1-4c3d-8066-a40e8a89e409.png", caption: "Dashboard com métricas e relatórios detalhados em tempo real. Acompanhe vendas, atendimentos, tráfego e performance da sua equipe." },
+                      { image: "/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png", caption: "Sistema inteligente de distribuição e gerenciamento de filas. A Aive organiza automaticamente a fila de atendimento e distribui leads por performance." },
+                      { image: "/lovable-uploads/671ce0d1-2127-4a4a-b6aa-63942b30965c.png", caption: "Gateway de pagamentos integrado com múltiplas opções. Receba pagamentos via PIX, boleto e cartão diretamente na conversa do WhatsApp." },
+                      { image: "/lovable-uploads/84467682-d5ad-4c9c-a68c-95c2ae6da1cd.png", caption: "Central de integrações com APIs e automações. Conecte com N8N, Make, Zapier e centenas de outras ferramentas via webhook." },
+                      { image: "/lovable-uploads/8b2b5876-b729-4bee-9757-56e04899be2d.png", caption: "Rastreamento completo da origem até conversão dos leads. Veja quais anúncios geram mais vendas com UTMs automáticos." },
+                      { image: "/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png", caption: "Sistema de roteamento inteligente de conversas. A Aive decide quando transferir para humanos e qual vendedor recebe cada lead." },
+                      { image: "/lovable-uploads/993d177c-77dd-4ff6-8175-06d7eb568c64.png", caption: "Monitoramento discreto com possibilidade de intervenção. Acompanhe conversas em tempo real sem que o cliente saiba e intervenha quando necessário." },
+                      { image: "/lovable-uploads/9ea355fc-e40f-41f6-83f7-a490d2c881b7.png", caption: "Hub centralizado para gestão de todos os canais. Instagram, Facebook, site, landing pages - tudo converge para um só lugar." },
+                      { image: "/lovable-uploads/a21a868d-5fdc-4b78-a400-3e64f8cc67d5.png", caption: "Comunicação interna entre equipes e departamentos. Mantenha toda a equipe alinhada com chat interno integrado à plataforma." },
+                      { image: "/lovable-uploads/a886ce68-444c-48dc-b4ce-dc29c234dc87.png", caption: "Constructor de fluxos inteligentes para atendimento automatizado. Crie chatbots avançados que se comportam como vendedores experientes." }
+                    ][activeFeatureImage].image}
+                    alt="Preview da plataforma"
+                    className="w-full h-80 lg:h-96 object-cover transition-all duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <div className="flex items-start gap-3 mb-3">
+                      <div className="p-2 bg-white/20 rounded-lg backdrop-blur-sm">
+                        {[
+                          <Users className="w-5 h-5 text-white" />,
+                          <Zap className="w-5 h-5 text-white" />,
+                          <TrendingUp className="w-5 h-5 text-white" />,
+                          <Shield className="w-5 h-5 text-white" />,
+                          <Bot className="w-5 h-5 text-white" />,
+                          <Clock className="w-5 h-5 text-white" />,
+                          <TrendingUp className="w-5 h-5 text-white" />,
+                          <Target className="w-5 h-5 text-white" />,
+                          <Settings className="w-5 h-5 text-white" />,
+                          <MessageSquare className="w-5 h-5 text-white" />,
+                          <Wrench className="w-5 h-5 text-white" />,
+                          <MessageSquare className="w-5 h-5 text-white" />
+                        ][activeFeatureImage]}
+                      </div>
+                      <div>
+                        <h4 className="text-white font-semibold mb-1 text-lg">
+                          {[
+                            "CRM inteligente", "Campanhas WhatsApp", "Relatórios", "Fila inteligente", 
+                            "Pagamentos", "Integrações", "Rastreamento", "Distribuição auto", 
+                            "Espionagem", "Central", "Chat interno", "Chatbot + IA"
+                          ][activeFeatureImage]}
+                        </h4>
+                        <p className="text-white/90 text-sm leading-relaxed">
+                          {[
+                            { caption: "CRM inteligente para gestão completa de leads e negociações. A Aive registra automaticamente todas as interações e seu time pode acompanhar o progresso em tempo real." },
+                            { caption: "Central de campanhas com disparo automatizado no WhatsApp. Crie sequências de remarketing que dobram suas vendas com mensagens personalizadas." },
+                            { caption: "Dashboard com métricas e relatórios detalhados em tempo real. Acompanhe vendas, atendimentos, tráfego e performance da sua equipe." },
+                            { caption: "Sistema inteligente de distribuição e gerenciamento de filas. A Aive organiza automaticamente a fila de atendimento e distribui leads por performance." },
+                            { caption: "Gateway de pagamentos integrado com múltiplas opções. Receba pagamentos via PIX, boleto e cartão diretamente na conversa do WhatsApp." },
+                            { caption: "Central de integrações com APIs e automações. Conecte com N8N, Make, Zapier e centenas de outras ferramentas via webhook." },
+                            { caption: "Rastreamento completo da origem até conversão dos leads. Veja quais anúncios geram mais vendas com UTMs automáticos." },
+                            { caption: "Sistema de roteamento inteligente de conversas. A Aive decide quando transferir para humanos e qual vendedor recebe cada lead." },
+                            { caption: "Monitoramento discreto com possibilidade de intervenção. Acompanhe conversas em tempo real sem que o cliente saiba e intervenha quando necessário." },
+                            { caption: "Hub centralizado para gestão de todos os canais. Instagram, Facebook, site, landing pages - tudo converge para um só lugar." },
+                            { caption: "Comunicação interna entre equipes e departamentos. Mantenha toda a equipe alinhada com chat interno integrado à plataforma." },
+                            { caption: "Constructor de fluxos inteligentes para atendimento automatizado. Crie chatbots avançados que se comportam como vendedores experientes." }
+                          ][activeFeatureImage].caption}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2 text-white/80 text-xs">
+                      <span>Passe o mouse nos cards para explorar cada funcionalidade</span>
+                      <div className="flex gap-1">
+                        {Array.from({ length: 12 }).map((_, i) => (
+                          <div 
+                            key={i} 
+                            className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                              i === activeFeatureImage ? 'bg-white' : 'bg-white/40'
+                            }`} 
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
