@@ -507,35 +507,35 @@ const Aive = () => {
                   {
                     icon: <Users className="w-6 h-6" />,
                     title: "CRM inteligente", 
-                    description: "Para Aive, você e seu time registrar e acompanhar negociações",
-                    image: "/lovable-uploads/af21349b-4933-447c-9920-ad0890a5ea5a.png",
+                    description: "Gestão completa de leads e negociações. Aive cria cards, insere resumos e seu time acompanha.",
+                    image: "/lovable-uploads/6361e043-4c72-40d0-80b6-7d7f425f8671.png",
                     caption: "CRM inteligente para gestão completa de leads e negociações. A Aive registra automaticamente todas as interações e seu time pode acompanhar o progresso em tempo real."
                   },
                   {
                     icon: <Zap className="w-6 h-6" />,
-                    title: "Campanhas WhatsApp",
-                    description: "Para dobrar as vendas com remarketing estratégico",
+                    title: "Campanhas de WhatsApp",
+                    description: "Envie mensagens em massa no WhatsApp e dobre suas vendas com remarketing.",
                     image: "/lovable-uploads/50e9a1cf-c58f-4127-b5fb-9d81d5c248f0.png",
                     caption: "Central de campanhas com disparo automatizado no WhatsApp. Crie sequências de remarketing que dobram suas vendas com mensagens personalizadas."
                   },
                   {
                     icon: <TrendingUp className="w-6 h-6" />,
                     title: "Relatórios",
-                    description: "De atendimentos, de vendas ao tráfego, não perca nenhuma informação",
+                    description: "Dashboard e relatórios em tempo real.",
                     image: "/lovable-uploads/972cb601-6a8d-4742-b3fa-fa5d20aa7eb4.png",
                     caption: "Dashboard com métricas e relatórios detalhados em tempo real. Acompanhe vendas, atendimentos, tráfego e performance da sua equipe."
                   },
                   {
                     icon: <Shield className="w-6 h-6" />,
-                    title: "Fila inteligente",
-                    description: "Distribui e organizada automaticamente",
-                    image: "/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png",
+                    title: "Classificação de atendimento",
+                    description: "Acompanhe leads perdidos e ganhos e classifique o atendimento dos seus atendentes.",
+                    image: "/lovable-uploads/6361e043-4c72-40d0-80b6-7d7f425f8671.png",
                     caption: "Sistema inteligente de distribuição e gerenciamento de filas. A Aive organiza automaticamente a fila de atendimento e distribui leads por performance."
                   },
                   {
                     icon: <Bot className="w-6 h-6" />,
                     title: "Pagamentos",
-                    description: "PIX, boleto, cartão de crédito direto na conversa",
+                    description: "Gateway de pagamentos integrado, seu time e a Aive enviam cobranças em segundos.",
                     image: "/lovable-uploads/7e61337c-3bae-4698-b5f8-cccf7a7bef5b.png",
                     caption: "Gateway de pagamentos integrado com múltiplas opções. Receba pagamentos via PIX, boleto e cartão diretamente na conversa do WhatsApp."
                   },
@@ -548,30 +548,30 @@ const Aive = () => {
                   },
                   {
                     icon: <TrendingUp className="w-6 h-6" />,
-                    title: "Rastreamento",
-                    description: "Facebook Ads, Google Ads, Click-to-WhatsApp",
-                    image: "/lovable-uploads/8b2b5876-b729-4bee-9757-56e04899be2d.png",
+                    title: "Rastreio e origem de leads",
+                    description: "Monitore a origem dos seus leads e acompanhe todo o funil de vendas em tempo real.",
+                    image: "/lovable-uploads/9724fece-24f8-49d4-8108-d61dd0c1a8ef.png",
                     caption: "Rastreamento completo da origem até conversão dos leads. Veja quais anúncios geram mais vendas com UTMs automáticos."
                   },
                   {
                     icon: <Target className="w-6 h-6" />,
-                    title: "Distribuição auto",
-                    description: "Para o time humano complementar a IA",
-                    image: "/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png",
+                    title: "Rodízio de leads",
+                    description: "Distribuição automática e inteligente de leads para otimizar o atendimento da equipe.",
+                    image: "/lovable-uploads/a21a868d-5fdc-4b78-a400-3e64f8cc67d5.png",
                     caption: "Sistema de roteamento inteligente de conversas. A Aive decide quando transferir para humanos e qual vendedor recebe cada lead."
                   },
                   {
                     icon: <Settings className="w-6 h-6" />,
-                    title: "Espionagem",
-                    description: "E intervenha se necessário",
-                    image: "/lovable-uploads/993d177c-77dd-4ff6-8175-06d7eb568c64.png",
+                    title: "Supervisão de conversas",
+                    description: "Monitore conversas e analise o desempenho da equipe para melhorar resultados.",
+                    image: "/lovable-uploads/84d9488c-548b-445d-9ab9-bba59a95a486.png",
                     caption: "Monitoramento discreto com possibilidade de intervenção. Acompanhe conversas em tempo real sem que o cliente saiba e intervenha quando necessário."
                   },
                   {
                     icon: <MessageSquare className="w-6 h-6" />,
-                    title: "Central",
-                    description: "Múltiplos canais → Aive → Equipes",
-                    image: "/lovable-uploads/9724fece-24f8-49d4-8108-d61dd0c1a8ef.png",
+                    title: "Central de canais",
+                    description: "Hub centralizado para gestão de conversas de múltiplos canais. Instagram, Facebook, site, landing pages, tudo em um só lugar.",
+                    image: "/lovable-uploads/3abc9e6d-2999-4c23-be09-39fd2db3c44d.png",
                     caption: "Hub centralizado para gestão de todos os canais. Instagram, Facebook, site, landing pages - tudo converge para um só lugar."
                   },
                   {
@@ -613,16 +613,16 @@ const Aive = () => {
                 <div className="relative">
                   <img 
                     src={[
-                      { image: "/lovable-uploads/af21349b-4933-447c-9920-ad0890a5ea5a.png", caption: "CRM inteligente para gestão completa de leads e negociações. A Aive registra automaticamente todas as interações e seu time pode acompanhar o progresso em tempo real." },
+                      { image: "/lovable-uploads/6361e043-4c72-40d0-80b6-7d7f425f8671.png", caption: "CRM inteligente para gestão completa de leads e negociações. A Aive registra automaticamente todas as interações e seu time pode acompanhar o progresso em tempo real." },
                       { image: "/lovable-uploads/50e9a1cf-c58f-4127-b5fb-9d81d5c248f0.png", caption: "Central de campanhas com disparo automatizado no WhatsApp. Crie sequências de remarketing que dobram suas vendas com mensagens personalizadas." },
                       { image: "/lovable-uploads/972cb601-6a8d-4742-b3fa-fa5d20aa7eb4.png", caption: "Dashboard com métricas e relatórios detalhados em tempo real. Acompanhe vendas, atendimentos, tráfego e performance da sua equipe." },
-                      { image: "/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png", caption: "Sistema inteligente de distribuição e gerenciamento de filas. A Aive organiza automaticamente a fila de atendimento e distribui leads por performance." },
+                      { image: "/lovable-uploads/6361e043-4c72-40d0-80b6-7d7f425f8671.png", caption: "Sistema inteligente de distribuição e gerenciamento de filas. A Aive organiza automaticamente a fila de atendimento e distribui leads por performance." },
                       { image: "/lovable-uploads/7e61337c-3bae-4698-b5f8-cccf7a7bef5b.png", caption: "Gateway de pagamentos integrado com múltiplas opções. Receba pagamentos via PIX, boleto e cartão diretamente na conversa do WhatsApp." },
                       { image: "/lovable-uploads/d89ad0ca-b2fa-4807-8ae8-57934c89fa30.png", caption: "Central de integrações com APIs e automações. Conecte com N8N, Make, Zapier e centenas de outras ferramentas via webhook." },
-                      { image: "/lovable-uploads/8b2b5876-b729-4bee-9757-56e04899be2d.png", caption: "Rastreamento completo da origem até conversão dos leads. Veja quais anúncios geram mais vendas com UTMs automáticos." },
-                      { image: "/lovable-uploads/95f8624b-2b01-419e-ab0c-a852e5ad4bc8.png", caption: "Sistema de roteamento inteligente de conversas. A Aive decide quando transferir para humanos e qual vendedor recebe cada lead." },
-                      { image: "/lovable-uploads/993d177c-77dd-4ff6-8175-06d7eb568c64.png", caption: "Monitoramento discreto com possibilidade de intervenção. Acompanhe conversas em tempo real sem que o cliente saiba e intervenha quando necessário." },
-                      { image: "/lovable-uploads/9724fece-24f8-49d4-8108-d61dd0c1a8ef.png", caption: "Hub centralizado para gestão de todos os canais. Instagram, Facebook, site, landing pages - tudo converge para um só lugar." },
+                      { image: "/lovable-uploads/9724fece-24f8-49d4-8108-d61dd0c1a8ef.png", caption: "Rastreamento completo da origem até conversão dos leads. Veja quais anúncios geram mais vendas com UTMs automáticos." },
+                      { image: "/lovable-uploads/a21a868d-5fdc-4b78-a400-3e64f8cc67d5.png", caption: "Sistema de roteamento inteligente de conversas. A Aive decide quando transferir para humanos e qual vendedor recebe cada lead." },
+                      { image: "/lovable-uploads/84d9488c-548b-445d-9ab9-bba59a95a486.png", caption: "Monitoramento discreto com possibilidade de intervenção. Acompanhe conversas em tempo real sem que o cliente saiba e intervenha quando necessário." },
+                      { image: "/lovable-uploads/3abc9e6d-2999-4c23-be09-39fd2db3c44d.png", caption: "Hub centralizado para gestão de todos os canais. Instagram, Facebook, site, landing pages - tudo converge para um só lugar." },
                       { image: "/lovable-uploads/a21a868d-5fdc-4b78-a400-3e64f8cc67d5.png", caption: "Comunicação interna entre equipes e departamentos. Mantenha toda a equipe alinhada com chat interno integrado à plataforma." },
                       { image: "/lovable-uploads/f5682651-46dd-45a7-b786-7cc33bd2e54f.png", caption: "Constructor de fluxos inteligentes para atendimento automatizado. Crie chatbots avançados que se comportam como vendedores experientes." }
                     ][activeFeatureImage].image}
