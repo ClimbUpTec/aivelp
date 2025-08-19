@@ -627,7 +627,7 @@ const Aive = () => {
                       { image: "/lovable-uploads/a886ce68-444c-48dc-b4ce-dc29c234dc87.png", caption: "Constructor de fluxos inteligentes para atendimento automatizado. Crie chatbots avançados que se comportam como vendedores experientes." }
                     ][activeFeatureImage].image}
                     alt="Preview da plataforma"
-                    className="w-full h-80 lg:h-96 object-cover transition-all duration-500"
+                    className="w-full aspect-[3/2] object-cover transition-all duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
