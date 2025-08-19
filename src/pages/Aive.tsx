@@ -508,7 +508,7 @@ const Aive = () => {
                     icon: <Users className="w-6 h-6" />,
                     title: "CRM inteligente", 
                     description: "Para Aive, você e seu time registrar e acompanhar negociações",
-                    image: "/lovable-uploads/0372ad6c-da31-44c3-b412-db19d6252ca0.png",
+                    image: "/lovable-uploads/f21c022f-5e0f-4195-90ca-41368693e09d.png",
                     caption: "CRM inteligente para gestão completa de leads e negociações. A Aive registra automaticamente todas as interações e seu time pode acompanhar o progresso em tempo real."
                   },
                   {
@@ -613,7 +613,7 @@ const Aive = () => {
                 <div className="relative">
                   <img 
                     src={[
-                      { image: "/lovable-uploads/0372ad6c-da31-44c3-b412-db19d6252ca0.png", caption: "CRM inteligente para gestão completa de leads e negociações. A Aive registra automaticamente todas as interações e seu time pode acompanhar o progresso em tempo real." },
+                      { image: "/lovable-uploads/f21c022f-5e0f-4195-90ca-41368693e09d.png", caption: "CRM inteligente para gestão completa de leads e negociações. A Aive registra automaticamente todas as interações e seu time pode acompanhar o progresso em tempo real." },
                       { image: "/lovable-uploads/2f44a1ee-3680-412b-8561-da78cea652a2.png", caption: "Central de campanhas com disparo automatizado no WhatsApp. Crie sequências de remarketing que dobram suas vendas com mensagens personalizadas." },
                       { image: "/lovable-uploads/3ca28316-d1d1-4c3d-8066-a40e8a89e409.png", caption: "Dashboard com métricas e relatórios detalhados em tempo real. Acompanhe vendas, atendimentos, tráfego e performance da sua equipe." },
                       { image: "/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png", caption: "Sistema inteligente de distribuição e gerenciamento de filas. A Aive organiza automaticamente a fila de atendimento e distribui leads por performance." },
