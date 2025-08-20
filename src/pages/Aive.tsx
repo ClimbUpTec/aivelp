@@ -532,12 +532,6 @@ const Aive = () => {
                   className="w-full h-48 sm:h-64 object-cover"
                   lazy={false}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                  <p className="text-sm leading-relaxed">
-                    {section5Data[activeFeatureImage].caption}
-                  </p>
-                </div>
               </div>
             </div>
           </div>
@@ -579,35 +573,6 @@ const Aive = () => {
                     className="w-full aspect-[3/2] object-cover transition-all duration-500"
                     lazy={false}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className="p-2 bg-white/20 rounded-lg backdrop-blur-sm">
-                        {React.createElement(section5Data[activeFeatureImage].icon, { className: "w-5 h-5 text-white" })}
-                      </div>
-                      <div>
-                        <h4 className="text-white font-semibold mb-1 text-lg">
-                          {section5Data[activeFeatureImage].title}
-                        </h4>
-                        <p className="text-white/90 text-sm leading-relaxed">
-                          {section5Data[activeFeatureImage].caption}
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2 text-white/80 text-xs">
-                      <span>Passe o mouse nos cards para explorar cada funcionalidade</span>
-                      <div className="flex gap-1">
-                        {Array.from({ length: 12 }).map((_, i) => (
-                          <div 
-                            key={i} 
-                            className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
-                              i === activeFeatureImage ? 'bg-white' : 'bg-white/40'
-                            }`} 
-                          />
-                        ))}
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
