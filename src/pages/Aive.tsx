@@ -295,7 +295,6 @@ const FloatingWhatsAppButton = () => (
 const Aive = () => {
   const [showAllFAQs, setShowAllFAQs] = useState(false);
   const [activeFeatureImage, setActiveFeatureImage] = useState(0);
-  const [expandedCard, setExpandedCard] = useState<number | null>(null);
   
   return (
     <div className="min-h-screen bg-background">
@@ -521,11 +520,56 @@ const Aive = () => {
               Aive atua como cérebro. A Climb Up é o corpo que executa com estrutura e tecnologia. A Aive opera e faz todo trabalho repetitivo, seu time foca no que importa, e você espia e gerencia tudo em tempo real.
             </p>
           </div>
+          {/* Layout Mobile: Imagem de preview no topo */}
+          <div className="lg:hidden mb-8">
+            <div className="bg-background rounded-lg border overflow-hidden">
+              <div className="relative">
+                <img 
+                  src={[
+                    { image: "/lovable-uploads/f10c12b6-1a01-487b-88f8-e6b1c30e1941.png", caption: "CRM inteligente para gestão completa de leads e negociações. A Aive registra automaticamente todas as interações e seu time pode acompanhar o progresso em tempo real." },
+                    { image: "/lovable-uploads/0c847d1b-8787-4f10-aae4-7bb67117fae3.png", caption: "Central de campanhas com disparo automatizado no WhatsApp. Crie sequências de remarketing que dobram suas vendas com mensagens personalizadas." },
+                    { image: "/lovable-uploads/f628eb48-9315-4fc3-ad1c-412847c61c61.png", caption: "Dashboard com métricas e relatórios detalhados em tempo real. Acompanhe vendas, atendimentos, tráfego e performance da sua equipe." },
+                    { image: "/lovable-uploads/911dad1e-3ff7-48fb-a9c5-8fdff80a304e.png", caption: "Sistema inteligente de distribuição e gerenciamento de filas. A Aive organiza automaticamente a fila de atendimento e distribui leads por performance." },
+                    { image: "/lovable-uploads/4402870c-0f51-4600-ab30-3abcd0d03785.png", caption: "Gateway de pagamentos integrado com múltiplas opções. Receba pagamentos via PIX, boleto e cartão diretamente na conversa do WhatsApp." },
+                    { image: "/lovable-uploads/b7f16fc9-f943-40df-af70-f14a763bcded.png", caption: "Central de integrações com APIs e automações. Conecte com N8N, Make, Zapier e centenas de outras ferramentas via webhook." },
+                    { image: "/lovable-uploads/2a71d4de-aeeb-4ccf-9070-95e78eb81302.png", caption: "Rastreamento completo da origem até conversão dos leads. Veja quais anúncios geram mais vendas com UTMs automáticos." },
+                    { image: "/lovable-uploads/738ab304-808b-4dbd-bbdd-599f5c254d41.png", caption: "Sistema de roteamento inteligente de conversas. A Aive decide quando transferir para humanos e qual vendedor recebe cada lead." },
+                    { image: "/lovable-uploads/c13d29cd-53f0-4dca-941b-616e635fd4ae.png", caption: "Monitoramento discreto com possibilidade de intervenção. Acompanhe conversas em tempo real sem que o cliente saiba e intervenha quando necessário." },
+                    { image: "/lovable-uploads/51537a49-0b17-4dda-9d92-0d635bfa4ff9.png", caption: "Hub centralizado para gestão de todos os canais. Instagram, Facebook, site, landing pages - tudo converge para um só lugar." },
+                    { image: "/lovable-uploads/e5072db9-aa15-4223-a95f-cfdc99bc9aef.png", caption: "Comunicação interna entre equipes e departamentos. Mantenha toda a equipe alinhada com chat interno integrado à plataforma." },
+                    { image: "/lovable-uploads/f1e16003-7074-4b51-a143-f8ae2c1673b7.png", caption: "Constructor de fluxos inteligentes para atendimento automatizado. Crie chatbots avançados que se comportam como vendedores experientes." }
+                  ][activeFeatureImage].image}
+                  alt="Preview da funcionalidade"
+                  className="w-full h-48 sm:h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                  <p className="text-sm leading-relaxed">
+                    {[
+                      { caption: "CRM inteligente para gestão completa de leads e negociações. A Aive registra automaticamente todas as interações e seu time pode acompanhar o progresso em tempo real." },
+                      { caption: "Central de campanhas com disparo automatizado no WhatsApp. Crie sequências de remarketing que dobram suas vendas com mensagens personalizadas." },
+                      { caption: "Dashboard com métricas e relatórios detalhados em tempo real. Acompanhe vendas, atendimentos, tráfego e performance da sua equipe." },
+                      { caption: "Sistema inteligente de distribuição e gerenciamento de filas. A Aive organiza automaticamente a fila de atendimento e distribui leads por performance." },
+                      { caption: "Gateway de pagamentos integrado com múltiplas opções. Receba pagamentos via PIX, boleto e cartão diretamente na conversa do WhatsApp." },
+                      { caption: "Central de integrações com APIs e automações. Conecte com N8N, Make, Zapier e centenas de outras ferramentas via webhook." },
+                      { caption: "Rastreamento completo da origem até conversão dos leads. Veja quais anúncios geram mais vendas com UTMs automáticos." },
+                      { caption: "Sistema de roteamento inteligente de conversas. A Aive decide quando transferir para humanos e qual vendedor recebe cada lead." },
+                      { caption: "Monitoramento discreto com possibilidade de intervenção. Acompanhe conversas em tempo real sem que o cliente saiba e intervenha quando necessário." },
+                      { caption: "Hub centralizado para gestão de todos os canais. Instagram, Facebook, site, landing pages - tudo converge para um só lugar." },
+                      { caption: "Comunicação interna entre equipes e departamentos. Mantenha toda a equipe alinhada com chat interno integrado à plataforma." },
+                      { caption: "Constructor de fluxos inteligentes para atendimento automatizado. Crie chatbots avançados que se comportam como vendedores experientes." }
+                    ][activeFeatureImage].caption}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Layout Desktop: Cards + preview lado a lado */}
           <div className="lg:flex lg:gap-8 lg:items-start">
             {/* Cards compactos */}
             <div className="lg:w-1/2">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-3 mb-6 lg:mb-0">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-3 mb-6 lg:mb-0">
                 {[
                   {
                     icon: <Users className="w-6 h-6" />,
@@ -612,53 +656,21 @@ const Aive = () => {
                     caption: "Constructor de fluxos inteligentes para atendimento automatizado. Crie chatbots avançados que se comportam como vendedores experientes."
                   }
                 ].map((feature, index) => (
-                  <div key={index} className="space-y-3">
-                    <Card 
-                      className={`text-center transition-all duration-300 cursor-pointer p-3 ${
-                        activeFeatureImage === index 
-                          ? 'ring-2 ring-primary bg-primary/5 scale-105' 
-                          : 'hover:shadow-md hover:scale-102'
-                      } ${expandedCard === index ? 'lg:ring-2 lg:ring-primary lg:bg-primary/5' : ''}`}
-                      onMouseEnter={() => setActiveFeatureImage(index)}
-                      onClick={() => {
-                        // Para mobile: alterna expansão do card
-                        if (window.innerWidth < 1024) {
-                          setExpandedCard(expandedCard === index ? null : index);
-                        }
-                        // Para desktop: apenas muda a imagem do preview
-                        setActiveFeatureImage(index);
-                      }}
-                    >
-                      <CardContent className="p-3">
-                        <div className="text-primary mb-2 flex justify-center">{feature.icon}</div>
-                        <h3 className="font-semibold text-sm leading-tight">{feature.title}</h3>
-                        {/* Mostrar descrição no desktop sempre, no mobile apenas quando expandido */}
-                        <p className="text-xs text-muted-foreground mt-2 hidden lg:block">
-                          {feature.description}
-                        </p>
-                      </CardContent>
-                    </Card>
-                    
-                    {/* Imagem expandida no mobile */}
-                    {expandedCard === index && (
-                      <div className="lg:hidden overflow-hidden rounded-lg border bg-background">
-                        <div className="relative">
-                          <img 
-                            src={feature.image}
-                            alt={feature.title}
-                            className="w-full h-48 object-cover"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
-                          <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                            <h4 className="font-semibold mb-1">{feature.title}</h4>
-                            <p className="text-sm leading-relaxed opacity-90">
-                              {feature.caption}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                  </div>
+                  <Card 
+                    key={index} 
+                    className={`text-center transition-all duration-300 cursor-pointer p-3 ${
+                      activeFeatureImage === index 
+                        ? 'ring-2 ring-primary bg-primary/5 scale-105' 
+                        : 'hover:shadow-md hover:scale-102'
+                    }`}
+                    onMouseEnter={() => setActiveFeatureImage(index)}
+                    onClick={() => setActiveFeatureImage(index)}
+                  >
+                    <CardContent className="p-3">
+                      <div className="text-primary mb-2 flex justify-center">{feature.icon}</div>
+                      <h3 className="font-semibold text-sm leading-tight">{feature.title}</h3>
+                    </CardContent>
+                  </Card>
                 ))}
               </div>
             </div>
