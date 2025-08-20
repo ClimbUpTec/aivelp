@@ -90,12 +90,12 @@ const AivePresentation = () => {
   ];
 
   return (
-    <div className="py-16 px-9 bg-muted">
+    <div className="py-12 sm:py-16 px-4 sm:px-6 lg:px-9 bg-muted">
       <div className="text-center max-w-5xl mx-auto">
-        <h3 className="text-3xl md:text-4xl font-bold mb-8 text-primary" style={{ transform: 'scale(1.1)' }}>
-          Conheça a AIVE, a IA da <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-14 md:h-16 mx-2" />
+        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-primary">
+          Conheça a AIVE, a IA da <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-10 sm:h-12 md:h-14 lg:h-16 mx-1 sm:mx-2" />
         </h3>
-        <p className="text-xl text-muted-foreground mb-20 max-w-4xl mx-auto" style={{ transform: 'scale(1.1)' }}>
+        <p className="text-lg sm:text-xl text-muted-foreground mb-12 sm:mb-16 lg:mb-20 max-w-4xl mx-auto">
           Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera. Você decide.
         </p>
         
@@ -135,8 +135,8 @@ const AivePresentation = () => {
         </Carousel>
         
         {/* Botão CTA */}
-        <div className="text-center mt-12">
-          <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+        <div className="text-center mt-8 sm:mt-12">
+          <Button onClick={redirectToWhatsApp} className="bg-primary hover:bg-primary/90 px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base lg:text-lg font-semibold w-full sm:w-auto">
             Quero AIVE
           </Button>
         </div>
@@ -300,45 +300,45 @@ const Aive = () => {
     <div className="min-h-screen bg-background">
       {/* 1. Chamada Impactante (Herói) */}
       <section 
-        className="py-32 px-4 relative overflow-hidden"
+        className="py-16 sm:py-24 lg:py-32 px-4 relative overflow-hidden"
         style={{
           backgroundImage: `url('/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png')`,
           backgroundSize: 'cover',
-          backgroundPosition: 'calc(center - 5cm) center',
+          backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       >
         {/* Logo Climb Up - Superior Esquerdo */}
-        <div className="absolute top-8 left-8 z-30 flex items-center">
-          <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="h-16" />
+        <div className="absolute top-4 sm:top-8 left-4 sm:left-8 z-30 flex items-center">
+          <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="h-12 sm:h-14 lg:h-16" />
         </div>
 
         {/* Botão Contratar Agora - Superior Direito */}
-        <div className="absolute top-8 right-8 z-30 flex items-center">
-          <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary text-white hover:bg-primary/90">
+        <div className="absolute top-4 sm:top-8 right-4 sm:right-8 z-30 flex items-center">
+          <Button onClick={redirectToWhatsApp} size="sm" className="bg-primary text-white hover:bg-primary/90 text-xs sm:text-sm lg:text-base px-3 sm:px-4 lg:px-6">
             Contratar agora
           </Button>
         </div>
         <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Coluna Esquerda - Conteúdo de Texto */}
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: '#FF5B04' }}>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6" style={{ color: '#FF5B04' }}>
                 Venda mais com a AIVE. A IA da Climb Up que escala suas vendas 24/7.
               </h1>
-              <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
                 Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
                 Ou, se preferir, passa pro seu time. Tudo 24/7.
               </p>
               <div className="flex justify-center lg:justify-start">
-                <Button onClick={redirectToWhatsApp} variant="hero" size="xl">
+                <Button onClick={redirectToWhatsApp} className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full sm:w-auto">
                   Quero escalar com Aive
                 </Button>
               </div>
             </div>
             
             {/* Coluna Direita - Vídeo do YouTube */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
               <div className="w-full max-w-lg">
                 <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl bg-black/10 backdrop-blur-sm border border-white/20">
                   <iframe
@@ -358,37 +358,37 @@ const Aive = () => {
       </section>
 
       {/* 2. Está enfrentando isso? */}
-      <section className="py-16 px-4 relative bg-gradient-to-br from-orange-400 to-orange-600">
+      <section className="py-12 sm:py-16 px-4 relative bg-gradient-to-br from-orange-400 to-orange-600">
         <div className="max-w-6xl mx-auto relative z-10">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white">
               Sua empresa está passando por isso?
             </h2>
-            <p className="text-xl text-white max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-white max-w-3xl mx-auto">
               Enfrentando dificuldades para gerar vendas e manter a operação no ritmo que o mercado exige?
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6 mb-10">
-            <Card className="p-6 text-center border-gray-300 bg-white">
-              <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-red-500" />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 lg:gap-6 mb-8 sm:mb-10">
+            <Card className="p-3 sm:p-4 lg:p-6 text-center border-gray-300 bg-white">
+              <div className="mb-2 sm:mb-3">
+                <X className="w-6 sm:w-8 lg:w-10 h-6 sm:h-8 lg:h-10 mx-auto text-red-500" />
               </div>
-              <p className="text-base font-medium text-red-500">
+              <p className="text-xs sm:text-sm lg:text-base font-medium text-red-500">
                 Leads esperando por resposta
               </p>
             </Card>
 
-            <Card className="p-6 text-center border-gray-300 bg-white">
-              <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-red-500" />
+            <Card className="p-3 sm:p-4 lg:p-6 text-center border-gray-300 bg-white">
+              <div className="mb-2 sm:mb-3">
+                <X className="w-6 sm:w-8 lg:w-10 h-6 sm:h-8 lg:h-10 mx-auto text-red-500" />
               </div>
-              <p className="text-base font-medium text-red-500">
+              <p className="text-xs sm:text-sm lg:text-base font-medium text-red-500">
                 Falta de follow-up
               </p>
             </Card>
 
-            <Card className="p-6 text-center border-gray-300 bg-white">
+            <Card className="p-3 sm:p-4 lg:p-6 text-center border-gray-300 bg-white">
               <div className="mb-3">
                 <X className="w-10 h-10 mx-auto text-red-500" />
               </div>
@@ -397,36 +397,36 @@ const Aive = () => {
               </p>
             </Card>
             
-            <Card className="p-6 text-center border-gray-300 bg-white">
-              <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-red-500" />
+            <Card className="p-3 sm:p-4 lg:p-6 text-center border-gray-300 bg-white">
+              <div className="mb-2 sm:mb-3">
+                <X className="w-6 sm:w-8 lg:w-10 h-6 sm:h-8 lg:h-10 mx-auto text-red-500" />
               </div>
-              <p className="text-base font-medium text-red-500">
+              <p className="text-xs sm:text-sm lg:text-base font-medium text-red-500">
                 CRM desatualizado
               </p>
             </Card>
             
-            <Card className="p-6 text-center border-gray-300 bg-white">
-              <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-red-500" />
+            <Card className="p-3 sm:p-4 lg:p-6 text-center border-gray-300 bg-white">
+              <div className="mb-2 sm:mb-3">
+                <X className="w-6 sm:w-8 lg:w-10 h-6 sm:h-8 lg:h-10 mx-auto text-red-500" />
               </div>
-              <p className="text-base font-medium text-red-500">
+              <p className="text-xs sm:text-sm lg:text-base font-medium text-red-500">
                 Crescimento travado
               </p>
             </Card>
 
-            <Card className="p-6 text-center border-gray-300 bg-white">
-              <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-red-500" />
+            <Card className="p-3 sm:p-4 lg:p-6 text-center border-gray-300 bg-white">
+              <div className="mb-2 sm:mb-3">
+                <X className="w-6 sm:w-8 lg:w-10 h-6 sm:h-8 lg:h-10 mx-auto text-red-500" />
               </div>
-              <p className="text-base font-medium text-red-500">
+              <p className="text-xs sm:text-sm lg:text-base font-medium text-red-500">
                 Perdendo vendas p/ concorrentes
               </p>
             </Card>
           </div>
           
           <div className="text-center">
-            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary text-white hover:bg-primary/90">
+            <Button onClick={redirectToWhatsApp} className="bg-primary text-white hover:bg-primary/90 px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base lg:text-lg font-semibold w-full sm:w-auto">
               Resolver com AIVE
             </Button>
           </div>
@@ -434,23 +434,23 @@ const Aive = () => {
       </section>
 
       {/* 3. Apresentação da Aive */}
-      <section className="py-16 px-4 bg-gray-100">
+      <section className="py-12 sm:py-16 px-4 bg-gray-100">
         <div className="container mx-auto max-w-5xl">
           <AivePresentation />
         </div>
       </section>
 
       {/* 4. Por que a Aive é a melhor IA do mercado? */}
-      <section className="py-8 px-4 bg-muted">
+      <section className="py-8 sm:py-12 lg:py-16 px-4 bg-muted">
         <div className="container mx-auto max-w-6xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8">
             Por que a Aive é diferente de tudo que você já viu?
           </h2>
-          <p className="text-xl text-muted-foreground mb-12 max-w-4xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground mb-8 sm:mb-12 max-w-4xl mx-auto">
             Enquanto outros oferecem uma IA genérica, a Climb Up entrega um ecossistema inteligente com múltiplas IAs integradas e treinadas para cada etapa da jornada do seu cliente. Elas se comunicam entre si e com seu time humano.
           </p>
           
-          <div className="grid md:grid-cols-5 gap-6 mb-12">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 lg:gap-6 mb-8 sm:mb-12">
             {[
               { name: "IA de Atendimento", icon: <MessageSquare className="w-8 h-8" /> },
               { name: "IA de Qualificação", icon: <UserCheck className="w-8 h-8" /> },
