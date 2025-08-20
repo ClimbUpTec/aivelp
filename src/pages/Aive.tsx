@@ -84,10 +84,10 @@ const AivePresentation = () => {
     <div className="py-12 sm:py-16 px-4 sm:px-6 lg:px-9 bg-muted">
       <div className="text-center max-w-5xl mx-auto">
         <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-primary">
-          Conheça a AIVE, a IA da <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-10 sm:h-12 md:h-14 lg:h-16 mx-1 sm:mx-2" />
+          Conheça a AIVE, a IA da <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-12 sm:h-14 md:h-16 lg:h-20 mx-1 sm:mx-2" />
         </h3>
         <p className="text-lg sm:text-xl text-muted-foreground mb-12 sm:mb-16 lg:mb-20 max-w-4xl mx-auto">
-          Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera. Você decide.
+          Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera.
         </p>
         
         {/* Carrossel rotativo das funcionalidades */}
@@ -326,7 +326,7 @@ const Aive = () => {
             {/* Coluna Esquerda - Conteúdo de Texto */}
             <div className="text-center lg:text-left">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6" style={{ color: '#FF5B04' }}>
-                Venda mais com a AIVE. A IA da Climb Up que escala suas vendas 24/7.
+                Venda mais com a AIVE. A IA da Climb Up que vende 24/7.
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
                 Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
@@ -668,7 +668,7 @@ const Aive = () => {
                   <tr className="bg-primary text-primary-foreground">
                     <th className="p-4 text-left"></th>
                     <th className="p-4 text-center">Vendedor humano (1 pessoa)</th>
-                    <th className="p-4 text-center"><img src="/lovable-uploads/3ca28316-d1d1-4c3d-8066-a40e8a89e409.png" alt="IA de vendas" className="inline h-6 mx-2" /> (IA de vendas 24/7)</th>
+                    <th className="p-4 text-center">Aive da Climb Up</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -724,8 +724,8 @@ const Aive = () => {
                 <p className="text-muted-foreground">Clientes</p>
               </div>
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">+200k</div>
-                <p className="text-muted-foreground">Interações por mês</p>
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">+2MM</div>
+                <p className="text-muted-foreground">Mensagens circuladas</p>
               </div>
               <div className="text-center">
                 <div className="text-4xl md:text-5xl font-bold text-primary mb-2">98%</div>
@@ -937,6 +937,14 @@ const Aive = () => {
                 answer: "Sim. A Aive é adaptável a qualquer tipo de jornada comercial. Temos casos de sucesso em segmentos muito diferentes como restaurantes, clínicas, e-commerce, advocacia e distribuidoras. Criamos fluxos e abordagens específicas para o seu modelo, seu público e seu objetivo de conversão."
               },
               {
+                question: "É muito caro?",
+                answer: "Muito pelo contrário. A Aive custa menos que contratar um vendedor — e trabalha 24h por dia, sem pausa, sem comissão e com performance previsível. Você ganha escala com investimento inteligente."
+              },
+              {
+                question: "É seguro usar IA no atendimento?",
+                answer: "Sim! A Aive não toma decisões sozinha sem sua validação. Ela segue scripts, respeita regras pré-definidas e atua com limites. Além disso, toda a operação é monitorada — com histórico, auditoria e segurança de dados."
+              },
+              {
                 question: "E se o cliente perceber que está falando com uma IA?",
                 answer: "Tudo depende da estratégia de tom de voz. Em alguns nichos, dizemos que é uma IA desde o início (com orgulho!). Em outros, a linguagem é tão natural que o cliente acha que está falando com alguém da equipe. Você escolhe como quer posicionar a Aive — e a gente entrega pronta nesse formato."
               },
@@ -959,14 +967,6 @@ const Aive = () => {
               {
                 question: "E se mudar meu cardápio, serviço ou campanha?",
                 answer: "A Aive é flexível e fácil de atualizar. Sempre que precisar mudar algum texto, ação ou estratégia, você pode solicitar pelo suporte — ou editar direto pela plataforma. E a gente também pode acompanhar com você mensalmente, se desejar."
-              },
-              {
-                question: "É seguro usar IA no atendimento?",
-                answer: "Sim! A Aive não toma decisões sozinha sem sua validação. Ela segue scripts, respeita regras pré-definidas e atua com limites. Além disso, toda a operação é monitorada — com histórico, auditoria e segurança de dados."
-              },
-              {
-                question: "É muito caro?",
-                answer: "Muito pelo contrário. A Aive custa menos que contratar um vendedor — e trabalha 24h por dia, sem pausa, sem comissão e com performance previsível. Você ganha escala com investimento inteligente."
               }
             ].slice(0, showAllFAQs ? 10 : 5).map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="border border-primary/20 rounded-lg px-4">
