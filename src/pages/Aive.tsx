@@ -84,7 +84,7 @@ const AivePresentation = () => {
     <div className="py-12 sm:py-16 px-4 sm:px-6 lg:px-9 bg-muted">
       <div className="text-center max-w-5xl mx-auto">
         <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-primary">
-          Conheça a AIVE, a IA da <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-12 sm:h-14 md:h-16 lg:h-20 mx-1 sm:mx-2" />
+          Conheça a AIVE, a IA da <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-16 sm:h-18 md:h-20 lg:h-24 mx-1 sm:mx-2" />
         </h3>
         <p className="text-lg sm:text-xl text-muted-foreground mb-12 sm:mb-16 lg:mb-20 max-w-4xl mx-auto">
           Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera.
@@ -332,7 +332,7 @@ const Aive = () => {
                 Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
                 Ou, se preferir, passa pro seu time. Tudo 24/7.
               </p>
-              <div className="flex justify-center lg:justify-start">
+              <div className="flex justify-center">
                 <Button onClick={redirectToWhatsApp} className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full sm:w-auto">
                   Quero escalar com Aive
                 </Button>
@@ -801,9 +801,9 @@ const Aive = () => {
               <Card>
                 <CardHeader className="text-center">
                   <div className="mb-4 flex justify-center">
-                    <img src="/lovable-uploads/ec1d8e37-e645-4307-aa1e-2fa8c176c340.png" alt="Climb Up" className="h-12" />
+                    <img src="/lovable-uploads/ec1d8e37-e645-4307-aa1e-2fa8c176c340.png" alt="Climb Up" className="h-16" />
                   </div>
-                  <h3 className="text-2xl font-bold">Formulário de Contato</h3>
+                  <h3 className="text-2xl font-bold">Fale conosco</h3>
                   <p className="text-muted-foreground">Preencha o formulário e nossa equipe entrará em contato</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -820,8 +820,8 @@ const Aive = () => {
                     <input type="tel" className="w-full p-3 border rounded-lg mt-1" placeholder="(11) 99999-9999" />
                   </div>
                   <div>
-                    <label className="text-sm font-medium">Empresa</label>
-                    <input type="text" className="w-full p-3 border rounded-lg mt-1" placeholder="Nome da empresa" />
+                    <label className="text-sm font-medium">CNPJ</label>
+                    <input type="text" className="w-full p-3 border rounded-lg mt-1" placeholder="00.000.000/0000-00" />
                   </div>
                   <Button onClick={redirectToWhatsApp} className="w-full" size="lg">
                     Quero AIVE
@@ -929,6 +929,10 @@ const Aive = () => {
           <Accordion type="single" collapsible className="space-y-4">
             {[
               {
+                question: "E se mudar meu cardápio, serviço ou campanha?",
+                answer: "A Aive é flexível e fácil de atualizar. Sempre que precisar mudar algum texto, ação ou estratégia, você pode solicitar pelo suporte — ou editar direto pela plataforma. E a gente também pode acompanhar com você mensalmente, se desejar."
+              },
+              {
                 question: "Vai substituir meu time de vendas?",
                 answer: "Não. A Aive não substitui seu time — ela potencializa. Ela cuida das tarefas repetitivas, atende 24h, faz pré-venda e entrega o lead mais quente para seu time fechar. Seu time vende mais com menos esforço, e você ganha produtividade sem precisar contratar mais pessoas."
               },
@@ -964,11 +968,7 @@ const Aive = () => {
                 question: "Quanto tempo leva pra começar?",
                 answer: "Em até 30 dias, você já tem a Aive 100% ativa e validada. Em alguns casos, conseguimos colocar no ar em menos de 10 dias. A gente adapta a jornada de onboarding à sua realidade."
               },
-              {
-                question: "E se mudar meu cardápio, serviço ou campanha?",
-                answer: "A Aive é flexível e fácil de atualizar. Sempre que precisar mudar algum texto, ação ou estratégia, você pode solicitar pelo suporte — ou editar direto pela plataforma. E a gente também pode acompanhar com você mensalmente, se desejar."
-              }
-            ].slice(0, showAllFAQs ? 10 : 5).map((faq, index) => (
+            ].slice(0, showAllFAQs ? 9 : 5).map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="border border-primary/20 rounded-lg px-4">
                 <AccordionTrigger className="text-left font-semibold hover:text-primary">
                   {faq.question}
