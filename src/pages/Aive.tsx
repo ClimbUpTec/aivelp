@@ -319,18 +319,40 @@ const Aive = () => {
             Contratar agora
           </Button>
         </div>
-        <div className="container mx-auto max-w-6xl text-center relative z-10">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: '#FF5B04' }}>
-            Venda mais com a AIVE. A IA da Climb Up que escala suas vendas 24/7.
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
-            Ou, se preferir, passa pro seu time. Tudo 24/7.
-          </p>
-          <div className="flex justify-center">
-            <Button onClick={redirectToWhatsApp} variant="hero" size="xl">
-              Quero escalar com Aive
-            </Button>
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Coluna Esquerda - Conteúdo de Texto */}
+            <div className="text-center lg:text-left">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: '#FF5B04' }}>
+                Venda mais com a AIVE. A IA da Climb Up que escala suas vendas 24/7.
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+                Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
+                Ou, se preferir, passa pro seu time. Tudo 24/7.
+              </p>
+              <div className="flex justify-center lg:justify-start">
+                <Button onClick={redirectToWhatsApp} variant="hero" size="xl">
+                  Quero escalar com Aive
+                </Button>
+              </div>
+            </div>
+            
+            {/* Coluna Direita - Vídeo do YouTube */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="w-full max-w-lg">
+                <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl bg-black/10 backdrop-blur-sm border border-white/20">
+                  <iframe
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&rel=0&modestbranding=1&playsinline=1"
+                    title="Aive - IA para Vendas"
+                    className="absolute inset-0 w-full h-full"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
