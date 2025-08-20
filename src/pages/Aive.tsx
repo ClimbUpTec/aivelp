@@ -342,7 +342,7 @@ const Aive = () => {
               <div className="w-full max-w-lg">
                 <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl bg-black/10 backdrop-blur-sm border border-white/20">
                   <iframe
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&rel=0&modestbranding=1&playsinline=1"
+                    src="https://www.youtube.com/embed/FX8tRaJyOAk?autoplay=0&rel=0&modestbranding=1&playsinline=1"
                     title="Aive - IA para Vendas"
                     className="absolute inset-0 w-full h-full"
                     frameBorder="0"
