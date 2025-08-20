@@ -343,15 +343,18 @@ const Aive = () => {
             <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
               <div className="w-full max-w-lg">
                 <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl bg-black/10 backdrop-blur-sm border border-white/20">
-                  <iframe
-                    src="https://www.youtube.com/embed/FX8tRaJyOAk?autoplay=0&rel=0&modestbranding=1&playsinline=1"
+                  <video
+                    src="https://drive.google.com/uc?export=download&id=1sMMNShQBRcSS_-fRnitGq-0cFwS5GJ8k"
                     title="Aive - IA para Vendas"
-                    className="absolute inset-0 w-full h-full"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    loading="lazy"
-                  />
+                    className="absolute inset-0 w-full h-full object-cover"
+                    controls
+                    preload="metadata"
+                    playsInline
+                  >
+                    <p className="absolute inset-0 flex items-center justify-center text-white bg-black/50">
+                      Seu navegador não suporta o elemento de vídeo.
+                    </p>
+                  </video>
                 </div>
               </div>
             </div>
