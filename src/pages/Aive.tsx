@@ -98,7 +98,7 @@ const AivePresentation = () => {
             }}
             plugins={[
               Autoplay({
-                delay: 100,
+                delay: 2000,
                 stopOnInteraction: false,
                 stopOnMouseEnter: false,
               }),
