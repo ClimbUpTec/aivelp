@@ -98,9 +98,9 @@ const AivePresentation = () => {
             }}
             plugins={[
               Autoplay({
-                delay: 4000,
-                stopOnInteraction: true,
-                stopOnMouseEnter: true,
+                delay: 100,
+                stopOnInteraction: false,
+                stopOnMouseEnter: false,
               }),
             ]}
             className="w-full max-w-6xl mx-auto"
@@ -121,8 +121,6 @@ const AivePresentation = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
         </Carousel>
         
         {/* Botão CTA */}
