@@ -98,9 +98,9 @@ const AivePresentation = () => {
             }}
             plugins={[
               Autoplay({
-                delay: 2000,
-                stopOnInteraction: false,
-                stopOnMouseEnter: false,
+                delay: 4000,
+                stopOnInteraction: true,
+                stopOnMouseEnter: true,
               }),
             ]}
             className="w-full max-w-6xl mx-auto"
@@ -287,12 +287,53 @@ const Aive = () => {
   const [showAllFAQs, setShowAllFAQs] = useState(false);
   const [activeFeatureImage, setActiveFeatureImage] = useState(0);
   
-  // Preload critical images
+  // Progressive image preloading
   useEffect(() => {
-    [...PRELOAD_IMAGES, ...SECTION5_PRELOAD_IMAGES].forEach(src => {
-      const img = new Image();
-      img.src = src;
+    const startTime = performance.now();
+    console.log("🚀 Iniciando carregamento da página");
+
+    // Apenas imagens críticas primeiro (hero + primeira seção)
+    const criticalImages = [
+      ...PRELOAD_IMAGES.slice(0, 2), // Apenas 2 primeiras do carrossel
+      "/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png" // Background hero
+    ];
+
+    let loadedCount = 0;
+    const totalCritical = criticalImages.length;
+
+    criticalImages.forEach((src, index) => {
+      setTimeout(() => {
+        const img = new Image();
+        img.onload = () => {
+          loadedCount++;
+          console.log(`✅ Imagem crítica ${loadedCount}/${totalCritical} carregada: ${src.split('/').pop()}`);
+        };
+        img.onerror = () => {
+          loadedCount++;
+          console.log(`❌ Erro ao carregar imagem crítica: ${src.split('/').pop()}`);
+        };
+        img.src = src;
+      }, index * 100); // Escalonar carregamento
     });
+
+    // Preload restante após 2 segundos
+    setTimeout(() => {
+      const remainingImages = [
+        ...PRELOAD_IMAGES.slice(2),
+        ...SECTION5_PRELOAD_IMAGES.slice(0, 2), // Reduzir quantidade
+        "/lovable-uploads/e3b12e63-ee54-425d-81e0-30ecce94145e.png",
+        "/lovable-uploads/911dad1e-3ff7-48fb-a9c5-8fdff80a304e.png"
+      ];
+
+      remainingImages.forEach((src, index) => {
+        setTimeout(() => {
+          const img = new Image();
+          img.src = src;
+        }, index * 50);
+      });
+
+      console.log(`⏱️ Tempo inicial de carregamento: ${((performance.now() - startTime) / 1000).toFixed(2)}s`);
+    }, 2000);
   }, []);
 
   // Memoize section 5 data
@@ -510,7 +551,7 @@ const Aive = () => {
                   src={section5Data[activeFeatureImage].image}
                   alt="Preview da funcionalidade"
                   className="w-full h-48 sm:h-64 object-cover"
-                  lazy={false}
+                  priority={true}
                 />
               </div>
             </div>
@@ -551,7 +592,7 @@ const Aive = () => {
                     src={section5Data[activeFeatureImage].image}
                     alt="Preview da plataforma"
                     className="w-full aspect-[3/2] object-cover transition-all duration-500"
-                    lazy={false}
+                    priority={true}
                   />
                 </div>
               </div>
