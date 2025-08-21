@@ -9,7 +9,7 @@ export const SECTION5_FEATURES = [
     icon: Users,
     title: "CRM inteligente",
     description: "Gestão completa de leads e negociações. Aive cria cards, insere resumos e seu time acompanha",
-    image: "/lovable-uploads/f10c12b6-1a01-487b-88f8-e6b1c30e1941.png",
+    image: "/lovable-uploads/449cc1bb-f3e4-4fdf-b151-9f642601e740.png",
     caption: "CRM inteligente para gestão completa de leads e negociações. A Aive registra automaticamente todas as interações e seu time pode acompanhar o progresso em tempo real."
   },
   {
@@ -25,7 +25,7 @@ export const SECTION5_FEATURES = [
     icon: TrendingUp,
     title: "Relatórios",
     description: "Dashboard e relatórios em tempo real",
-    image: "/lovable-uploads/f628eb48-9315-4fc3-ad1c-412847c61c61.png",
+    image: "/lovable-uploads/d9300ab6-d26a-4f8f-b375-f6b9bf2c53da.png",
     caption: "Dashboard com métricas e relatórios detalhados em tempo real. Acompanhe vendas, atendimentos, tráfego e performance da sua equipe."
   },
   {
@@ -33,7 +33,7 @@ export const SECTION5_FEATURES = [
     icon: Shield,
     title: "Classificação de atendimento",
     description: "Acompanhe leads perdidos e ganhos e classifique o atendimento dos seus atendentes",
-    image: "/lovable-uploads/911dad1e-3ff7-48fb-a9c5-8fdff80a304e.png",
+    image: "/lovable-uploads/9631e126-b8a3-474a-9646-271a50d9e5d0.png",
     caption: "Sistema inteligente de distribuição e gerenciamento de filas. A Aive organiza automaticamente a fila de atendimento e distribui leads por performance."
   },
   {
@@ -41,7 +41,7 @@ export const SECTION5_FEATURES = [
     icon: Bot,
     title: "Pagamentos",
     description: "Gateway de pagamentos integrado, seu time e a Aive enviam cobranças em segundos",
-    image: "/lovable-uploads/4402870c-0f51-4600-ab30-3abcd0d03785.png",
+    image: "/lovable-uploads/f80198f3-fd92-43f7-95d7-e6ad082c2dd4.png",
     caption: "Gateway de pagamentos integrado com múltiplas opções. Receba pagamentos via PIX, boleto e cartão diretamente na conversa do WhatsApp."
   },
   {
@@ -49,7 +49,7 @@ export const SECTION5_FEATURES = [
     icon: Clock,
     title: "Integrações",
     description: "Webhook, API, N8N, Make, etc.",
-    image: "/lovable-uploads/b7f16fc9-f943-40df-af70-f14a763bcded.png",
+    image: "/lovable-uploads/c94abaa0-66ba-47c2-b4cb-d810a2397606.png",
     caption: "Central de integrações com APIs e automações. Conecte com N8N, Make, Zapier e centenas de outras ferramentas via webhook."
   },
   {
@@ -57,7 +57,7 @@ export const SECTION5_FEATURES = [
     icon: TrendingUp,
     title: "Rastreio e origem de leads",
     description: "Facebook Ads, Google Ads, Click-to-WhatsApp",
-    image: "/lovable-uploads/2a71d4de-aeeb-4ccf-9070-95e78eb81302.png",
+    image: "/lovable-uploads/cdc8856a-b937-4aa2-a55d-3cbf057d22a2.png",
     caption: "Rastreamento completo da origem até conversão dos leads. Veja quais anúncios geram mais vendas com UTMs automáticos."
   },
   {
@@ -65,7 +65,7 @@ export const SECTION5_FEATURES = [
     icon: Target,
     title: "Rodízio de leads",
     description: "Para o time humano complementar a IA",
-    image: "/lovable-uploads/738ab304-808b-4dbd-bbdd-599f5c254d41.png",
+    image: "/lovable-uploads/cdd5a6dc-af52-4256-9e5c-5af806eccf94.png",
     caption: "Sistema de roteamento inteligente de conversas. A Aive decide quando transferir para humanos e qual vendedor recebe cada lead."
   },
   {
@@ -73,7 +73,7 @@ export const SECTION5_FEATURES = [
     icon: Settings,
     title: "Supervisão de conversas",
     description: "E intervenha se necessário",
-    image: "/lovable-uploads/c13d29cd-53f0-4dca-941b-616e635fd4ae.png",
+    image: "/lovable-uploads/d4458b5e-7720-46d9-90b0-c370a32b25ca.png",
     caption: "Monitoramento discreto com possibilidade de intervenção. Acompanhe conversas em tempo real sem que o cliente saiba e intervenha quando necessário."
   },
   {
@@ -97,7 +97,7 @@ export const SECTION5_FEATURES = [
     icon: MessageSquare,
     title: "Chatbot + IA",
     description: "Fluxogramas completos",
-    image: "/lovable-uploads/f1e16003-7074-4b51-a143-f8ae2c1673b7.png",
+    image: "/lovable-uploads/82d4f544-25a9-416e-85da-e87747c775a9.png",
     caption: "Constructor de fluxos inteligentes para atendimento automatizado. Crie chatbots avançados que se comportam como vendedores experientes."
   }
 ] as const;
