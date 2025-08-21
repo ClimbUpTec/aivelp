@@ -321,42 +321,19 @@ const Aive = () => {
             Contratar agora
           </Button>
         </div>
-        <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {/* Coluna Esquerda - Conteúdo de Texto */}
-            <div className="text-center lg:text-left">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6" style={{ color: '#FF5B04' }}>
-                Venda mais com a AIVE. A IA da Climb Up que vende 24/7.
-              </h1>
-              <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
-                Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
-                Ou, se preferir, passa pro seu time. Tudo 24/7.
-              </p>
-              <div className="flex justify-center">
-                <Button onClick={redirectToWhatsApp} className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full sm:w-auto">
-                  Quero escalar com Aive
-                </Button>
-              </div>
-            </div>
-            
-            {/* Coluna Direita - Vídeo do YouTube */}
-            <div className="flex justify-center lg:justify-end mt-8 lg:mt-0">
-              <div className="w-full max-w-lg">
-                <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl bg-black/10 backdrop-blur-sm border border-white/20">
-                  <video
-                    src="https://drive.google.com/uc?export=download&id=1sMMNShQBRcSS_-fRnitGq-0cFwS5GJ8k"
-                    title="Aive - IA para Vendas"
-                    className="absolute inset-0 w-full h-full object-cover"
-                    controls
-                    preload="metadata"
-                    playsInline
-                  >
-                    <p className="absolute inset-0 flex items-center justify-center text-white bg-black/50">
-                      Seu navegador não suporta o elemento de vídeo.
-                    </p>
-                  </video>
-                </div>
-              </div>
+        <div className="container mx-auto max-w-4xl relative z-10">
+          <div className="text-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6" style={{ color: '#FF5B04' }}>
+              Venda mais com a AIVE. A IA da Climb Up que vende 24/7.
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto">
+              Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
+              Ou, se preferir, passa pro seu time. Tudo 24/7.
+            </p>
+            <div className="flex justify-center">
+              <Button onClick={redirectToWhatsApp} className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full sm:w-auto">
+                Quero escalar com Aive
+              </Button>
             </div>
           </div>
         </div>
