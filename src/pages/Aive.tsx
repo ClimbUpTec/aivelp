@@ -12,6 +12,7 @@ import { ArrowDown, CheckCircle, Star, Users, TrendingUp, Clock, MessageSquare, 
          Phone, UserCheck, UserPlus, ArrowUpRight, Folder, FolderPlus, MoveHorizontal, 
          Bell, RefreshCw, Calendar, Link, FileText, Settings, Wrench, X, MessageCircle, Linkedin, Instagram, Facebook, Globe, ChevronDown } from "lucide-react";
 import React, { useState, useEffect, useMemo } from "react";
+import { toast } from "sonner";
 
 // Componente para a ampulheta da jornada
 const JourneyHourglass = () => (
@@ -284,6 +285,8 @@ const FloatingWhatsAppButton = () => (
 const Aive = () => {
   const [showAllFAQs, setShowAllFAQs] = useState(false);
   const [activeFeatureImage, setActiveFeatureImage] = useState(0);
+  const [sending, setSending] = useState(false);
+  const [form, setForm] = useState({ name: "", email: "", whatsapp: "", cnpj: "" });
   
   // Progressive image preloading
   useEffect(() => {
@@ -333,6 +336,26 @@ const Aive = () => {
       console.log(`⏱️ Tempo inicial de carregamento: ${((performance.now() - startTime) / 1000).toFixed(2)}s`);
     }, 2000);
   }, []);
+  const GOOGLE_FORMS_ACTION = "https://docs.google.com/forms/d/e/1FAIpQLScImNy55j_muLtW-7AEdd6laRMWKggtV8jEwQYrmC0eWI5VWw/formResponse";
+
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      setSending(true);
+      const fd = new FormData();
+      fd.append("entry.485040789", form.name);
+      fd.append("entry.701958551", form.email);
+      fd.append("entry.507543805", form.whatsapp);
+      fd.append("entry.921269748", form.cnpj);
+      await fetch(GOOGLE_FORMS_ACTION, { method: "POST", mode: "no-cors", body: fd });
+      toast.success("Enviado! Em breve entraremos em contato.");
+      setForm({ name: "", email: "", whatsapp: "", cnpj: "" });
+    } catch (error) {
+      toast.error("Não foi possível enviar. Tente novamente.");
+    } finally {
+      setSending(false);
+    }
+  };
 
   // Memoize section 5 data
   const section5Data = useMemo(() => SECTION5_FEATURES, []);
@@ -826,25 +849,58 @@ const Aive = () => {
                   <p className="text-muted-foreground">Preencha o formulário e nossa equipe entrará em contato</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div>
-                    <label className="text-sm font-medium">Nome completo</label>
-                    <input type="text" className="w-full p-3 border rounded-lg mt-1" placeholder="Seu nome" />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium">Email</label>
-                    <input type="email" className="w-full p-3 border rounded-lg mt-1" placeholder="seu@email.com" />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium">WhatsApp</label>
-                    <input type="tel" className="w-full p-3 border rounded-lg mt-1" placeholder="(11) 99999-9999" />
-                  </div>
-                  <div>
-                    <label className="text-sm font-medium">CNPJ</label>
-                    <input type="text" className="w-full p-3 border rounded-lg mt-1" placeholder="00.000.000/0000-00" />
-                  </div>
-                  <Button onClick={redirectToWhatsApp} className="w-full" size="lg">
-                    Quero AIVE
-                  </Button>
+                  <form onSubmit={handleFormSubmit} className="space-y-4" aria-label="Formulário de contato">
+                    <div>
+                      <label className="text-sm font-medium" htmlFor="cf-name">Nome completo</label>
+                      <input
+                        id="cf-name"
+                        type="text"
+                        className="w-full p-3 border rounded-lg mt-1"
+                        placeholder="Seu nome"
+                        value={form.name}
+                        onChange={(e) => setForm((prev) => ({ ...prev, name: e.target.value }))}
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label className="text-sm font-medium" htmlFor="cf-email">Email</label>
+                      <input
+                        id="cf-email"
+                        type="email"
+                        className="w-full p-3 border rounded-lg mt-1"
+                        placeholder="seu@email.com"
+                        value={form.email}
+                        onChange={(e) => setForm((prev) => ({ ...prev, email: e.target.value }))}
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label className="text-sm font-medium" htmlFor="cf-whatsapp">WhatsApp</label>
+                      <input
+                        id="cf-whatsapp"
+                        type="tel"
+                        className="w-full p-3 border rounded-lg mt-1"
+                        placeholder="(11) 99999-9999"
+                        value={form.whatsapp}
+                        onChange={(e) => setForm((prev) => ({ ...prev, whatsapp: e.target.value }))}
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label className="text-sm font-medium" htmlFor="cf-cnpj">CNPJ</label>
+                      <input
+                        id="cf-cnpj"
+                        type="text"
+                        className="w-full p-3 border rounded-lg mt-1"
+                        placeholder="00.000.000/0000-00"
+                        value={form.cnpj}
+                        onChange={(e) => setForm((prev) => ({ ...prev, cnpj: e.target.value }))}
+                      />
+                    </div>
+                    <Button type="submit" className="w-full" size="lg" disabled={sending}>
+                      {sending ? "Enviando..." : "Quero AIVE"}
+                    </Button>
+                  </form>
                 </CardContent>
               </Card>
             </div>
