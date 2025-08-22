@@ -404,7 +404,7 @@ const Aive = () => {
             {/* Coluna direita - Imagem */}
             <div className="order-1 lg:order-2 flex justify-center">
               <img 
-                src="/lovable-uploads/0372ad6c-da31-44c3-b412-db19d6252ca0.png" 
+                src="/lovable-uploads/482b814f-afcd-4658-aa33-4b381dddf532.png" 
                 alt="Conversa da AIVE com cliente" 
                 className="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-lg shadow-lg"
               />
