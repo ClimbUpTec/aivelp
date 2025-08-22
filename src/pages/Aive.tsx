@@ -364,10 +364,10 @@ const Aive = () => {
     <div className="min-h-screen bg-background">
       {/* 1. Chamada Impactante (Herói) */}
       <section 
-        className="py-16 sm:py-24 lg:py-32 px-4 relative overflow-hidden"
+        className="py-14 sm:py-20 lg:py-28 px-4 relative overflow-hidden"
         style={{
           backgroundImage: `url('/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png')`,
-          backgroundSize: 'cover',
+          backgroundSize: 'contain',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
@@ -385,13 +385,13 @@ const Aive = () => {
         </div>
         <div className="container mx-auto max-w-7xl relative z-10">
           {/* Layout em duas colunas */}
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center">
             {/* Coluna esquerda - Título e Subtítulo */}
             <div className="order-1 lg:order-1 text-center lg:text-left">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8" style={{ color: '#FF5B04' }}>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6" style={{ color: '#FF5B04' }}>
                 Venda mais com a AIVE. A IA da Climb Up que vende 24/7.
               </h1>
-              <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-5 sm:mb-6 leading-relaxed">
                 Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
                 Ou, se preferir, passa pro seu time. Tudo 24/7.
               </p>
@@ -402,13 +402,13 @@ const Aive = () => {
               <img 
                 src="/lovable-uploads/c25f03f2-ea7a-4b12-b128-fabcd1bed2a5.png" 
                 alt="Conversa da AIVE com cliente" 
-                className="w-full max-w-md lg:max-w-lg xl:max-w-xl"
+                className="w-full max-w-sm lg:max-w-md xl:max-w-lg"
               />
             </div>
           </div>
           
           {/* Botão CTA centralizado */}
-          <div className="flex justify-center mt-8 sm:mt-12">
+          <div className="flex justify-center mt-6 sm:mt-10">
             <Button onClick={redirectToWhatsApp} className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full sm:w-auto">
               Quero escalar com Aive
             </Button>
