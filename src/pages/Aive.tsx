@@ -393,21 +393,23 @@ const Aive = () => {
           
           {/* Layout em duas colunas */}
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {/* Coluna esquerda - Texto */}
-            <div className="order-2 lg:order-1">
+            {/* Coluna esquerda - Imagem e Texto */}
+            <div className="order-1 lg:order-1">
+              <div className="flex justify-center mb-6">
+                <img 
+                  src="/lovable-uploads/c25f03f2-ea7a-4b12-b128-fabcd1bed2a5.png" 
+                  alt="Conversa da AIVE com cliente" 
+                  className="w-full max-w-lg lg:max-w-xl xl:max-w-2xl"
+                />
+              </div>
               <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
                 Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
                 Ou, se preferir, passa pro seu time. Tudo 24/7.
               </p>
             </div>
             
-            {/* Coluna direita - Imagem */}
-            <div className="order-1 lg:order-2 flex justify-center">
-              <img 
-                src="/lovable-uploads/68f5bc82-3e5b-4537-b54b-22546178ba2c.png" 
-                alt="Conversa da AIVE com cliente" 
-                className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl"
-              />
+            {/* Coluna direita - Vazia ou conteúdo adicional */}
+            <div className="order-2 lg:order-2">
             </div>
           </div>
           
