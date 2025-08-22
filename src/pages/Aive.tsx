@@ -406,7 +406,7 @@ const Aive = () => {
               <img 
                 src="/lovable-uploads/482b814f-afcd-4658-aa33-4b381dddf532.png" 
                 alt="Conversa da AIVE com cliente" 
-                className="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-lg shadow-lg"
+                className="w-full max-w-lg lg:max-w-xl xl:max-w-2xl"
               />
             </div>
           </div>
