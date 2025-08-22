@@ -383,20 +383,39 @@ const Aive = () => {
             Contratar agora
           </Button>
         </div>
-        <div className="container mx-auto max-w-4xl relative z-10">
-          <div className="text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6" style={{ color: '#FF5B04' }}>
+        <div className="container mx-auto max-w-7xl relative z-10">
+          {/* Título principal centralizado acima de tudo */}
+          <div className="text-center mb-8 sm:mb-12">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold" style={{ color: '#FF5B04' }}>
               Venda mais com a AIVE. A IA da Climb Up que vende 24/7.
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto">
-              Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
-              Ou, se preferir, passa pro seu time. Tudo 24/7.
-            </p>
-            <div className="flex justify-center">
-              <Button onClick={redirectToWhatsApp} className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full sm:w-auto">
-                Quero escalar com Aive
-              </Button>
+          </div>
+          
+          {/* Layout em duas colunas */}
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Coluna esquerda - Texto */}
+            <div className="order-2 lg:order-1">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
+                Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
+                Ou, se preferir, passa pro seu time. Tudo 24/7.
+              </p>
             </div>
+            
+            {/* Coluna direita - Imagem */}
+            <div className="order-1 lg:order-2 flex justify-center">
+              <img 
+                src="/lovable-uploads/0372ad6c-da31-44c3-b412-db19d6252ca0.png" 
+                alt="Conversa da AIVE com cliente" 
+                className="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+          
+          {/* Botão CTA centralizado */}
+          <div className="flex justify-center mt-8 sm:mt-12">
+            <Button onClick={redirectToWhatsApp} className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full sm:w-auto">
+              Quero escalar com Aive
+            </Button>
           </div>
         </div>
       </section>
