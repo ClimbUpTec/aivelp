@@ -85,7 +85,7 @@ const AivePresentation = () => {
     <div className="py-12 sm:py-16 px-4 sm:px-6 lg:px-9 bg-muted">
       <div className="text-center max-w-5xl mx-auto">
         <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-primary">
-          Conheça a AIVE, a IA da <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-16 sm:h-18 md:h-20 lg:h-24 mx-1 sm:mx-2" />
+          Conheça a AIVE, a IA da <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-8 sm:h-10 md:h-12 mx-1 sm:mx-2" />
         </h3>
         <p className="text-lg sm:text-xl text-muted-foreground mb-12 sm:mb-16 lg:mb-20 max-w-4xl mx-auto">
           Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera.
@@ -801,6 +801,9 @@ const Aive = () => {
                 </div>
                 <div className="h-24 w-32 flex items-center justify-center">
                   <img src="/lovable-uploads/bbcfdba9-f4d0-444c-b8fe-b3f2ecc9f833.png" alt="Oito Gestão Tributária" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-24 w-32 flex items-center justify-center">
+                  <img src="/lovable-uploads/bc5c4ca3-ddcd-49d6-9f1c-ee481cff29d1.png" alt="Nova empresa" className="max-h-full max-w-full object-contain" />
                 </div>
               </div>
             </div>

@@ -79,12 +79,6 @@ export const AIVE_FEATURES = [
     image: "/lovable-uploads/7e61337c-3bae-4698-b5f8-cccf7a7bef5b.png"
   },
   {
-    id: 13,
-    name: "Campanhas segmentadas de remarketing",
-    icon: Target,
-    image: "/lovable-uploads/84467682-d5ad-4c9c-a68c-95c2ae6da1cd.png"
-  },
-  {
     id: 14,
     name: "Personalizada para cada negócio",
     icon: Settings,
