@@ -384,32 +384,26 @@ const Aive = () => {
           </Button>
         </div>
         <div className="container mx-auto max-w-7xl relative z-10">
-          {/* Título principal centralizado acima de tudo */}
-          <div className="text-center mb-8 sm:mb-12">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold" style={{ color: '#FF5B04' }}>
-              Venda mais com a AIVE. A IA da Climb Up que vende 24/7.
-            </h1>
-          </div>
-          
           {/* Layout em duas colunas */}
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {/* Coluna esquerda - Imagem e Texto */}
-            <div className="order-1 lg:order-1">
-              <div className="flex justify-center mb-6">
-                <img 
-                  src="/lovable-uploads/c25f03f2-ea7a-4b12-b128-fabcd1bed2a5.png" 
-                  alt="Conversa da AIVE com cliente" 
-                  className="w-full max-w-lg lg:max-w-xl xl:max-w-2xl"
-                />
-              </div>
+            {/* Coluna esquerda - Título e Subtítulo */}
+            <div className="order-1 lg:order-1 text-center lg:text-left">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8" style={{ color: '#FF5B04' }}>
+                Venda mais com a AIVE. A IA da Climb Up que vende 24/7.
+              </h1>
               <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
                 Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
                 Ou, se preferir, passa pro seu time. Tudo 24/7.
               </p>
             </div>
             
-            {/* Coluna direita - Vazia ou conteúdo adicional */}
-            <div className="order-2 lg:order-2">
+            {/* Coluna direita - Imagem */}
+            <div className="order-2 lg:order-2 flex justify-center">
+              <img 
+                src="/lovable-uploads/c25f03f2-ea7a-4b12-b128-fabcd1bed2a5.png" 
+                alt="Conversa da AIVE com cliente" 
+                className="w-full max-w-md lg:max-w-lg xl:max-w-xl"
+              />
             </div>
           </div>
           
