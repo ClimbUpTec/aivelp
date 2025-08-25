@@ -367,7 +367,7 @@ const Aive = () => {
         className="py-14 sm:py-20 lg:py-28 px-4 relative overflow-hidden"
         style={{
           backgroundImage: `url('/lovable-uploads/53fcc771-6659-4fc3-9368-25accfdd26a4.png')`,
-          backgroundSize: 'contain',
+          backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
