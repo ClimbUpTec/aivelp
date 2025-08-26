@@ -818,7 +818,10 @@ const Aive = () => {
                   <img src="/lovable-uploads/bbcfdba9-f4d0-444c-b8fe-b3f2ecc9f833.png" alt="Oito Gestão Tributária" className="max-h-full max-w-full object-contain" />
                 </div>
                 <div className="h-24 w-32 flex items-center justify-center">
-                  <img src="/lovable-uploads/bc5c4ca3-ddcd-49d6-9f1c-ee481cff29d1.png" alt="Nova empresa" className="max-h-full max-w-full object-contain" />
+                  <img src="/lovable-uploads/993d177c-77dd-4ff6-8175-06d7eb568c64.png" alt="InfinitySul - Corretora de Seguros" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-24 w-32 flex items-center justify-center">
+                  <img src="/lovable-uploads/9631e126-b8a3-474a-9646-271a50d9e5d0.png" alt="Zoccoli Advogados" className="max-h-full max-w-full object-contain" />
                 </div>
               </div>
             </div>
