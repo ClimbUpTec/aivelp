@@ -86,7 +86,7 @@ const AivePresentation = () => {
     <div className="py-12 sm:py-16 px-4 sm:px-6 lg:px-9 bg-muted">
       <div className="text-center max-w-5xl mx-auto">
         <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-primary">
-          Conheça a AIVE, a IA da <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-8 sm:h-10 md:h-12 mx-1 sm:mx-2" />
+          Conheça a AIVE, a IA da <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-9 sm:h-11 md:h-14 mx-1 sm:mx-2" />
         </h3>
         <p className="text-lg sm:text-xl text-muted-foreground mb-12 sm:mb-16 lg:mb-20 max-w-4xl mx-auto">
           Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera.
