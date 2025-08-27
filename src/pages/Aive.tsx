@@ -390,7 +390,7 @@ const Aive = () => {
             {/* Coluna esquerda - Título e Subtítulo */}
             <div className="order-1 lg:order-1 text-center lg:text-left">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6" style={{ color: '#FF5B04' }}>
-                Venda mais com a AIVE. A IA da Climb Up que <RotatingText words={["vende", "atende", "qualifica", "negocia", "agenda"]} /> 24/7.
+                Venda mais com a Aive. A IA da Climb Up que <RotatingText words={["vende", "atende", "qualifica", "negocia", "agenda"]} /> 24/7.
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-5 sm:mb-6 leading-relaxed">
                 Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
