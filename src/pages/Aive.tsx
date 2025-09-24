@@ -411,7 +411,7 @@ const Aive = () => {
           {/* Botão CTA centralizado */}
           <div className="flex justify-center mt-6 sm:mt-10">
             <Button onClick={redirectToWhatsApp} className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full sm:w-auto">
-              Quero escalar com Aive
+              Quero vender com IA
             </Button>
           </div>
         </div>
