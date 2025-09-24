@@ -127,7 +127,7 @@ const AivePresentation = () => {
         
         {/* Botão CTA */}
         <div className="text-center mt-8 sm:mt-12">
-          <Button onClick={redirectToWhatsApp} className="bg-primary hover:bg-primary/90 px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base lg:text-lg font-semibold w-full sm:w-auto">
+          <Button onClick={redirectToWhatsApp} className="bg-primary hover:bg-primary/90 px-6 sm:px-8 py-3 sm:py-4 text-base font-semibold w-full sm:w-auto">
             Fale com vendas
           </Button>
         </div>
@@ -380,7 +380,7 @@ const Aive = () => {
 
         {/* Botão Contratar Agora - Superior Direito */}
         <div className="absolute top-4 sm:top-8 right-4 sm:right-8 z-30 flex items-center">
-          <Button onClick={redirectToWhatsApp} size="sm" className="bg-primary text-white hover:bg-primary/90 text-xs sm:text-sm lg:text-base px-3 sm:px-4 lg:px-6">
+          <Button onClick={redirectToWhatsApp} size="sm" className="bg-primary text-white hover:bg-primary/90 text-base px-3 sm:px-4 lg:px-6">
             Contratar agora
           </Button>
         </div>
@@ -410,8 +410,8 @@ const Aive = () => {
           
           {/* Botão CTA centralizado */}
           <div className="flex justify-center mt-6 sm:mt-10">
-            <Button onClick={redirectToWhatsApp} className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold w-full sm:w-auto">
-            Automatizar agora
+            <Button onClick={redirectToWhatsApp} className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-3 sm:py-4 text-base font-semibold w-full sm:w-auto">
+              Fale com vendas
             </Button>
           </div>
         </div>
@@ -486,8 +486,8 @@ const Aive = () => {
           </div>
           
           <div className="text-center">
-            <Button onClick={redirectToWhatsApp} className="bg-primary text-white hover:bg-primary/90 px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base lg:text-lg font-semibold w-full sm:w-auto">
-              Resolver com AIVE
+            <Button onClick={redirectToWhatsApp} className="bg-primary text-white hover:bg-primary/90 px-6 sm:px-8 py-3 sm:py-4 text-base font-semibold w-full sm:w-auto">
+              Automatizar agora
             </Button>
           </div>
         </div>
@@ -562,7 +562,7 @@ const Aive = () => {
           
           {/* Botão CTA */}
           <div className="text-center mt-12">
-            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90 text-base">
               Fale com vendas
             </Button>
           </div>
@@ -638,7 +638,7 @@ const Aive = () => {
           
           {/* Botão CTA */}
           <div className="text-center mt-12">
-            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90 text-base">
               Assistir demonstração
             </Button>
           </div>
@@ -681,7 +681,7 @@ const Aive = () => {
           
           {/* Botão CTA */}
           <div className="text-center mt-12">
-            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90 text-base">
               Escolher plano
             </Button>
           </div>
@@ -699,7 +699,7 @@ const Aive = () => {
           
           {/* Botão CTA */}
           <div className="text-center mt-12">
-            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90 text-base">
               Escolher plano
             </Button>
           </div>
@@ -757,7 +757,7 @@ const Aive = () => {
           
           {/* Botão CTA */}
           <div className="text-center mt-8">
-            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90 text-base">
               Escolher plano
             </Button>
           </div>
@@ -851,10 +851,10 @@ const Aive = () => {
                 Invista em conversas que vendem e escale com a Climb Up.
               </p>
               <div className="flex flex-col md:flex-row gap-4">
-                <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+                <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90 text-base">
                   Falar com vendas
                 </Button>
-                <Button onClick={redirectToWhatsApp} variant="outline" size="lg">
+                <Button onClick={redirectToWhatsApp} variant="outline" size="lg" className="text-base">
                   Saber mais
                 </Button>
               </div>
@@ -919,7 +919,7 @@ const Aive = () => {
                         onChange={(e) => setForm((prev) => ({ ...prev, cnpj: e.target.value }))}
                       />
                     </div>
-                    <Button type="submit" className="w-full" size="lg" disabled={sending}>
+                    <Button type="submit" className="w-full text-base" size="lg" disabled={sending}>
                       {sending ? "Enviando..." : "Falar com especialista"}
                     </Button>
                   </form>
@@ -1080,7 +1080,7 @@ const Aive = () => {
           {/* Botão Ver Mais */}
           {!showAllFAQs && (
             <div className="text-center mt-8">
-              <Button onClick={() => setShowAllFAQs(true)} variant="outline" size="lg" className="flex items-center gap-2">
+              <Button onClick={() => setShowAllFAQs(true)} variant="outline" size="lg" className="flex items-center gap-2 text-base">
                 Ver mais perguntas
                 <ChevronDown className="w-4 h-4" />
               </Button>
@@ -1089,7 +1089,7 @@ const Aive = () => {
           
           {/* Botão CTA */}
           <div className="text-center mt-12">
-            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
+            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90 text-base">
               Saber mais
             </Button>
           </div>
