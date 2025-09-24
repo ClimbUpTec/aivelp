@@ -388,7 +388,7 @@ const Aive = () => {
           {/* Layout em duas colunas */}
           <div className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center">
             {/* Coluna esquerda - Título e Subtítulo */}
-            <div className="order-1 lg:order-1 text-center lg:text-left">
+            <div className="order-1 lg:order-1 text-center lg:text-left mt-16 sm:mt-0">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6" style={{ color: '#FF5B04' }}>
                 Venda mais com a Aive. A IA da Climb Up que <RotatingText words={["vende", "atende", "qualifica", "negocia", "agenda"]} /> 24/7.
               </h1>
@@ -639,7 +639,7 @@ const Aive = () => {
           {/* Botão CTA */}
           <div className="text-center mt-12">
             <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
-              Quero AIVE
+              Automatizar agora
             </Button>
           </div>
         </div>
