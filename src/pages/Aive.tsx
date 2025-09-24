@@ -920,7 +920,7 @@ const Aive = () => {
                       />
                     </div>
                     <Button type="submit" className="w-full" size="lg" disabled={sending}>
-                      {sending ? "Enviando..." : "Quero AIVE"}
+                      {sending ? "Enviando..." : "Falar com especialista"}
                     </Button>
                   </form>
                 </CardContent>
