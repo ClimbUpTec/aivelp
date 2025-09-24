@@ -449,10 +449,10 @@ const Aive = () => {
             </Card>
 
             <Card className="p-3 sm:p-4 lg:p-6 text-center border-gray-300 bg-white">
-              <div className="mb-3">
-                <X className="w-10 h-10 mx-auto text-red-500" />
+              <div className="mb-2 sm:mb-3">
+                <X className="w-6 sm:w-8 lg:w-10 h-6 sm:h-8 lg:h-10 mx-auto text-red-500" />
               </div>
-              <p className="text-base font-medium text-red-500">
+              <p className="text-xs sm:text-sm lg:text-base font-medium text-red-500">
                 Equipe sobrecarregada
               </p>
             </Card>
