@@ -128,7 +128,7 @@ const AivePresentation = () => {
         {/* Botão CTA */}
         <div className="text-center mt-8 sm:mt-12">
           <Button onClick={redirectToWhatsApp} className="bg-primary hover:bg-primary/90 px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base lg:text-lg font-semibold w-full sm:w-auto">
-            Quero AIVE
+            Assistir demonstração
           </Button>
         </div>
       </div>
@@ -563,7 +563,7 @@ const Aive = () => {
           {/* Botão CTA */}
           <div className="text-center mt-12">
             <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90">
-              Quero AIVE
+              Assistir demonstração
             </Button>
           </div>
         </div>
