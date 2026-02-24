@@ -706,63 +706,6 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 8. Produtividade de um time inteiro pelo valor de 1 colaborador júnior */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
-              Produtividade de um time inteiro pelo valor de 1 colaborador júnior
-            </h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto">
-              Atende e vende como uma equipe completa, mas sem salário, férias, folgas ou encargos.
-            </p>
-          </div>
-
-
-          <Card className="overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead>
-                  <tr className="bg-primary text-primary-foreground">
-                    <th className="p-4 text-left"></th>
-                    <th className="p-4 text-center">Vendedor humano (1 pessoa)</th>
-                    <th className="p-4 text-center">Aive da Climb Up</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    ["Custo", "Salário + encargos", "Valor fixo e menor que contratar mais um funcionário"],
-                    ["Disponibilidade", "44h semanais", "24h/dia, 7 dias por semana"],
-                    ["Follow-up", "Depende de rotina", "Sempre no timing certo"],
-                    ["Organização", "Falhas no CRM", "Atualização automática e inteligente"],
-                    ["Atendimentos", "Limitado à carga de trabalho", "Ilimitado e imediato"],
-                    ["Treinamento", "Mensal e sujeito a turnover", "Pronto e validado pela sua equipe"]
-                  ].map(([feature, human, ai], index) => (
-                    <tr key={index} className={index % 2 === 0 ? "bg-muted/30" : "bg-background"}>
-                      <td className="p-4 font-medium">{feature}</td>
-                      <td className="p-4 text-center text-destructive">{human}</td>
-                      <td className="p-4 text-center text-primary font-medium">{ai}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </Card>
-
-          <div className="mt-8 text-center p-6 bg-primary/5 rounded-lg">
-            <p className="text-lg font-semibold text-primary">
-              💡 Com o valor de um único colaborador júnior por mês, você ativa a Aive, que entrega a produtividade ilimitada, o ano inteiro, sem comissão e sem erro.
-            </p>
-          </div>
-          
-          {/* Botão CTA */}
-          <div className="text-center mt-8">
-            <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90 text-base">
-              Escolher plano
-            </Button>
-          </div>
-        </div>
-      </section>
 
       {/* 9. Clientes Ativos e Empresas que Confiam */}
       <section className="py-16 px-4 bg-muted/20">
