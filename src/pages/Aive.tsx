@@ -5,7 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { OptimizedImage } from "@/components/OptimizedImage";
-import { AIVE_FEATURES, PRELOAD_IMAGES } from "@/constants/aiveFeatures";
+import { AGENTES_FEATURES, PRELOAD_IMAGES } from "@/constants/aiveFeatures";
 import { SECTION5_FEATURES, SECTION5_PRELOAD_IMAGES } from "@/constants/section5Features";
 import RotatingText from "@/components/RotatingText";
 
@@ -31,10 +31,10 @@ const JourneyHourglass = () => (
         <ArrowDown className="w-6 h-6 mx-auto mt-4 text-primary animate-bounce" />
       </div>
 
-      {/* Meio - onde Aive atua */}
+      {/* Meio - onde os Agentes Inteligentes atuam */}
       <div className="bg-primary text-primary-foreground rounded-lg p-6 shadow-elegant">
         <Bot className="w-10 h-10 mx-auto mb-3" />
-        <h3 className="font-bold text-lg mb-2">AIVE ATENDE EM TEMPO REAL</h3>
+        <h3 className="font-bold text-lg mb-2">AGENTES INTELIGENTES ATENDEM EM TEMPO REAL</h3>
         <ul className="text-sm space-y-1">
           <li>• Qualifica o lead</li>
           <li>• Identifica o perfil</li>
@@ -49,7 +49,7 @@ const JourneyHourglass = () => (
           </ul>
         </div>
         <div className="mt-4 pt-4 border-t border-primary-foreground/20">
-          <p className="text-sm font-medium">AIVE GERA CONVERSÃO</p>
+          <p className="text-sm font-medium">AGENTES INTELIGENTES GERAM CONVERSÃO</p>
           <ul className="text-xs mt-2 space-y-1">
             <li>• Agendamento</li>
             <li>• Link de compra</li>
@@ -73,10 +73,10 @@ const JourneyHourglass = () => (
   </div>
 );
 
-// Componente da apresentação da Aive
-const AivePresentation = () => {
+// Componente da apresentação dos Agentes Inteligentes
+const AgentesInteligentesPresentation = () => {
   const features = useMemo(() => 
-    AIVE_FEATURES.map(feature => ({
+    AGENTES_FEATURES.map(feature => ({
       name: feature.name,
       icon: <feature.icon className="w-8 h-8" />
     })), []
@@ -86,10 +86,10 @@ const AivePresentation = () => {
     <div className="py-12 sm:py-16 px-4 sm:px-6 lg:px-9 bg-muted">
       <div className="text-center max-w-5xl mx-auto">
         <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-primary">
-          Conheça a AIVE, a IA da <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-9 sm:h-11 md:h-14 mx-1 sm:mx-2" />
+          Conheça os Agentes Inteligentes da <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-9 sm:h-11 md:h-14 mx-1 sm:mx-2" />
         </h3>
         <p className="text-lg sm:text-xl text-muted-foreground mb-12 sm:mb-16 lg:mb-20 max-w-4xl mx-auto">
-          Você decide onde a Aive atua e quando ela passa o bastão pro seu time humano. Ela complementa. Ou lidera.
+          Você decide onde os Agentes Inteligentes atuam e quando eles passam o bastão pro seu time humano. Eles complementam. Ou lideram.
         </p>
         
         {/* Carrossel rotativo das funcionalidades */}
@@ -142,7 +142,7 @@ const BeforeAfterComparison = () => (
     {/* Antes */}
     <Card className="border-destructive/20">
       <CardHeader className="bg-destructive/5">
-        <h3 className="text-xl font-bold text-center text-destructive">Antes da Aive</h3>
+        <h3 className="text-xl font-bold text-center text-destructive">Antes dos Agentes Inteligentes</h3>
       </CardHeader>
       <CardContent className="p-6 space-y-4">
         {[
@@ -163,7 +163,7 @@ const BeforeAfterComparison = () => (
     {/* Depois */}
     <Card className="border-primary/20 shadow-elegant">
       <CardHeader className="bg-primary/5">
-        <h3 className="text-xl font-bold text-center text-primary">Depois da Aive</h3>
+        <h3 className="text-xl font-bold text-center text-primary">Depois dos Agentes Inteligentes</h3>
       </CardHeader>
       <CardContent className="p-6 space-y-4">
         {[
@@ -190,17 +190,17 @@ const ClimbUpFeatures = () => (
       {
         icon: <MessageSquare className="w-8 h-8" />,
         title: "Central de atendimento",
-        description: "Múltiplos canais → Aive → Equipes"
+        description: "Múltiplos canais → Agentes Inteligentes → Equipes"
       },
       {
         icon: <Users className="w-8 h-8" />,
         title: "CRM inteligente", 
-        description: "Para Aive registrar e acompanhar negociações"
+        description: "Para Agentes Inteligentes registrarem e acompanharem negociações"
       },
       {
         icon: <Zap className="w-8 h-8" />,
         title: "Campanhas em massa no WhatsApp",
-        description: "Aive ativa com inteligência"
+        description: "Agentes Inteligentes ativam com inteligência"
       },
       {
         icon: <Target className="w-8 h-8" />,
@@ -215,7 +215,7 @@ const ClimbUpFeatures = () => (
       {
         icon: <Shield className="w-8 h-8" />,
         title: "Relatórios em tempo real",
-        description: "Com insights gerados pela Aive"
+        description: "Com insights gerados pelos Agentes Inteligentes"
       },
       {
         icon: <Bot className="w-8 h-8" />,
@@ -262,7 +262,7 @@ const ClimbUpFeatures = () => (
 // Função para redirecionar para WhatsApp
 const redirectToWhatsApp = () => {
   const phoneNumber = "5551981435937"; // (51) 98143-5937
-  const message = "Olá! Gostaria de conhecer mais sobre a AIVE e como ela pode transformar meu atendimento e vendas.";
+  const message = "Olá! Gostaria de conhecer mais sobre os Agentes Inteligentes e como eles podem transformar meu atendimento e vendas.";
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   window.open(url, '_blank');
 };
@@ -390,7 +390,7 @@ const Aive = () => {
             {/* Coluna esquerda - Título e Subtítulo */}
             <div className="order-1 lg:order-1 text-center lg:text-left mt-16 sm:mt-0">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-5 sm:mb-6" style={{ color: '#FF5B04' }}>
-                Venda mais com a Aive. A IA da Climb Up que <RotatingText words={["vende", "atende", "qualifica", "negocia", "agenda"]} /> 24/7.
+                Venda mais com os Agentes Inteligentes da Climb Up que <RotatingText words={["vende", "atende", "qualifica", "negocia", "agenda"]} /> 24/7.
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-5 sm:mb-6 leading-relaxed">
                 Atende. Qualifica. Preenche o CRM. Faz follow-up. Agenda. Vende.
@@ -402,7 +402,7 @@ const Aive = () => {
             <div className="order-2 lg:order-2 flex justify-center">
               <img 
                 src="/lovable-uploads/8f490de1-1d20-4db1-b741-1e476de43db6.png" 
-                alt="Conversa da AIVE com cliente" 
+                alt="Conversa dos Agentes Inteligentes com cliente" 
                 className="w-full max-w-xs lg:max-w-sm xl:max-w-md"
               />
             </div>
@@ -493,18 +493,18 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 3. Apresentação da Aive */}
+      {/* 3. Apresentação dos Agentes Inteligentes */}
       <section className="py-12 sm:py-16 px-4 bg-gray-100">
         <div className="container mx-auto max-w-5xl">
-          <AivePresentation />
+          <AgentesInteligentesPresentation />
         </div>
       </section>
 
-      {/* 4. Por que a Aive é a melhor IA do mercado? */}
+      {/* 4. Por que os Agentes Inteligentes são os melhores do mercado? */}
       <section className="py-8 sm:py-12 lg:py-16 px-4 bg-muted">
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8">
-            Por que a Aive é diferente de tudo que você já viu?
+            Por que os Agentes Inteligentes são diferentes de tudo que você já viu?
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground mb-8 sm:mb-12 max-w-4xl mx-auto">
             Enquanto outros oferecem uma IA genérica, a Climb Up entrega um ecossistema inteligente com múltiplas IAs integradas e treinadas para cada etapa da jornada do seu cliente. Elas se comunicam entre si e com seu time humano.
@@ -547,7 +547,7 @@ const Aive = () => {
               <h3 className="text-xl font-bold mb-4 text-primary">Benefícios:</h3>
               <ul className="space-y-3">
                 {[
-                  "Escalabilidade real: você pode expandir para novos setores criando novas Aives especializadas.",
+                  "Escalabilidade real: você pode expandir para novos setores criando novos Agentes Inteligentes especializados.",
                   "Experiência premium para o cliente: fluidez, clareza e agilidade em qualquer etapa da jornada.",
                   "Uma equipe inteira que trabalha sem folgas, pra você e seus clientes."
                 ].map((benefit, index) => (
@@ -569,15 +569,15 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 5. Aive + Climb Up, um ecossistema completo! */}
+      {/* 5. Agentes Inteligentes + Climb Up, um ecossistema completo! */}
       <section className="py-16 px-4 bg-muted">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Aive + <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-12 md:h-14 mx-2" /> um ecossistema completo!
+              Agentes Inteligentes + <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-12 md:h-14 mx-2" /> um ecossistema completo!
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
-              Aive atua como cérebro. A Climb Up é o corpo que executa com estrutura e tecnologia. A Aive opera e faz todo trabalho repetitivo, seu time foca no que importa, e você espia e gerencia tudo em tempo real.
+              Os Agentes Inteligentes atuam como cérebro. A Climb Up é o corpo que executa com estrutura e tecnologia. Eles operam e fazem todo trabalho repetitivo, seu time foca no que importa, e você espia e gerencia tudo em tempo real.
             </p>
           </div>
           {/* Layout Mobile: Imagem de preview no topo */}
@@ -656,7 +656,7 @@ const Aive = () => {
               {
                 icon: <Sparkles className="w-8 h-8" />,
                 title: "Tom de voz adaptável",
-                description: "Aive tem tom de voz adaptável, humanizado e alinhado com a linguagem do seu negócio."
+                description: "Os Agentes Inteligentes têm tom de voz adaptável, humanizado e alinhado com a linguagem do seu negócio."
               },
               {
                 icon: <Users className="w-8 h-8" />,
@@ -689,11 +689,11 @@ const Aive = () => {
       </section>
 
 
-      {/* 7. Antes vs. Depois da Aive */}
+      {/* 7. Antes vs. Depois dos Agentes Inteligentes */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Antes da Aive vs. Depois da Aive
+            Antes dos Agentes Inteligentes vs. Depois dos Agentes Inteligentes
           </h2>
           <BeforeAfterComparison />
           
@@ -873,11 +873,11 @@ const Aive = () => {
         </div>
       </section>
 
-      {/* 11. Ciclo de implementação da Aive (visual horizontal) */}
+      {/* 11. Ciclo de implementação dos Agentes Inteligentes (visual horizontal) */}
       <section className="py-16 px-4 bg-secondary/5 pb-24">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Ciclo de implementação da Aive
+            Ciclo de implementação dos Agentes Inteligentes
           </h2>
           <p className="text-center text-lg text-muted-foreground mb-12">
             De 10 a 30 dias (ajustável conforme urgência)
@@ -970,27 +970,27 @@ const Aive = () => {
             {[
               {
                 question: "E se mudar meu cardápio, serviço ou campanha?",
-                answer: "A Aive é flexível e fácil de atualizar. Sempre que precisar mudar algum texto, ação ou estratégia, você pode solicitar pelo suporte — ou editar direto pela plataforma. E a gente também pode acompanhar com você mensalmente, se desejar."
+                answer: "Os Agentes Inteligentes são flexíveis e fáceis de atualizar. Sempre que precisar mudar algum texto, ação ou estratégia, você pode solicitar pelo suporte — ou editar direto pela plataforma. E a gente também pode acompanhar com você mensalmente, se desejar."
               },
               {
                 question: "Vai substituir meu time de vendas?",
-                answer: "Não. A Aive não substitui seu time — ela potencializa. Ela cuida das tarefas repetitivas, atende 24h, faz pré-venda e entrega o lead mais quente para seu time fechar. Seu time vende mais com menos esforço, e você ganha produtividade sem precisar contratar mais pessoas."
+                answer: "Não. Os Agentes Inteligentes não substituem seu time — eles potencializam. Eles cuidam das tarefas repetitivas, atendem 24h, fazem pré-venda e entregam o lead mais quente para seu time fechar. Seu time vende mais com menos esforço, e você ganha produtividade sem precisar contratar mais pessoas."
               },
               {
                 question: "Isso vai funcionar pro meu tipo de negócio?",
-                answer: "Sim. A Aive é adaptável a qualquer tipo de jornada comercial. Temos casos de sucesso em segmentos muito diferentes como restaurantes, clínicas, e-commerce, advocacia e distribuidoras. Criamos fluxos e abordagens específicas para o seu modelo, seu público e seu objetivo de conversão."
+                answer: "Sim. Os Agentes Inteligentes são adaptáveis a qualquer tipo de jornada comercial. Temos casos de sucesso em segmentos muito diferentes como restaurantes, clínicas, e-commerce, advocacia e distribuidoras. Criamos fluxos e abordagens específicas para o seu modelo, seu público e seu objetivo de conversão."
               },
               {
                 question: "É muito caro?",
-                answer: "Muito pelo contrário. A Aive custa menos que contratar um vendedor — e trabalha 24h por dia, sem pausa, sem comissão e com performance previsível. Você ganha escala com investimento inteligente."
+                answer: "Muito pelo contrário. Os Agentes Inteligentes custam menos que contratar um vendedor — e trabalham 24h por dia, sem pausa, sem comissão e com performance previsível. Você ganha escala com investimento inteligente."
               },
               {
                 question: "É seguro usar IA no atendimento?",
-                answer: "Sim! A Aive não toma decisões sozinha sem sua validação. Ela segue scripts, respeita regras pré-definidas e atua com limites. Além disso, toda a operação é monitorada — com histórico, auditoria e segurança de dados."
+                answer: "Sim! Os Agentes Inteligentes não tomam decisões sozinhos sem sua validação. Eles seguem scripts, respeitam regras pré-definidas e atuam com limites. Além disso, toda a operação é monitorada — com histórico, auditoria e segurança de dados."
               },
               {
                 question: "E se o cliente perceber que está falando com uma IA?",
-                answer: "Tudo depende da estratégia de tom de voz. Em alguns nichos, dizemos que é uma IA desde o início (com orgulho!). Em outros, a linguagem é tão natural que o cliente acha que está falando com alguém da equipe. Você escolhe como quer posicionar a Aive — e a gente entrega pronta nesse formato."
+                answer: "Tudo depende da estratégia de tom de voz. Em alguns nichos, dizemos que é uma IA desde o início (com orgulho!). Em outros, a linguagem é tão natural que o cliente acha que está falando com alguém da equipe. Você escolhe como quer posicionar os Agentes Inteligentes — e a gente entrega prontos nesse formato."
               },
               {
                 question: "Mas eu não sei nada de automação ou tecnologia...",
@@ -998,15 +998,15 @@ const Aive = () => {
               },
               {
                 question: "Isso não vai virar bagunça no meu atendimento?",
-                answer: "Muito pelo contrário. A Aive foi feita para organizar. Ela distribui atendimentos de forma automática, cria cards no CRM com todas as informações do cliente e mantém histórico completo. Com ela, sua operação fica mais clara, rápida e previsível."
+                answer: "Muito pelo contrário. Os Agentes Inteligentes foram feitos para organizar. Eles distribuem atendimentos de forma automática, criam cards no CRM com todas as informações do cliente e mantêm histórico completo. Com eles, sua operação fica mais clara, rápida e previsível."
               },
               {
                 question: "E se meu lead preferir falar com uma pessoa?",
-                answer: "Sem problema. A Aive sabe o momento certo de passar para um atendente humano. Ela identifica quando o lead precisa de suporte humano e transfere automaticamente, com todas as informações organizadas."
+                answer: "Sem problema. Os Agentes Inteligentes sabem o momento certo de passar para um atendente humano. Eles identificam quando o lead precisa de suporte humano e transferem automaticamente, com todas as informações organizadas."
               },
               {
                 question: "Quanto tempo leva pra começar?",
-                answer: "Em até 30 dias, você já tem a Aive 100% ativa e validada. Em alguns casos, conseguimos colocar no ar em menos de 10 dias. A gente adapta a jornada de onboarding à sua realidade."
+                answer: "Em até 30 dias, você já tem os Agentes Inteligentes 100% ativos e validados. Em alguns casos, conseguimos colocar no ar em menos de 10 dias. A gente adapta a jornada de onboarding à sua realidade."
               },
             ].slice(0, showAllFAQs ? 9 : 5).map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="border border-primary/20 rounded-lg px-4">
