@@ -5,7 +5,7 @@ import {
 } from "lucide-react";
 
 // Consolidated features data to avoid duplication and improve performance
-export const AIVE_FEATURES = [
+export const AGENTES_FEATURES = [
   {
     id: 1,
     name: "Atende 24/7",
@@ -93,4 +93,4 @@ export const AIVE_FEATURES = [
 ] as const;
 
 // Preload the first few critical images
-export const PRELOAD_IMAGES = AIVE_FEATURES.slice(0, 3).map(feature => feature.image);
+export const PRELOAD_IMAGES = AGENTES_FEATURES.slice(0, 3).map(feature => feature.image);

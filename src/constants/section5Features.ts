@@ -8,9 +8,9 @@ export const SECTION5_FEATURES = [
     id: 1,
     icon: Users,
     title: "CRM inteligente",
-    description: "Gestão completa de leads e negociações. Aive cria cards, insere resumos e seu time acompanha",
+    description: "Gestão completa de leads e negociações. Agentes Inteligentes criam cards, inserem resumos e seu time acompanha",
     image: "/lovable-uploads/449cc1bb-f3e4-4fdf-b151-9f642601e740.png",
-    caption: "CRM inteligente para gestão completa de leads e negociações. A Aive registra automaticamente todas as interações e seu time pode acompanhar o progresso em tempo real."
+    caption: "CRM inteligente para gestão completa de leads e negociações. Os Agentes Inteligentes registram automaticamente todas as interações e seu time pode acompanhar o progresso em tempo real."
   },
   {
     id: 2,
@@ -34,13 +34,13 @@ export const SECTION5_FEATURES = [
     title: "Classificação de atendimento",
     description: "Acompanhe leads perdidos e ganhos e classifique o atendimento dos seus atendentes",
     image: "/lovable-uploads/9631e126-b8a3-474a-9646-271a50d9e5d0.png",
-    caption: "Sistema inteligente de distribuição e gerenciamento de filas. A Aive organiza automaticamente a fila de atendimento e distribui leads por performance."
+    caption: "Sistema inteligente de distribuição e gerenciamento de filas. Os Agentes Inteligentes organizam automaticamente a fila de atendimento e distribuem leads por performance."
   },
   {
     id: 5,
     icon: Bot,
     title: "Pagamentos",
-    description: "Gateway de pagamentos integrado, seu time e a Aive enviam cobranças em segundos",
+    description: "Gateway de pagamentos integrado, seu time e os Agentes Inteligentes enviam cobranças em segundos",
     image: "/lovable-uploads/f80198f3-fd92-43f7-95d7-e6ad082c2dd4.png",
     caption: "Gateway de pagamentos integrado com múltiplas opções. Receba pagamentos via PIX, boleto e cartão diretamente na conversa do WhatsApp."
   },
@@ -66,7 +66,7 @@ export const SECTION5_FEATURES = [
     title: "Rodízio de leads",
     description: "Para o time humano complementar a IA",
     image: "/lovable-uploads/cdd5a6dc-af52-4256-9e5c-5af806eccf94.png",
-    caption: "Sistema de roteamento inteligente de conversas. A Aive decide quando transferir para humanos e qual vendedor recebe cada lead."
+    caption: "Sistema de roteamento inteligente de conversas. Os Agentes Inteligentes decidem quando transferir para humanos e qual vendedor recebe cada lead."
   },
   {
     id: 9,
