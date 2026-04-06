@@ -393,8 +393,7 @@ const Aive = () => {
                 Agentes Inteligentes que <RotatingText words={["conversam", "atendem", "qualificam", "negociam"]} /> 24/7.
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-5 sm:mb-6 leading-relaxed">
-                Conversam. Atendem. Qualificam. Preenchem o CRM. Fazem o follow-up. Consultam Informações. Coletam dados.
-                Ou, passam pro seu time. Tudo 24/7.
+                Conversam. Atendem. Qualificam. Preenchem o CRM. Fazem o follow-up. Consultam informações. Coletam dados. Ou, passam pro seu time. Tudo 24/7 e sem perder o contexto.
               </p>
             </div>
             
