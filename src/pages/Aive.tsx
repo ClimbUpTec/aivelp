@@ -875,7 +875,7 @@ const Aive = () => {
             {/* Linha horizontal conectora */}
             <div className="absolute top-12 left-0 right-0 h-0.5 bg-primary/30 hidden md:block"></div>
             
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
               {[
                 {
                   phase: "1",
@@ -903,9 +903,18 @@ const Aive = () => {
                   days: "Dias 5 a 7",
                   items: [
                     "Criação da estrutura de atendimento e equipes",
-                    "Configuração do CRM, funil e processos",
-                    "Organização de automações, campanhas e templates",
+                    "Configuração do CRM, funil, processos, campanhas e templates",
                     "Treinamento prático do dia a dia p/ o time"
+                  ]
+                },
+                {
+                  phase: "4",
+                  title: "Criação, validação e ativação da IA",
+                  days: "De 7 a 14 dias úteis",
+                  items: [
+                    "Desenvolvimento dos agentes",
+                    "Criação de fluxos, base de conhecimento e regras",
+                    "Testes, ajustes e validação com o cliente"
                   ]
                 }
               ].map((phase, index) => (
@@ -932,31 +941,6 @@ const Aive = () => {
                   </Card>
                 </div>
               ))}
-            </div>
-
-            <div className="max-w-lg mx-auto mb-12">
-              <div className="relative">
-                <div className="relative z-10 mb-6">
-                  <div className="w-24 h-24 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto">
-                    4
-                  </div>
-                </div>
-                
-                <Card className="text-center h-auto min-h-[20rem]">
-                  <CardContent className="p-6 h-full flex flex-col">
-                    <h3 className="text-xl font-bold mb-2">Criação, validação e ativação da IA</h3>
-                    <Badge variant="outline" className="mb-4 mx-auto">De 7 a 14 dias úteis</Badge>
-                    <ul className="space-y-2 text-sm text-left flex-1">
-                      {["Desenvolvimento dos agentes", "Criação de fluxos, base de conhecimento e regras", "Testes, ajustes e validação com o cliente"].map((item, itemIndex) => (
-                        <li key={itemIndex} className="flex items-start gap-2">
-                          <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              </div>
             </div>
 
             <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto">
