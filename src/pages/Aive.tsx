@@ -667,7 +667,7 @@ const Aive = () => {
               {
                 icon: <MessageCircle className="w-8 h-8" />,
                 title: "Contexto de conversa",
-                description: "Agentes que entendem o histórico, consideram os dados do CRM e do cadastro, retomam conversas no ponto certo após follow-ups e mantém o contexto do início ao fim do atendimento."
+                description: "Agentes que entendem o histórico, usam dados do CRM, retomam no ponto certo após follow-ups e mantêm o contexto do início ao fim."
               }
             ].map((feature, index) => (
               <Card key={index} className="text-center">
