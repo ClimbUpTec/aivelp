@@ -899,12 +899,13 @@ const Aive = () => {
                 },
                 {
                   phase: "3",
-                  title: "Estrutura e Gestão (Gestores)", 
+                  title: "Estrutura e Treinamento do Time", 
                   days: "Dias 5 a 7",
                   items: [
                     "Criação da estrutura de atendimento e equipes",
                     "Configuração do CRM, funil e processos",
-                    "Organização de automações, campanhas e templates"
+                    "Organização de automações, campanhas e templates",
+                    "Treinamento prático do dia a dia p/ o time"
                   ]
                 }
               ].map((phase, index) => (
@@ -933,54 +934,29 @@ const Aive = () => {
               ))}
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
-              {[
-                {
-                  phase: "4",
-                  title: "Treinamento do Time",
-                  days: "Dias 5 a 7",
-                  items: [
-                    "Treinamento prático do dia a dia",
-                    "Uso do CRM, atendimento e movimentação de leads",
-                    "Padronização do processo de atendimento"
-                  ]
-                },
-                {
-                  phase: "5",
-                  title: "Criação, validação e ativação da IA",
-                  days: "De 7 a 14 dias úteis",
-                  items: [
-                    "Desenvolvimento dos agentes com base no seu negócio",
-                    "Criação de fluxos, base de conhecimento e regras",
-                    "Testes, ajustes e validação com o cliente",
-                    "Apresentação da IA funcionando na prática",
-                    "Ativação oficial da operação"
-                  ]
-                }
-              ].map((phase, index) => (
-                <div key={index} className="relative">
-                  <div className="relative z-10 mb-6">
-                    <div className="w-24 h-24 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto">
-                      {phase.phase}
-                    </div>
+            <div className="max-w-lg mx-auto mb-12">
+              <div className="relative">
+                <div className="relative z-10 mb-6">
+                  <div className="w-24 h-24 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto">
+                    4
                   </div>
-                  
-                  <Card className="text-center h-auto min-h-[20rem]">
-                    <CardContent className="p-6 h-full flex flex-col">
-                      <h3 className="text-xl font-bold mb-2">{phase.title}</h3>
-                      <Badge variant="outline" className="mb-4 mx-auto">{phase.days}</Badge>
-                      <ul className="space-y-2 text-sm text-left flex-1">
-                        {phase.items.map((item, itemIndex) => (
-                          <li key={itemIndex} className="flex items-start gap-2">
-                            <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                            <span>{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </CardContent>
-                  </Card>
                 </div>
-              ))}
+                
+                <Card className="text-center h-auto min-h-[20rem]">
+                  <CardContent className="p-6 h-full flex flex-col">
+                    <h3 className="text-xl font-bold mb-2">Criação, validação e ativação da IA</h3>
+                    <Badge variant="outline" className="mb-4 mx-auto">De 7 a 14 dias úteis</Badge>
+                    <ul className="space-y-2 text-sm text-left flex-1">
+                      {["Desenvolvimento dos agentes", "Criação de fluxos, base de conhecimento e regras", "Testes, ajustes e validação com o cliente"].map((item, itemIndex) => (
+                        <li key={itemIndex} className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
 
             <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto">
