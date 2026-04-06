@@ -861,62 +861,54 @@ const Aive = () => {
       {/* 11. Ciclo de implementação dos Agentes Inteligentes (visual horizontal) */}
       <section className="py-16 px-4 bg-secondary/5 pb-24">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Ciclo de implementação dos Agentes Inteligentes
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+            Implantação guiada
           </h2>
+          <p className="text-center text-lg text-muted-foreground mb-2">
+            Em até 7 dias estruturamos sua operação
+          </p>
           <p className="text-center text-lg text-muted-foreground mb-12">
-            De 10 a 30 dias (ajustável conforme urgência)
+            Em até 14 dias úteis entregamos sua IA pronta para uso
           </p>
 
           <div className="relative">
             {/* Linha horizontal conectora */}
             <div className="absolute top-12 left-0 right-0 h-0.5 bg-primary/30 hidden md:block"></div>
             
-            <div className="grid md:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
               {[
                 {
                   phase: "1",
                   title: "Diagnóstico",
-                  days: "Dia 1 a 5",
+                  days: "Dias 1 a 3",
                   items: [
-                    "Reunião para entender estrutura, público e modelo de vendas",
-                    "Levantamento de canais, integrações e tipos de atendimento",
-                    "Aprovação de estrutura pelo cliente"
+                    "Entendimento do negócio, público e operação",
+                    "Validação de estrutura, canais e acessos",
+                    "Coleta de dados e briefing da IA"
                   ]
                 },
                 {
                   phase: "2", 
-                  title: "Criação de scripts",
-                  days: "Dia 5 a 15",
+                  title: "Implantação Técnica",
+                  days: "Dias 3 a 7",
                   items: [
-                    "Desenvolvimento de fluxos de conversa e base de conhecimento",
-                    "Definição de tom de voz e regras gerais",
-                    "Aprovação final de estrutura pelo cliente"
+                    "Configuração do WhatsApp oficial e canais",
+                    "Integração com ferramentas e CRM",
+                    "Testes iniciais de envio e recebimento"
                   ]
                 },
                 {
                   phase: "3",
-                  title: "Testes e ajustes", 
-                  days: "Dia 15 a 25",
+                  title: "Estrutura e Gestão (Gestores)", 
+                  days: "Dias 5 a 7",
                   items: [
-                    "Testes reais com leads",
-                    "Ajustes com base no comportamento do público",
-                    "Aprovação com o cliente da IA"
-                  ]
-                },
-                {
-                  phase: "4",
-                  title: "Ativação",
-                  days: "Dia 25 a 30", 
-                  items: [
-                    "Publicação oficial da IA",
-                    "Treinamento da equipe (se necessário)",
-                    "Início do acompanhamento de performance"
+                    "Criação da estrutura de atendimento e equipes",
+                    "Configuração do CRM, funil e processos",
+                    "Organização de automações, campanhas e templates"
                   ]
                 }
               ].map((phase, index) => (
                 <div key={index} className="relative">
-                  {/* Ícone circular numerado */}
                   <div className="relative z-10 mb-6">
                     <div className="w-24 h-24 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto">
                       {phase.phase}
@@ -940,6 +932,60 @@ const Aive = () => {
                 </div>
               ))}
             </div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+              {[
+                {
+                  phase: "4",
+                  title: "Treinamento do Time",
+                  days: "Dias 5 a 7",
+                  items: [
+                    "Treinamento prático do dia a dia",
+                    "Uso do CRM, atendimento e movimentação de leads",
+                    "Padronização do processo de atendimento"
+                  ]
+                },
+                {
+                  phase: "5",
+                  title: "Criação, validação e ativação da IA",
+                  days: "De 7 a 14 dias úteis",
+                  items: [
+                    "Desenvolvimento dos agentes com base no seu negócio",
+                    "Criação de fluxos, base de conhecimento e regras",
+                    "Testes, ajustes e validação com o cliente",
+                    "Apresentação da IA funcionando na prática",
+                    "Ativação oficial da operação"
+                  ]
+                }
+              ].map((phase, index) => (
+                <div key={index} className="relative">
+                  <div className="relative z-10 mb-6">
+                    <div className="w-24 h-24 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto">
+                      {phase.phase}
+                    </div>
+                  </div>
+                  
+                  <Card className="text-center h-auto min-h-[20rem]">
+                    <CardContent className="p-6 h-full flex flex-col">
+                      <h3 className="text-xl font-bold mb-2">{phase.title}</h3>
+                      <Badge variant="outline" className="mb-4 mx-auto">{phase.days}</Badge>
+                      <ul className="space-y-2 text-sm text-left flex-1">
+                        {phase.items.map((item, itemIndex) => (
+                          <li key={itemIndex} className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </div>
+              ))}
+            </div>
+
+            <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto">
+              Você não recebe só uma ferramenta. Recebe uma operação estruturada, com processos, equipe treinada e agentes inteligentes prontos para atuar e acompanhamento contínuo.
+            </p>
           </div>
         </div>
       </section>
