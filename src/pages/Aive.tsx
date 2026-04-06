@@ -899,12 +899,13 @@ const Aive = () => {
                 },
                 {
                   phase: "3",
-                  title: "Estrutura e Gestão (Gestores)", 
+                  title: "Estrutura e Treinamento do Time", 
                   days: "Dias 5 a 7",
                   items: [
                     "Criação da estrutura de atendimento e equipes",
                     "Configuração do CRM, funil e processos",
-                    "Organização de automações, campanhas e templates"
+                    "Organização de automações, campanhas e templates",
+                    "Treinamento prático do dia a dia p/ o time"
                   ]
                 }
               ].map((phase, index) => (
