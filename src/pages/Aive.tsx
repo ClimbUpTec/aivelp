@@ -647,7 +647,7 @@ const Aive = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
             "Mas eu não quero parecer um robô..."
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 icon: <Sparkles className="w-8 h-8" />,
