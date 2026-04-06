@@ -716,24 +716,8 @@ const Aive = () => {
               Empresas que confiam na <img src="/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" alt="Climb Up" className="inline h-16 md:h-18 mx-2" />
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-4xl mx-auto">
-              Centenas de empresas já trocaram a expansão da equipe por uma inteligência que vende o ano inteiro, sem pausas e com um ecossistema robusto.
+              Operações que evoluíram para um ecossistema de conversas inteligentes, com agentes de IA, CRM e gestão integrados em um só lugar.
             </p>
-            
-            {/* Métricas de clientes */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-12">
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">+2000</div>
-                <p className="text-muted-foreground">Clientes</p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">+2MM</div>
-                <p className="text-muted-foreground">Mensagens circuladas</p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">98%</div>
-                <p className="text-muted-foreground">Taxa de satisfação</p>
-              </div>
-            </div>
 
             {/* Logos das empresas */}
             <div>
