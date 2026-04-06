@@ -421,11 +421,8 @@ const Aive = () => {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white">
-              Sua empresa está passando por isso?
+              Dificuldade para atender, gerenciar e ter controle real das conversas com seus clientes?
             </h2>
-            <p className="text-lg sm:text-xl text-white max-w-3xl mx-auto">
-              Enfrentando dificuldades para gerar vendas e manter a operação no ritmo que o mercado exige?
-            </p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 lg:gap-6 mb-8 sm:mb-10">
