@@ -893,7 +893,7 @@ const Aive = () => {
                   days: "Dias 3 a 7",
                   items: [
                     "Configuração do WhatsApp oficial e canais",
-                    "Integração com ferramentas e CRM",
+                    "Integração com ferramentas",
                     "Testes iniciais de envio e recebimento"
                   ]
                 },
