@@ -9,7 +9,7 @@ import { AGENTES_FEATURES, PRELOAD_IMAGES } from "@/constants/aiveFeatures";
 import { SECTION5_FEATURES, SECTION5_PRELOAD_IMAGES } from "@/constants/section5Features";
 import RotatingText from "@/components/RotatingText";
 
-import { ArrowDown, CheckCircle, Star, Users, TrendingUp, Clock, MessageSquare, Bot, Zap, Shield, Target, Sparkles, AlertCircle, TrendingDown,
+import { ArrowDown, CheckCircle, CheckCircle2, Star, Users, TrendingUp, Clock, MessageSquare, Bot, Zap, Shield, Target, Sparkles, AlertCircle, TrendingDown,
          Phone, UserCheck, UserPlus, ArrowUpRight, Folder, FolderPlus, MoveHorizontal, 
          Bell, RefreshCw, Calendar, Link, FileText, Settings, Wrench, X, MessageCircle, Linkedin, Instagram, Facebook, Globe, ChevronDown } from "lucide-react";
 import React, { useState, useEffect, useMemo } from "react";
