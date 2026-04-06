@@ -647,7 +647,7 @@ const Aive = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
             "Mas eu não quero parecer um robô..."
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 icon: <Sparkles className="w-8 h-8" />,
@@ -663,6 +663,11 @@ const Aive = () => {
                 icon: <FileText className="w-8 h-8" />,
                 title: "Bases de conhecimento",
                 description: "Cada detalhe do seu negócio será memorizado e atualizado constantemente."
+              },
+              {
+                icon: <MessageCircle className="w-8 h-8" />,
+                title: "Contexto de conversa",
+                description: "Agentes que entendem o histórico, consideram os dados do CRM e do cadastro, retomam conversas no ponto certo após follow-ups e mantém o contexto do início ao fim do atendimento."
               }
             ].map((feature, index) => (
               <Card key={index} className="text-center">
