@@ -776,7 +776,7 @@ const Aive = () => {
                 O futuro está a uma mensagem de distância.
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Invista em conversas que vendem e escale com a Climb Up.
+                Quem atende melhor e mais rápido, vende mais. Atenda melhor e escale suas vendas com a Climb Up.
               </p>
               <div className="flex flex-col md:flex-row gap-4">
                 <Button onClick={redirectToWhatsApp} size="lg" className="bg-primary hover:bg-primary/90 text-base">
