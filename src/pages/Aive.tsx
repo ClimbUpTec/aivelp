@@ -663,6 +663,11 @@ const Aive = () => {
                 icon: <FileText className="w-8 h-8" />,
                 title: "Bases de conhecimento",
                 description: "Cada detalhe do seu negócio será memorizado e atualizado constantemente."
+              },
+              {
+                icon: <MessageCircle className="w-8 h-8" />,
+                title: "Contexto de conversa",
+                description: "Agentes que entendem o histórico, consideram os dados do CRM e do cadastro, retomam conversas no ponto certo após follow-ups e mantém o contexto do início ao fim do atendimento."
               }
             ].map((feature, index) => (
               <Card key={index} className="text-center">
