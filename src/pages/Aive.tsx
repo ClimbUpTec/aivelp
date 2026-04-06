@@ -9,7 +9,7 @@ import { AGENTES_FEATURES, PRELOAD_IMAGES } from "@/constants/aiveFeatures";
 import { SECTION5_FEATURES, SECTION5_PRELOAD_IMAGES } from "@/constants/section5Features";
 import RotatingText from "@/components/RotatingText";
 
-import { ArrowDown, CheckCircle, CheckCircle2, Star, Users, TrendingUp, Clock, MessageSquare, Bot, Zap, Shield, Target, Sparkles, AlertCircle, TrendingDown,
+import { ArrowDown, CheckCircle, Star, Users, TrendingUp, Clock, MessageSquare, Bot, Zap, Shield, Target, Sparkles, AlertCircle, TrendingDown,
          Phone, UserCheck, UserPlus, ArrowUpRight, Folder, FolderPlus, MoveHorizontal, 
          Bell, RefreshCw, Calendar, Link, FileText, Settings, Wrench, X, MessageCircle, Linkedin, Instagram, Facebook, Globe, ChevronDown } from "lucide-react";
 import React, { useState, useEffect, useMemo } from "react";
@@ -421,7 +421,7 @@ const Aive = () => {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white">
-              Enfrentando dificuldades para atender, supervisionar e organizar as conversas da sua equipe?
+              Sua empresa está passando por isso?
             </h2>
             <p className="text-lg sm:text-xl text-white max-w-3xl mx-auto">
               Enfrentando dificuldades para gerar vendas e manter a operação no ritmo que o mercado exige?
@@ -646,56 +646,37 @@ const Aive = () => {
 
       {/* 6. "Mas eu não quero parecer um robô..." */}
       <section className="py-16 px-4 bg-gradient-to-br from-orange-secondary/20 to-orange-secondary/10">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary text-center">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
             "Mas eu não quero parecer um robô..."
           </h2>
-          
-          {/* Tom de voz adaptável */}
-          <Card className="mb-8">
-            <CardContent className="p-8 text-center">
-              <div className="text-primary mb-4 flex justify-center">
-                <Sparkles className="w-10 h-10" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Tom de voz adaptável</h3>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Os Agentes Inteligentes têm tom de voz adaptável, humanizado e alinhado com a linguagem do seu negócio.
-              </p>
-            </CardContent>
-          </Card>
-
-          {/* Conheça os Agentes Inteligentes */}
-          <Card className="mb-8">
-            <CardContent className="p-8">
-              <h3 className="text-xl font-bold mb-3 text-center">Conheça os Agentes Inteligentes da Climb Up</h3>
-              <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-6">
-                Você decide onde os Agentes Inteligentes atuam e quando passam o bastão para o seu time humano. Eles podem complementar ou liderar o atendimento.
-              </p>
-              <h4 className="font-semibold mb-4 text-primary">O que eles fazem:</h4>
-              <ul className="grid md:grid-cols-2 gap-x-8 gap-y-3">
-                {[
-                  "Atendem 24/7",
-                  "Realizam múltiplos atendimentos simultaneamente",
-                  "Qualificam leads",
-                  "Cadastram clientes",
-                  "Direcionam para as equipes corretas",
-                  "Criam cards no CRM",
-                  "Inserem resumos automaticamente nos cards",
-                  "Fazem follow-ups e enviam lembretes",
-                  "Reativam leads parados",
-                  "Realizam agendamentos automáticos",
-                  "Enviam links de compra",
-                  "Geram orçamentos",
-                  "Se adaptam a cada negócio com personalizações constantes"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-muted-foreground">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                icon: <Sparkles className="w-8 h-8" />,
+                title: "Tom de voz adaptável",
+                description: "Os Agentes Inteligentes têm tom de voz adaptável, humanizado e alinhado com a linguagem do seu negócio."
+              },
+              {
+                icon: <Users className="w-8 h-8" />,
+                title: "Fluxos personalizados",
+                description: "Cada fluxo é escrito à mão, com contexto real do seu atendimento, como se fosse um membro da equipe."
+              },
+              {
+                icon: <FileText className="w-8 h-8" />,
+                title: "Bases de conhecimento",
+                description: "Cada detalhe do seu negócio será memorizado e atualizado constantemente."
+              }
+            ].map((feature, index) => (
+              <Card key={index} className="text-center">
+                <CardContent className="p-6">
+                  <div className="text-primary mb-4 flex justify-center">{feature.icon}</div>
+                  <h3 className="font-semibold mb-2">{feature.title}</h3>
+                  <p className="text-sm text-muted-foreground">{feature.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
           
           {/* Botão CTA */}
           <div className="text-center mt-12">
