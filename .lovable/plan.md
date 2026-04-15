@@ -1,16 +1,24 @@
 
-
-## Plano: Adicionar 3 logos de clientes e reordenar InfinitySul para primeira posição
+## Plano: Adicionar logo Forteplan e reordenar logos
 
 ### Alterações em `src/pages/Aive.tsx`
 
-**1. Copiar as 3 imagens enviadas para o projeto** (pasta `public/lovable-uploads/`):
-- `Captura_de_tela_2026-04-15_162843.png` → Allebasi Corretora
-- `WhatsApp_Image_2026-04-06_at_17.03.23.jpeg` → Maktub Seguros
-- `WhatsApp_Image_2026-04-06_at_17.01.41.jpeg` → Venuta Corretora de Seguros
+**1. Copiar imagem Forteplan** para `public/lovable-uploads/forteplan-logo.png`
 
-**2. Reordenar a lista de logos** (linhas 721-752):
-- Mover InfinitySul da posição 9 para a primeira posição
-- Adicionar as 3 novas logos ao final da lista
-- Ordem final: InfinitySul, Comfy Pizza, Litifica, Alligator, Garantepay, Economize, Bike Line, Anhanguera, Oito, Zoccoli, Allebasi, Maktub, Venuta
+**2. Reordenar logos** (linhas 722-760) para a seguinte ordem:
+1. InfinitySul
+2. Allebasi Corretora
+3. Maktub Seguros
+4. Venuta Corretora de Seguros
+5. **Forteplan Seguros** (nova)
+6. Comfy Pizza
+7. Litifica
+8. Alligator
+9. Garantepay
+10. Economize
+11. Bike Line
+12. Anhanguera
+13. Oito
+14. Zoccoli
 
+InfinitySul permanece em primeiro. Allebasi, Maktub e Venuta sobem para logo após InfinitySul. Forteplan entra como 5ª posição (início do bloco, após as seguradoras).
