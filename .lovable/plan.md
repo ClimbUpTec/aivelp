@@ -1,20 +1,19 @@
 
 
-## Plano: Áudio do cliente + velocidade mais lenta
+## Plano: Ajustar título, moldura cinza escura e fundo WhatsApp
 
-### Alterações em `src/components/WhatsAppChat.tsx`
+### Alterações
 
-**1. Mensagem de áudio do cliente**: Substituir a mensagem da linha 29 (`"Bati em outro carro no estacionamento do shopping."`) por uma mensagem de áudio. Adicionar campo `isAudio?: boolean` à interface `Message`. Na renderização, quando `isAudio` for true, exibir um visual de áudio (ícone de microfone + barra de onda simulada + duração "0:12") em vez do texto.
+**1. Título da seção (src/pages/Aive.tsx, linha 420)**
+Reduzir o tamanho do h2 de `text-2xl sm:text-3xl md:text-4xl lg:text-5xl` para `text-3xl md:text-4xl` — alinhando com os outros títulos do site.
 
-**2. Velocidade mais lenta**: Aumentar `TYPING_DELAY` de `900ms` para `1800ms` para dar tempo de leitura.
+**2. Moldura cinza escura (src/components/WhatsAppChat.tsx)**
+Trocar `border-orange-200 bg-orange-200` de volta para `border-gray-800 bg-gray-800` na moldura, notch e status bar. Ajustar texto da status bar para branco e notch interno para `bg-gray-700`.
 
-**3. Delay dinâmico (opcional mas recomendado)**: Calcular o delay baseado no comprimento da mensagem anterior — mensagens longas ficam visíveis por mais tempo antes da próxima aparecer. Fórmula: `Math.max(1500, texto.length * 40)` com cap em `3500ms`.
+**3. Fundo do WhatsApp na área de chat (src/components/WhatsAppChat.tsx)**
+Adicionar o padrão de fundo característico do WhatsApp na div do chat area. Usar um SVG inline como `backgroundImage` com opacidade baixa sobre o `#ECE5DD`, simulando o padrão de ícones repetidos (doodle pattern) do WhatsApp.
 
-### Detalhes do visual do áudio
+### Detalhes técnicos
 
-O balão de áudio terá:
-- Ícone de play (triângulo) à esquerda
-- Barras de onda estilizadas (5-7 divs com alturas variadas e `bg-gray-400`)
-- Texto "0:12" à direita
-- Mesmo estilo de balão branco do cliente
+- O fundo será um CSS `background-image` com um SVG data URI contendo ícones pequenos (relógio, chat, telefone etc.) em tom levemente mais escuro que o bege, repetido via `background-repeat: repeat`.
 
