@@ -397,13 +397,9 @@ const Aive = () => {
               </p>
             </div>
             
-            {/* Coluna direita - Imagem */}
+            {/* Coluna direita - WhatsApp animado */}
             <div className="order-2 lg:order-2 flex justify-center">
-              <img 
-                src="/lovable-uploads/8f490de1-1d20-4db1-b741-1e476de43db6.png" 
-                alt="Conversa dos Agentes Inteligentes com cliente" 
-                className="w-full max-w-xs lg:max-w-sm xl:max-w-md"
-              />
+              <WhatsAppChat />
             </div>
           </div>
           
