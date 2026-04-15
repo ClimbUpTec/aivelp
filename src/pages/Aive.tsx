@@ -8,6 +8,7 @@ import { OptimizedImage } from "@/components/OptimizedImage";
 import { AGENTES_FEATURES, PRELOAD_IMAGES } from "@/constants/aiveFeatures";
 import { SECTION5_FEATURES, SECTION5_PRELOAD_IMAGES } from "@/constants/section5Features";
 import RotatingText from "@/components/RotatingText";
+import WhatsAppChat from "@/components/WhatsAppChat";
 
 import { ArrowDown, CheckCircle, Star, Users, TrendingUp, Clock, MessageSquare, Bot, Zap, Shield, Target, Sparkles, AlertCircle, TrendingDown,
          Phone, UserCheck, UserPlus, ArrowUpRight, Folder, FolderPlus, MoveHorizontal, 
