@@ -8,6 +8,7 @@ import { OptimizedImage } from "@/components/OptimizedImage";
 import { AGENTES_FEATURES, PRELOAD_IMAGES } from "@/constants/aiveFeatures";
 import { SECTION5_FEATURES, SECTION5_PRELOAD_IMAGES } from "@/constants/section5Features";
 import RotatingText from "@/components/RotatingText";
+import WhatsAppChat from "@/components/WhatsAppChat";
 
 import { ArrowDown, CheckCircle, Star, Users, TrendingUp, Clock, MessageSquare, Bot, Zap, Shield, Target, Sparkles, AlertCircle, TrendingDown,
          Phone, UserCheck, UserPlus, ArrowUpRight, Folder, FolderPlus, MoveHorizontal, 
@@ -397,13 +398,9 @@ const Aive = () => {
               </p>
             </div>
             
-            {/* Coluna direita - Imagem */}
+            {/* Coluna direita - WhatsApp animado */}
             <div className="order-2 lg:order-2 flex justify-center">
-              <img 
-                src="/lovable-uploads/8f490de1-1d20-4db1-b741-1e476de43db6.png" 
-                alt="Conversa dos Agentes Inteligentes com cliente" 
-                className="w-full max-w-xs lg:max-w-sm xl:max-w-md"
-              />
+              <WhatsAppChat />
             </div>
           </div>
           
