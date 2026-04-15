@@ -417,7 +417,7 @@ const Aive = () => {
       <section className="py-12 sm:py-16 px-4 relative bg-gradient-to-br from-orange-400 to-orange-600">
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white">
               Dificuldade para atender, gerenciar e ter controle real das conversas com seus clientes?
             </h2>
           </div>
