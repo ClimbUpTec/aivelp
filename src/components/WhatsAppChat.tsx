@@ -4,6 +4,7 @@ interface Message {
   sender: "client" | "agent";
   text: string;
   agentName?: string;
+  isAudio?: boolean;
 }
 
 const MESSAGES: Message[] = [
@@ -26,7 +27,7 @@ const MESSAGES: Message[] = [
   { sender: "agent", text: "Se puder, me envia fotos do acidente? Isso já agiliza bastante o atendimento.", agentName: "Nina (IA)" },
   { sender: "client", text: "meu marido que tem" },
   { sender: "agent", text: "Sem problema.\nVocê pode me contar rapidamente o que aconteceu? Se preferir, pode enviar um áudio.", agentName: "Nina (IA)" },
-  { sender: "client", text: "Bati em outro carro no estacionamento do shopping." },
+  { sender: "client", text: "", isAudio: true },
   { sender: "agent", text: "Obrigada por me explicar.", agentName: "Nina (IA)" },
   { sender: "agent", text: "Você consegue me informar o endereço onde aconteceu?", agentName: "Nina (IA)" },
   { sender: "client", text: "Av Assis Brasil 123" },
@@ -44,7 +45,6 @@ const MESSAGES: Message[] = [
   { sender: "agent", text: "Se precisar de qualquer coisa nesse meio tempo, é só me chamar por aqui, combinado?", agentName: "Nina (IA)" },
 ];
 
-const TYPING_DELAY = 900;
 const RESTART_DELAY = 3000;
 
 const WhatsAppChat = () => {
@@ -81,9 +81,14 @@ const WhatsAppChat = () => {
     setTypingSender(nextMessage.sender);
     setIsTyping(true);
 
+    // Dynamic delay based on previous message length
+    const prevMsg = visibleMessages > 0 ? MESSAGES[visibleMessages - 1] : null;
+    const prevLength = prevMsg ? prevMsg.text.length : 0;
+    const delay = Math.min(3500, Math.max(1500, prevLength * 40));
+
     const timer = setTimeout(() => {
       showNextMessage();
-    }, TYPING_DELAY);
+    }, delay);
 
     return () => clearTimeout(timer);
   }, [visibleMessages, showNextMessage]);
@@ -139,7 +144,21 @@ const WhatsAppChat = () => {
               {msg.agentName && (
                 <p className="text-[10px] font-bold text-green-700">{msg.agentName}</p>
               )}
-              <p className="text-gray-800 text-[13px] leading-snug whitespace-pre-line">{msg.text}</p>
+              {msg.isAudio ? (
+                <div className="flex items-center gap-2 py-1">
+                  <svg viewBox="0 0 24 24" fill="#555" className="w-4 h-4 flex-shrink-0">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                  <div className="flex items-end gap-[2px]">
+                    {[3, 6, 4, 8, 5, 7, 3, 6, 4, 7, 5, 8, 3].map((h, idx) => (
+                      <div key={idx} className="w-[2px] bg-gray-400 rounded-full" style={{ height: `${h}px` }} />
+                    ))}
+                  </div>
+                  <span className="text-[10px] text-gray-500 ml-1">0:12</span>
+                </div>
+              ) : (
+                <p className="text-gray-800 text-[13px] leading-snug whitespace-pre-line">{msg.text}</p>
+              )}
             </div>
           ))}
 
