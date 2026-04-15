@@ -4,6 +4,7 @@ interface Message {
   sender: "client" | "agent";
   text: string;
   agentName?: string;
+  isAudio?: boolean;
 }
 
 const MESSAGES: Message[] = [
@@ -26,7 +27,7 @@ const MESSAGES: Message[] = [
   { sender: "agent", text: "Se puder, me envia fotos do acidente? Isso já agiliza bastante o atendimento.", agentName: "Nina (IA)" },
   { sender: "client", text: "meu marido que tem" },
   { sender: "agent", text: "Sem problema.\nVocê pode me contar rapidamente o que aconteceu? Se preferir, pode enviar um áudio.", agentName: "Nina (IA)" },
-  { sender: "client", text: "Bati em outro carro no estacionamento do shopping." },
+  { sender: "client", text: "", isAudio: true },
   { sender: "agent", text: "Obrigada por me explicar.", agentName: "Nina (IA)" },
   { sender: "agent", text: "Você consegue me informar o endereço onde aconteceu?", agentName: "Nina (IA)" },
   { sender: "client", text: "Av Assis Brasil 123" },
@@ -44,7 +45,6 @@ const MESSAGES: Message[] = [
   { sender: "agent", text: "Se precisar de qualquer coisa nesse meio tempo, é só me chamar por aqui, combinado?", agentName: "Nina (IA)" },
 ];
 
-const TYPING_DELAY = 900;
 const RESTART_DELAY = 3000;
 
 const WhatsAppChat = () => {
