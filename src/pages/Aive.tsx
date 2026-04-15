@@ -723,6 +723,18 @@ const Aive = () => {
                   <img src="/lovable-uploads/e533801f-0c77-42f6-bf64-2a14e3536c3a.png" alt="InfinitySul - Corretora de Seguros" className="max-h-full max-w-full object-contain" />
                 </div>
                 <div className="h-24 w-32 flex items-center justify-center">
+                  <img src="/lovable-uploads/allebasi-logo.png" alt="Allebasi Corretora" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-24 w-32 flex items-center justify-center">
+                  <img src="/lovable-uploads/maktub-logo.jpeg" alt="Maktub Seguros" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-24 w-32 flex items-center justify-center">
+                  <img src="/lovable-uploads/venuta-logo.jpeg" alt="Venuta Corretora de Seguros" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-24 w-32 flex items-center justify-center">
+                  <img src="/lovable-uploads/forteplan-logo.png" alt="Forteplan Seguros" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="h-24 w-32 flex items-center justify-center">
                   <img src="/lovable-uploads/b50cf148-a9f5-4926-ae36-c0513e64ce37.png" alt="Comfy Pizza Napoletana" className="max-h-full max-w-full object-contain" />
                 </div>
                 <div className="h-24 w-32 flex items-center justify-center">
@@ -748,15 +760,6 @@ const Aive = () => {
                 </div>
                 <div className="h-24 w-32 flex items-center justify-center">
                   <img src="/lovable-uploads/cc4d5430-8742-4f78-91c6-705be41e0f37.png" alt="Zoccoli Advogados" className="max-h-full max-w-full object-contain" />
-                </div>
-                <div className="h-24 w-32 flex items-center justify-center">
-                  <img src="/lovable-uploads/allebasi-logo.png" alt="Allebasi Corretora" className="max-h-full max-w-full object-contain" />
-                </div>
-                <div className="h-24 w-32 flex items-center justify-center">
-                  <img src="/lovable-uploads/maktub-logo.jpeg" alt="Maktub Seguros" className="max-h-full max-w-full object-contain" />
-                </div>
-                <div className="h-24 w-32 flex items-center justify-center">
-                  <img src="/lovable-uploads/venuta-logo.jpeg" alt="Venuta Corretora de Seguros" className="max-h-full max-w-full object-contain" />
                 </div>
               </div>
             </div>
