@@ -1,44 +1,23 @@
 
 
-## Plano: Moldura cinza, tamanho menor e nova conversa de sinistro
+## Plano: Auto-scroll, nomes das IAs, tamanho menor e moldura cinza claro
 
 ### Alterações em `src/components/WhatsAppChat.tsx`
 
-**1. Cor da moldura**: Voltar para `border-gray-800 bg-gray-800` (substituir todas as referências a `orange-500`)
+**1. Auto-scroll**: Adicionar `useRef` na div do chat area e chamar `scrollIntoView` ou `scrollTop = scrollHeight` sempre que `visibleMessages` mudar, para que as mensagens subam automaticamente.
 
-**2. Tamanho 20% menor**: Trocar `max-w-xs lg:max-w-sm` para `max-w-[256px] lg:max-w-[307px]` (80% dos valores originais)
+**2. Nomes das IAs nos balões**: Nas mensagens do agente, exibir o nome da IA como label em negrito acima do texto:
+- Mensagens 1-3 (índices 1, 3): prefixo "Gabriela (IA)"
+- Mensagens da Nina (índices 5+): já têm "Nina:" no texto — trocar para exibir "Nina (IA)" como label separado e remover o prefixo "Nina: " do texto
 
-**3. Nova conversa**: Substituir o array `MESSAGES` pelo fluxo completo de sinistro com ~30 mensagens. O header muda de "Agente Climb Up" para "Gabriela Seguros". Para diferenciar as duas agentes (Gabriela e Nina), o nome será incluído como prefixo no texto das mensagens da Nina (ex: "Nina: Oi! Eu sou a Nina...")
+**3. Tamanho 20% menor**: Reduzir `max-w-[256px]` para `max-w-[205px]` e `max-w-[307px]` para `max-w-[246px]`
 
-**4. Velocidade**: Reduzir `TYPING_DELAY` de 1200ms para 900ms dado que a conversa é mais longa
+**4. Moldura cinza claro**: Trocar `border-gray-800 bg-gray-800` para `border-gray-300 bg-gray-300` na moldura, notch e status bar. Ajustar cor do texto da status bar para escuro.
 
-**5. Header WhatsApp**: Trocar nome para "Gabriela Seguros" e avatar "GS"
+### Detalhes técnicos
 
-Mensagens do array (resumo):
-- Cliente: "Oi"
-- Gabriela: saudação + pergunta cotação/sinistro
-- Cliente: "sinistro"
-- Gabriela: direciona pra Nina
-- Cliente: "Tá bom"
-- Nina: se apresenta, pede nome completo
-- Cliente: nome
-- Nina: pede CPF
-- Cliente: CPF
-- Nina: mostra dados da apólice completos
-- Cliente: "eu bati o carro"
-- Nina: acolhe, pede fotos
-- Cliente: "meu marido que tem"
-- Nina: pede relato
-- Cliente: relato do acidente
-- Nina: pede endereço
-- Cliente: endereço
-- Nina: pergunta BO
-- Cliente: "sim"
-- Nina: pergunta contato da outra pessoa
-- Cliente: telefone
-- Nina: pergunta vítimas
-- Cliente: "não"
-- Nina: coletou tudo, vai encaminhar
-- Cliente: "Ok"
-- Nina: mensagem final de encerramento
+- Novo `useRef<HTMLDivElement>` para o container do chat
+- `useEffect` com dependência em `visibleMessages` que faz `chatRef.current.scrollTop = chatRef.current.scrollHeight`
+- Adicionar campo `agentName` à interface `Message` (opcional) para as mensagens do agente
+- Renderizar `agentName` como `<p className="text-[10px] font-bold text-green-700">` antes do texto
 
