@@ -738,7 +738,7 @@ const Aive = () => {
                   <img src="/lovable-uploads/livpro-logo.png" alt="Livpro" className="max-h-full max-w-full object-contain" />
                 </div>
                 <div className="h-24 w-32 flex items-center justify-center">
-                  <img src="/lovable-uploads/finova-logo.png" alt="Grupo Finova" className="max-h-full max-w-full object-contain" />
+                  <img src="/lovable-uploads/finova-logo.png" alt="Grupo Finova" className="max-h-14 max-w-full object-contain" />
                 </div>
                 <div className="h-24 w-32 flex items-center justify-center">
                   <img src="/lovable-uploads/b50cf148-a9f5-4926-ae36-c0513e64ce37.png" alt="Comfy Pizza Napoletana" className="max-h-full max-w-full object-contain" />
