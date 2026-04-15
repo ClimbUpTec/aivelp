@@ -85,7 +85,7 @@ const WhatsAppChat = () => {
 
         {/* Chat area */}
         <div
-          className="px-3 py-3 space-y-2 min-h-[320px] max-h-[380px] overflow-y-auto flex flex-col"
+          className="px-3 py-3 space-y-2 flex-1 overflow-y-auto flex flex-col"
           style={{ backgroundColor: "#ECE5DD" }}
         >
           {MESSAGES.slice(0, visibleMessages).map((msg, i) => (
