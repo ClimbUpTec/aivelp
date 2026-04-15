@@ -96,17 +96,17 @@ const WhatsAppChat = () => {
   return (
     <div className="w-full max-w-[205px] lg:max-w-[246px] mx-auto">
       {/* Phone frame */}
-      <div className="rounded-[2.5rem] border-[6px] border-orange-200 bg-orange-200 shadow-xl overflow-hidden aspect-[9/19] flex flex-col">
+      <div className="rounded-[2.5rem] border-[6px] border-gray-800 bg-gray-800 shadow-xl overflow-hidden aspect-[9/19] flex flex-col">
         {/* Notch */}
-        <div className="bg-orange-200 flex justify-center pt-2 pb-1">
-          <div className="w-20 h-5 bg-orange-300 rounded-full" />
+        <div className="bg-gray-800 flex justify-center pt-2 pb-1">
+          <div className="w-20 h-5 bg-gray-700 rounded-full" />
         </div>
         {/* Status bar */}
-        <div className="bg-orange-200 text-gray-700 text-[10px] flex justify-between items-center px-4 py-1">
+        <div className="bg-gray-800 text-white text-[10px] flex justify-between items-center px-4 py-1">
           <span>9:41</span>
           <div className="flex gap-1 items-center">
-            <div className="w-3.5 h-2 border border-gray-700 rounded-sm relative">
-              <div className="absolute inset-[1px] right-[2px] bg-gray-700 rounded-[1px]" />
+            <div className="w-3.5 h-2 border border-white rounded-sm relative">
+              <div className="absolute inset-[1px] right-[2px] bg-white rounded-[1px]" />
             </div>
           </div>
         </div>
@@ -126,7 +126,12 @@ const WhatsAppChat = () => {
         <div
           ref={chatRef}
           className="px-3 py-3 space-y-2 flex-1 overflow-y-auto flex flex-col"
-          style={{ backgroundColor: "#ECE5DD" }}
+          style={{
+            backgroundColor: "#ECE5DD",
+            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cdefs%3E%3Cstyle%3E.i%7Bfill:%23d5cfc5;%7D%3C/style%3E%3C/defs%3E%3Cpath class='i' d='M20 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0z'/%3E%3Cpath class='i' d='M60 30l-3 5h6z'/%3E%3Cpath class='i' d='M110 15a3 3 0 0 1 3 3v4a3 3 0 0 1-6 0v-4a3 3 0 0 1 3-3z'/%3E%3Cpath class='i' d='M160 10l2 6h-4z'/%3E%3Cpath class='i' d='M30 55a2 2 0 1 1-4 0 2 2 0 0 1 4 0z'/%3E%3Cpath class='i' d='M80 50h5v5h-5z'/%3E%3Cpath class='i' d='M140 55a2 2 0 1 1-4 0 2 2 0 0 1 4 0z'/%3E%3Cpath class='i' d='M180 45l3 5h-6z'/%3E%3Cpath class='i' d='M50 90a2 2 0 1 1-4 0 2 2 0 0 1 4 0z'/%3E%3Cpath class='i' d='M100 80h5v5h-5z'/%3E%3Cpath class='i' d='M150 90l2 6h-4z'/%3E%3Cpath class='i' d='M10 100a2 2 0 1 1-4 0 2 2 0 0 1 4 0z'/%3E%3Cpath class='i' d='M70 120a3 3 0 0 1 3 3v4a3 3 0 0 1-6 0v-4a3 3 0 0 1 3-3z'/%3E%3Cpath class='i' d='M130 110h5v5h-5z'/%3E%3Cpath class='i' d='M175 115a2 2 0 1 1-4 0 2 2 0 0 1 4 0z'/%3E%3Cpath class='i' d='M25 150l3 5h-6z'/%3E%3Cpath class='i' d='M90 145a2 2 0 1 1-4 0 2 2 0 0 1 4 0z'/%3E%3Cpath class='i' d='M155 150h5v5h-5z'/%3E%3Cpath class='i' d='M40 180a2 2 0 1 1-4 0 2 2 0 0 1 4 0z'/%3E%3Cpath class='i' d='M120 175l2 6h-4z'/%3E%3Cpath class='i' d='M185 180a3 3 0 0 1 3 3v4a3 3 0 0 1-6 0v-4a3 3 0 0 1 3-3z'/%3E%3C/svg%3E")`,
+            backgroundRepeat: "repeat",
+            backgroundSize: "200px 200px",
+          }}
         >
           {MESSAGES.slice(0, visibleMessages).map((msg, i) => (
             <div
