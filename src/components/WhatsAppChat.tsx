@@ -81,9 +81,14 @@ const WhatsAppChat = () => {
     setTypingSender(nextMessage.sender);
     setIsTyping(true);
 
+    // Dynamic delay based on previous message length
+    const prevMsg = visibleMessages > 0 ? MESSAGES[visibleMessages - 1] : null;
+    const prevLength = prevMsg ? prevMsg.text.length : 0;
+    const delay = Math.min(3500, Math.max(1500, prevLength * 40));
+
     const timer = setTimeout(() => {
       showNextMessage();
-    }, TYPING_DELAY);
+    }, delay);
 
     return () => clearTimeout(timer);
   }, [visibleMessages, showNextMessage]);
