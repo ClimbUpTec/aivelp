@@ -8,21 +8,27 @@ interface Message {
 
 const MESSAGES: Message[] = [
   { sender: "client", text: "Oi" },
-  { sender: "agent", text: "Olá! Tudo bem?\nVocê precisa de ajuda com cotação de seguro ou com alguma apólice ou sinistro?", agentName: "Gabriela (IA)" },
+  { sender: "agent", text: "Olá! Tudo bem?", agentName: "Gabriela (IA)" },
+  { sender: "agent", text: "Você precisa de ajuda com cotação de seguro ou com alguma apólice ou sinistro?", agentName: "Gabriela (IA)" },
   { sender: "client", text: "sinistro" },
   { sender: "agent", text: "Entendi! Vou te direcionar agora pra especialista de sinistros que vai te ajudar, tudo bem?", agentName: "Gabriela (IA)" },
   { sender: "client", text: "Tá bom" },
-  { sender: "agent", text: "Oi! Eu sou a Nina, do time de sinistros.\nVou te ajudar por aqui, tá?\n\nEncontrei um cadastro aqui no nome de Alice.\nPode me confirmar seu nome completo pra eu buscar sua apólice?", agentName: "Nina (IA)" },
+  { sender: "agent", text: "Oi! Eu sou a Nina, do time de sinistros.\nVou te ajudar por aqui, tá?", agentName: "Nina (IA)" },
+  { sender: "agent", text: "Encontrei um cadastro aqui no nome de Alice.\nPode me confirmar seu nome completo pra eu buscar sua apólice?", agentName: "Nina (IA)" },
   { sender: "client", text: "Alice Ferreira Ortiz" },
-  { sender: "agent", text: "Perfeito.\n\nAlice, pra eu te enviar os detalhes da sua apólice, pode me confirmar seu CPF ou CNPJ?", agentName: "Nina (IA)" },
+  { sender: "agent", text: "Perfeito.", agentName: "Nina (IA)" },
+  { sender: "agent", text: "Alice, pra eu te enviar os detalhes da sua apólice, pode me confirmar seu CPF ou CNPJ?", agentName: "Nina (IA)" },
   { sender: "client", text: "12345678910" },
-  { sender: "agent", text: "Perfeito, Alice! Já localizei sua apólice aqui 👇\n\n✅ Segurado: Alice Ferreira Ortiz\n🚗 Veículo: HB20 (Placa BRA2E25)\n🏢 Seguradora: Bradesco\n📅 Vigência: até 04/04/2027\n💰 Franquia: R$ 2.000\n📞 Assistência 24h: 0800 12345\n\nMe conta qual foi o sinistro?", agentName: "Nina (IA)" },
+  { sender: "agent", text: "Perfeito, Alice! Já localizei sua apólice aqui 👇\n\n✅ Segurado: Alice Ferreira Ortiz\n🚗 Veículo: HB20 (Placa BRA2E25)\n🏢 Seguradora: Bradesco\n📅 Vigência: até 04/04/2027\n💰 Franquia: R$ 2.000\n📞 Assistência 24h: 0800 12345", agentName: "Nina (IA)" },
+  { sender: "agent", text: "Me conta qual foi o sinistro?", agentName: "Nina (IA)" },
   { sender: "client", text: "eu bati o carro" },
-  { sender: "agent", text: "Poxa, sinto muito por isso, Alice…\nMas fica tranquila que eu vou te ajudar agora, tá?\n\nSe puder, me envia fotos do acidente? Isso já agiliza bastante o atendimento.", agentName: "Nina (IA)" },
+  { sender: "agent", text: "Poxa, sinto muito por isso, Alice…\nMas fica tranquila que eu vou te ajudar agora, tá?", agentName: "Nina (IA)" },
+  { sender: "agent", text: "Se puder, me envia fotos do acidente? Isso já agiliza bastante o atendimento.", agentName: "Nina (IA)" },
   { sender: "client", text: "meu marido que tem" },
   { sender: "agent", text: "Sem problema.\nVocê pode me contar rapidamente o que aconteceu? Se preferir, pode enviar um áudio.", agentName: "Nina (IA)" },
   { sender: "client", text: "Bati em outro carro no estacionamento do shopping." },
-  { sender: "agent", text: "Obrigada por me explicar.\n\nVocê consegue me informar o endereço onde aconteceu?", agentName: "Nina (IA)" },
+  { sender: "agent", text: "Obrigada por me explicar.", agentName: "Nina (IA)" },
+  { sender: "agent", text: "Você consegue me informar o endereço onde aconteceu?", agentName: "Nina (IA)" },
   { sender: "client", text: "Av Assis Brasil 123" },
   { sender: "agent", text: "Perfeito.\nVocê chegou a fazer o Boletim de Ocorrência?", agentName: "Nina (IA)" },
   { sender: "client", text: "sim" },
@@ -30,9 +36,12 @@ const MESSAGES: Message[] = [
   { sender: "client", text: "tenho 51 123456789" },
   { sender: "agent", text: "Perfeito. E só pra confirmar: teve alguma vítima no acidente?", agentName: "Nina (IA)" },
   { sender: "client", text: "não" },
-  { sender: "agent", text: "Que bom.\n\nAlice, já coletei todas as informações iniciais aqui.\nVou encaminhar seu atendimento agora pra nossa equipe dar continuidade e te orientar nos próximos passos, tudo bem?", agentName: "Nina (IA)" },
+  { sender: "agent", text: "Que bom.", agentName: "Nina (IA)" },
+  { sender: "agent", text: "Alice, já coletei todas as informações iniciais aqui.\nVou encaminhar seu atendimento agora pra nossa equipe dar continuidade e te orientar nos próximos passos, tudo bem?", agentName: "Nina (IA)" },
   { sender: "client", text: "Ok" },
-  { sender: "agent", text: "Perfeito.\nJá deixei tudo registrado e encaminhado aqui internamente.\n\nNossa equipe vai iniciar o processo de sinistro e seguir com você pra resolver o seu caso o mais rápido possível.\nEm breve, um corretor vai entrar em contato por ligação com você.\n\nSe precisar de qualquer coisa nesse meio tempo, é só me chamar por aqui, combinado?", agentName: "Nina (IA)" },
+  { sender: "agent", text: "Perfeito.\nJá deixei tudo registrado e encaminhado aqui internamente.", agentName: "Nina (IA)" },
+  { sender: "agent", text: "Nossa equipe vai iniciar o processo de sinistro e seguir com você pra resolver o seu caso o mais rápido possível.\nEm breve, um corretor vai entrar em contato por ligação com você.", agentName: "Nina (IA)" },
+  { sender: "agent", text: "Se precisar de qualquer coisa nesse meio tempo, é só me chamar por aqui, combinado?", agentName: "Nina (IA)" },
 ];
 
 const TYPING_DELAY = 900;
@@ -82,13 +91,13 @@ const WhatsAppChat = () => {
   return (
     <div className="w-full max-w-[205px] lg:max-w-[246px] mx-auto">
       {/* Phone frame */}
-      <div className="rounded-[2.5rem] border-[6px] border-gray-300 bg-gray-300 shadow-xl overflow-hidden aspect-[9/19] flex flex-col">
+      <div className="rounded-[2.5rem] border-[6px] border-orange-200 bg-orange-200 shadow-xl overflow-hidden aspect-[9/19] flex flex-col">
         {/* Notch */}
-        <div className="bg-gray-300 flex justify-center pt-2 pb-1">
-          <div className="w-20 h-5 bg-gray-400 rounded-full" />
+        <div className="bg-orange-200 flex justify-center pt-2 pb-1">
+          <div className="w-20 h-5 bg-orange-300 rounded-full" />
         </div>
         {/* Status bar */}
-        <div className="bg-gray-300 text-gray-700 text-[10px] flex justify-between items-center px-4 py-1">
+        <div className="bg-orange-200 text-gray-700 text-[10px] flex justify-between items-center px-4 py-1">
           <span>9:41</span>
           <div className="flex gap-1 items-center">
             <div className="w-3.5 h-2 border border-gray-700 rounded-sm relative">
@@ -100,10 +109,10 @@ const WhatsAppChat = () => {
         {/* WhatsApp header */}
         <div className="flex items-center gap-2 px-3 py-2" style={{ backgroundColor: "#075E54" }}>
           <div className="w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-xs font-bold text-gray-600">
-            GS
+            CS
           </div>
           <div className="text-white">
-            <p className="text-sm font-semibold leading-tight">Gabriela Seguros</p>
+            <p className="text-sm font-semibold leading-tight">Climb Up Seguros</p>
             <p className="text-[10px] opacity-80">online</p>
           </div>
         </div>
