@@ -38,8 +38,6 @@ const MESSAGES: Message[] = [
   { sender: "agent", text: "Perfeito. E só pra confirmar: teve alguma vítima no acidente?", agentName: "Nina (IA)" },
   { sender: "client", text: "não" },
   { sender: "agent", text: "Que bom.", agentName: "Nina (IA)" },
-  { sender: "agent", text: "Alice, já coletei todas as informações iniciais aqui.\nVou encaminhar seu atendimento agora pra nossa equipe dar continuidade e te orientar nos próximos passos, tudo bem?", agentName: "Nina (IA)" },
-  { sender: "client", text: "Ok" },
   { sender: "agent", text: "Perfeito.\nJá deixei tudo registrado e encaminhado aqui internamente.", agentName: "Nina (IA)" },
   { sender: "agent", text: "Nossa equipe vai iniciar o processo de sinistro e seguir com você pra resolver o seu caso o mais rápido possível.\nEm breve, um corretor vai entrar em contato por ligação com você.", agentName: "Nina (IA)" },
   { sender: "agent", text: "Se precisar de qualquer coisa nesse meio tempo, é só me chamar por aqui, combinado?", agentName: "Nina (IA)" },
