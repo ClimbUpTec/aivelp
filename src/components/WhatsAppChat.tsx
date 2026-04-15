@@ -144,7 +144,21 @@ const WhatsAppChat = () => {
               {msg.agentName && (
                 <p className="text-[10px] font-bold text-green-700">{msg.agentName}</p>
               )}
-              <p className="text-gray-800 text-[13px] leading-snug whitespace-pre-line">{msg.text}</p>
+              {msg.isAudio ? (
+                <div className="flex items-center gap-2 py-1">
+                  <svg viewBox="0 0 24 24" fill="#555" className="w-4 h-4 flex-shrink-0">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                  <div className="flex items-end gap-[2px]">
+                    {[3, 6, 4, 8, 5, 7, 3, 6, 4, 7, 5, 8, 3].map((h, idx) => (
+                      <div key={idx} className="w-[2px] bg-gray-400 rounded-full" style={{ height: `${h}px` }} />
+                    ))}
+                  </div>
+                  <span className="text-[10px] text-gray-500 ml-1">0:12</span>
+                </div>
+              ) : (
+                <p className="text-gray-800 text-[13px] leading-snug whitespace-pre-line">{msg.text}</p>
+              )}
             </div>
           ))}
 
