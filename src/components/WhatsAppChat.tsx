@@ -57,9 +57,13 @@ const WhatsAppChat = () => {
   return (
     <div className="w-full max-w-xs lg:max-w-sm mx-auto">
       {/* Phone frame */}
-      <div className="rounded-[2rem] border-[6px] border-gray-800 bg-gray-800 shadow-xl overflow-hidden">
+      <div className="rounded-[2.5rem] border-[6px] border-orange-500 bg-orange-500 shadow-xl overflow-hidden aspect-[9/19] flex flex-col">
+        {/* Notch */}
+        <div className="bg-orange-500 flex justify-center pt-2 pb-1">
+          <div className="w-20 h-5 bg-black rounded-full" />
+        </div>
         {/* Status bar */}
-        <div className="bg-gray-800 text-white text-[10px] flex justify-between items-center px-4 py-1">
+        <div className="bg-orange-500 text-white text-[10px] flex justify-between items-center px-4 py-1">
           <span>9:41</span>
           <div className="flex gap-1 items-center">
             <div className="w-3.5 h-2 border border-white rounded-sm relative">
