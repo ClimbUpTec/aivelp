@@ -1,14 +1,13 @@
 
 
-## Plano: Reduzir logo da Finova
+## Plano: Arredondar bordas de 4 logos
 
-### Alteração em `src/pages/Aive.tsx` (linha 741)
+### Alteração em `src/pages/Aive.tsx`
 
-Adicionar `max-h-14` à classe da imagem da Finova para limitar sua altura e ficar proporcional às demais logos:
+Adicionar `rounded-lg` às classes `<img>` dos seguintes logos:
 
-```
-<img src="/lovable-uploads/finova-logo.png" alt="Grupo Finova" className="max-h-14 max-w-full object-contain" />
-```
-
-Isso reduz a altura máxima de `max-h-full` (96px do container) para `max-h-14` (56px), alinhando visualmente com as outras logos.
+- **InfinitySul** (linha 723): `className="max-h-full max-w-full object-contain rounded-lg"`
+- **Forteplan** (linha 735): `className="max-h-full max-w-full object-contain rounded-lg"`
+- **Finova** (linha 741): `className="max-h-14 max-w-full object-contain rounded-lg"`
+- **Bike Line** (linha 759): `className="max-h-full max-w-full object-contain rounded-lg"`
 
