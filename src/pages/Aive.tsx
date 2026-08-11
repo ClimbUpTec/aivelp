@@ -1055,8 +1055,8 @@ const Aive = () => {
               </div>
               <h4 className="font-bold mb-4">Endereço:</h4>
               <p className="text-sm text-white/90">
-                Av. Padre Cacique, 122/702 – Praia de Belas<br />
-                Porto Alegre (Ed. Park Offices)<br />
+                R. dos Andradas, 1234 - 15º andar - Centro Histórico<br />
+                Porto Alegre - RS, 90020-008<br />
                 CNPJ: 40.328.259/0001-80
               </p>
             </div>
