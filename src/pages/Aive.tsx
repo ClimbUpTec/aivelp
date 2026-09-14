@@ -935,7 +935,7 @@ const Aive = () => {
                     "Testes, ajustes e validação do agente com o cliente",
                     "Treinamento dos gestores",
                     "Treinamento dos colaboradores",
-                    "Encerramento do onbording"
+                    "Encerramento do onboarding"
                   ]
                 }
               ].map((phase, index) => (
