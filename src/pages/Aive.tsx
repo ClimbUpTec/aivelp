@@ -888,9 +888,9 @@ const Aive = () => {
 
           <div className="relative">
             {/* Linha horizontal conectora */}
-            <div className="absolute top-12 left-0 right-0 h-0.5 bg-primary/30 hidden md:block"></div>
+            <div className="absolute top-10 left-0 right-0 h-0.5 bg-primary/30 hidden md:block"></div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 items-stretch">
               {[
                 {
                   phase: "1",
@@ -898,58 +898,57 @@ const Aive = () => {
                   days: "Dias 1 a 2",
                   items: [
                     "Entendimento do negócio, público e operação",
-                    "Validação de estrutura, canais e acessos",
                     "Coleta de dados e briefing da IA",
-                    "Configuração do WhatsApp oficial e canais",
-                    "Integração com ferramentas",
-                    "Testes iniciais de envio e recebimento"
+                    "Validação da estrutura, dos canais e dos acessos",
+                    "Configuração do WhatsApp oficial e demais canais, integração com ferramentas e testes iniciais de envio e recebimento"
                   ]
                 },
                 {
                   phase: "2", 
-                  title: "Fluxograma e Criação de Estrutura Comercial", 
+                  title: "Fluxograma e Criação da Estrutura Comercial", 
                   days: "Dias 2 a 4",
                   items: [
-                    "Criação da estrutura de atendimento e equipes",
-                    "Configuração do CRM, funil, processos, campanhas e templates",
-                    "Entrega e aprovação do fluxograma comercial",
-                    "Entrega e aprovação do fluxograma de IA"
+                    "Criação da estrutura de atendimento e das equipes",
+                    "Configuração do CRM, funil e processos",
+                    "Configuração de campanhas e templates",
+                    "Entrega e aprovação dos fluxogramas comercial e de IA"
                   ]
                 },
                 {
                   phase: "3",
-                  title: "Criação, validação e ativação da IA", 
-                  days: "De 4 a 7 dias úteis",
+                  title: "Criação e Validação da IA", 
+                  days: "Dias 4 a 7",
                   items: [
-                    "Desenvolvimento dos agentes",
-                    "Criação de fluxos, base de conhecimento e regras",
-                    "Criação e treinamento de habilidades",
-                    "Testes e validação de transferência e regras"
+                    "Desenvolvimento dos agentes de IA",
+                    "Criação dos fluxos e da base de conhecimento",
+                    "Configuração de regras e treinamento de habilidades",
+                    "Testes e validação das transferências, regras e funcionamento dos agentes"
                   ]
                 },
                 {
                   phase: "4",
                   title: "Ativação da IA + Treinamento",
-                  days: "De 7 a 7 dias úteis",
+                  days: "Dia 7",
                   items: [
-                    "Testes, ajustes e validação do agente com o cliente",
-                    "Treinamento dos gestores",
-                    "Treinamento dos colaboradores",
-                    "Encerramento do onboarding"
+                    "Testes finais do agente com o cliente",
+                    "Ajustes e validação para ativação da IA",
+                    "Treinamento dos gestores e colaboradores",
+                    "Ativação da operação e encerramento do onboarding"
                   ]
                 }
               ].map((phase, index) => (
                 <div key={index} className="relative">
-                  <div className="relative z-10 mb-6">
-                    <div className="w-24 h-24 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto">
-                      {phase.phase}
-                    </div>
-                  </div>
-                  
-                  <Card className="text-center h-80">
+                  <Card className="text-left h-full relative z-10">
                     <CardContent className="p-6 h-full flex flex-col">
-                      <h3 className="text-xl font-bold mb-2">{phase.title}</h3>
-                      <Badge variant="outline" className="mb-4 mx-auto">{phase.days}</Badge>
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="w-14 h-14 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold flex-shrink-0">
+                          {phase.phase}
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-bold leading-snug">{phase.title}</h3>
+                          <Badge variant="outline" className="mt-2">{phase.days}</Badge>
+                        </div>
+                      </div>
                       <ul className="space-y-2 text-sm text-left flex-1">
                         {phase.items.map((item, itemIndex) => (
                           <li key={itemIndex} className="flex items-start gap-2">
