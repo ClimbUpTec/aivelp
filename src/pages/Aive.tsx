@@ -924,7 +924,7 @@ const Aive = () => {
                     "Desenvolvimento dos agentes",
                     "Criação de fluxos, base de conhecimento e regras",
                     "Criação e treinamento de habilidades",
-                    "Testes e validação de tranferência e regras"
+                    "Testes e validação de transferência e regras"
                   ]
                 },
                 {
