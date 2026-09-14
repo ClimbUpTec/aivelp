@@ -894,42 +894,48 @@ const Aive = () => {
               {[
                 {
                   phase: "1",
-                  title: "Diagnóstico",
-                  days: "Dias 1 a 3",
+                  title: "Diagnóstico + Implantação Técnica",
+                  days: "Dias 1 a 2",
                   items: [
                     "Entendimento do negócio, público e operação",
                     "Validação de estrutura, canais e acessos",
-                    "Coleta de dados e briefing da IA"
-                  ]
-                },
-                {
-                  phase: "2", 
-                  title: "Implantação Técnica",
-                  days: "Dias 3 a 7",
-                  items: [
+                    "Coleta de dados e briefing da IA",
                     "Configuração do WhatsApp oficial e canais",
                     "Integração com ferramentas",
                     "Testes iniciais de envio e recebimento"
                   ]
                 },
                 {
-                  phase: "3",
-                  title: "Estrutura e Treinamento do Time", 
-                  days: "Dias 5 a 7",
+                  phase: "2", 
+                  title: "Fluxograma e Criação de Estrutura Comercial", 
+                  days: "Dias 2 a 4",
                   items: [
                     "Criação da estrutura de atendimento e equipes",
                     "Configuração do CRM, funil, processos, campanhas e templates",
-                    "Treinamento prático do dia a dia p/ o time"
+                    "Entrega e aprovação do fluxograma comercial",
+                    "Entrega e aprovação do fluxograma de IA"
+                  ]
+                },
+                {
+                  phase: "3",
+                  title: "Criação, validação e ativação da IA", 
+                  days: "De 4 a 7 dias úteis",
+                  items: [
+                    "Desenvolvimento dos agentes",
+                    "Criação de fluxos, base de conhecimento e regras",
+                    "Criação e treinamento de habilidades",
+                    "Testes e validação de tranferência e regras"
                   ]
                 },
                 {
                   phase: "4",
-                  title: "Criação, validação e ativação da IA",
-                  days: "De 7 a 14 dias úteis",
+                  title: "Ativação da IA + Treinamento",
+                  days: "De 7 a 7 dias úteis",
                   items: [
-                    "Desenvolvimento dos agentes",
-                    "Criação de fluxos, base de conhecimento e regras",
-                    "Testes, ajustes e validação com o cliente"
+                    "Testes, ajustes e validação do agente com o cliente",
+                    "Treinamento dos gestores",
+                    "Treinamento dos colaboradores",
+                    "Encerramento do onbording"
                   ]
                 }
               ].map((phase, index) => (
