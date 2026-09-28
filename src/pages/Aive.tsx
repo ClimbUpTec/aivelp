@@ -906,7 +906,7 @@ const Aive = () => {
                 {
                   phase: "2", 
                   title: "Fluxograma e Criação da Estrutura Comercial", 
-                  days: "Dias 2 a 4",
+                  days: "Dias 3 a 6",
                   items: [
                     "Criação da estrutura de atendimento e das equipes",
                     "Configuração do CRM, funil e processos",
@@ -917,7 +917,7 @@ const Aive = () => {
                 {
                   phase: "3",
                   title: "Criação e Validação da IA", 
-                  days: "Dias 4 a 7",
+                  days: "Dias 7 a 10",
                   items: [
                     "Desenvolvimento dos agentes de IA",
                     "Criação dos fluxos e da base de conhecimento",
@@ -928,7 +928,7 @@ const Aive = () => {
                 {
                   phase: "4",
                   title: "Ativação da IA + Treinamento",
-                  days: "Dia 7",
+                  days: "Dias 10 a 14",
                   items: [
                     "Testes finais do agente com o cliente",
                     "Ajustes e validação para ativação da IA",
