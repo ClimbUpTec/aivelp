@@ -66,5 +66,22 @@
     
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Abre o webchat automaticamente quando o widget terminar de carregar -->
+    <script>
+      (function () {
+        var attempts = 0;
+        var timer = setInterval(function () {
+          attempts++;
+          var container = document.querySelector('.h-widget-modal.h-widget-container');
+          if (container && window.hWidget && typeof window.hWidget.show === 'function') {
+            clearInterval(timer);
+            window.hWidget.show('overlay');
+          } else if (attempts > 40) {
+            clearInterval(timer);
+          }
+        }, 250);
+      })();
+    </script>
   </body>
 </html>
