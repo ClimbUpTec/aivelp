@@ -72,22 +72,20 @@
         var attempts = 0;
         var timer = setInterval(function () {
           attempts++;
-          var container = document.querySelector('.h-widget-modal.h-widget-container');
-          var backdrop = document.querySelector('.h-widget-modal.h-widget-container-backdrop');
-          var iframe = document.getElementById('h-widget-iframe');
-          if (container && backdrop && iframe) {
+          // 1) API pública do widget, se exposta
+          if (window.hWidget && typeof window.hWidget.show === 'function') {
             clearInterval(timer);
-            // Abre o formulário do widget sem disparar o envio automático ao WhatsApp
-            try { iframe.contentWindow.postMessage({ action: 'PREPARE_FORM' }, '*'); } catch (e) {}
-            if (window.hWidget) {
-              window.hWidget.bodyScrollLockActive = true;
-              window.hWidget.bodyScrollOverflowOriginal = document.body.style.overflow || '';
-            }
-            document.body.style.overflow = 'hidden';
-            container.classList.remove('h-floating-iframe');
-            container.style.display = 'block';
-            backdrop.style.display = 'block';
-          } else if (attempts > 40) {
+            try { window.hWidget.show('overlay'); } catch (e) {}
+            return;
+          }
+          // 2) Fallback: clica no botão flutuante do próprio widget
+          var bubble = document.querySelector(
+            '.h-widget-float, .h-widget-bubble, [id*="h-widget"] button, [class*="h-widget"] button'
+          );
+          if (bubble) {
+            clearInterval(timer);
+            try { bubble.click(); } catch (e) {}
+          } else if (attempts > 60) {
             clearInterval(timer);
           }
         }, 250);
