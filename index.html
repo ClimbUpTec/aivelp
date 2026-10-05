@@ -46,15 +46,10 @@
     <meta name="twitter:image" content="https://ia.climbup.com.br/lovable-uploads/a437aa98-8118-4292-8f30-e470fd0582f4.png" />
 
     <!-- Webchat wts.chat -->
-    <style>
-      /* Esconde o botão flutuante do widget: a LP já tem o próprio botão de WhatsApp */
-      .h-widget-float { display: none !important; }
-    </style>
     <script
       type="application/javascript"
-      src="https://cdn.wts.chat/scripts/widget/v2/h-widget-min.js"
-      data-companyid="98e78dcc-1f7c-46b8-aeca-92c05fcddf1d"
-      data-widgetid="144592e4-b53d-4ca8-ace4-b20971b177d6"
+      src="https://cdn.wts.chat/scripts/widget/v3/h-widget-min.js"
+      data-widget="landing-page-climb-up-54b80e"
     ></script>
   </head>
 
@@ -77,25 +72,19 @@
         var attempts = 0;
         var timer = setInterval(function () {
           attempts++;
-          var container = document.querySelector('.h-widget-modal.h-widget-container');
-          var backdrop = document.querySelector('.h-widget-modal.h-widget-container-backdrop');
-          var iframe = document.getElementById('h-widget-iframe');
-          if (container && backdrop && iframe) {
+          // Já abriu? Encerra.
+          if (document.querySelector('.h-widget-container.h-open')) {
             clearInterval(timer);
-            // Abre o formulário do widget sem disparar o envio automático ao WhatsApp
-            try { iframe.contentWindow.postMessage({ action: 'PREPARE_FORM' }, '*'); } catch (e) {}
-            if (window.hWidget) {
-              window.hWidget.bodyScrollLockActive = true;
-              window.hWidget.bodyScrollOverflowOriginal = document.body.style.overflow || '';
-            }
-            document.body.style.overflow = 'hidden';
-            container.classList.remove('h-floating-iframe');
-            container.style.display = 'block';
-            backdrop.style.display = 'block';
-          } else if (attempts > 40) {
+            return;
+          }
+          // Chama a API do widget; se a config ainda não carregou, tenta de novo no próximo ciclo
+          if (window.hWidget && typeof window.hWidget.show === 'function') {
+            try { window.hWidget.show('overlay'); } catch (e) {}
+          }
+          if (attempts > 60) {
             clearInterval(timer);
           }
-        }, 250);
+        }, 500);
       })();
     </script>
   </body>

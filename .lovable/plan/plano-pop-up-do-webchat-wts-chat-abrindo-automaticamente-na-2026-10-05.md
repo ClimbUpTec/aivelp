@@ -6,20 +6,19 @@ Instalar o widget de webchat da wts.chat na landing page e fazer o pop-up abrir 
 ## O que será feito
 
 1. **Adicionar o script do widget ao site** (`index.html`)
-   - Inserir a tag do widget wts.chat no `<head>`:
+   - Inserir a tag oficial fornecida pelo painel da wts.chat no `<head>`:
      ```html
      <script
        type="application/javascript"
-       src="https://cdn.wts.chat/scripts/widget/v2/h-widget-min.js"
-       data-companyid="98e78dcc-1f7c-46b8-aeca-92c05fcddf1d"
-       data-widgetid="144592e4-b53d-4ca8-ace4-b20971b177d6"
+       src="https://cdn.wts.chat/scripts/widget/v3/h-widget-min.js"
+       data-widget="landing-page-climb-up-54b80e"
      ></script>
      ```
-   - O widget carrega de forma assíncrona (busca a configuração num servidor) e só cria os elementos do pop-up depois disso.
+   - O widget carrega de forma assíncrona (busca a configuração no servidor) e só cria os elementos do pop-up depois disso.
 
 2. **Abrir o pop-up automaticamente**
-   - O script do widget expõe `window.hWidget.show("overlay")`, que abre o pop-up.
-   - Adicionar um pequeno script no `index.html` que, após o carregamento da página, aguarda os elementos do widget existirem no DOM (verificação curta com repetição, já que o carregamento é assíncrono) e chama `hWidget.show("overlay")`.
+   - Adicionar um pequeno script no `index.html` que, após o carregamento da página, aguarda o widget existir no DOM (verificação curta com repetição, já que o carregamento é assíncrono).
+   - Tentar primeiro a API do widget (ex.: `window.hWidget.show(...)`, se exposta pela v3); se não houver API pública, simular o clique no botão flutuante do próprio widget para abrir o pop-up.
    - Funciona em toda visita, sem memória de visitas anteriores.
 
 3. **Verificar botão flutuante duplicado**
