@@ -67,16 +67,23 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
 
-    <!-- Abre o webchat automaticamente quando o widget terminar de carregar -->
+    <!-- Abre o pop-up do webchat automaticamente quando o widget terminar de carregar -->
     <script>
       (function () {
         var attempts = 0;
         var timer = setInterval(function () {
           attempts++;
           var container = document.querySelector('.h-widget-modal.h-widget-container');
-          if (container && window.hWidget && typeof window.hWidget.show === 'function') {
+          var backdrop = document.querySelector('.h-widget-modal.h-widget-container-backdrop');
+          var iframe = document.getElementById('h-widget-iframe');
+          if (container && backdrop && iframe) {
             clearInterval(timer);
-            window.hWidget.show('overlay');
+            // Abre o formulário do widget sem disparar o envio automático ao WhatsApp
+            try { iframe.contentWindow.postMessage({ action: 'PREPARE_FORM' }, '*'); } catch (e) {}
+            document.body.style.overflow = 'hidden';
+            container.classList.remove('h-floating-iframe');
+            container.style.display = 'block';
+            backdrop.style.display = 'block';
           } else if (attempts > 40) {
             clearInterval(timer);
           }
