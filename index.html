@@ -80,6 +80,10 @@
             clearInterval(timer);
             // Abre o formulário do widget sem disparar o envio automático ao WhatsApp
             try { iframe.contentWindow.postMessage({ action: 'PREPARE_FORM' }, '*'); } catch (e) {}
+            if (window.hWidget) {
+              window.hWidget.bodyScrollLockActive = true;
+              window.hWidget.bodyScrollOverflowOriginal = document.body.style.overflow || '';
+            }
             document.body.style.overflow = 'hidden';
             container.classList.remove('h-floating-iframe');
             container.style.display = 'block';
