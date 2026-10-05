@@ -72,23 +72,19 @@
         var attempts = 0;
         var timer = setInterval(function () {
           attempts++;
-          // 1) API pública do widget, se exposta
-          if (window.hWidget && typeof window.hWidget.show === 'function') {
+          // Já abriu? Encerra.
+          if (document.querySelector('.h-widget-container.h-open')) {
             clearInterval(timer);
-            try { window.hWidget.show('overlay'); } catch (e) {}
             return;
           }
-          // 2) Fallback: clica no botão flutuante do próprio widget
-          var bubble = document.querySelector(
-            '.h-widget-float, .h-widget-bubble, [id*="h-widget"] button, [class*="h-widget"] button'
-          );
-          if (bubble) {
-            clearInterval(timer);
-            try { bubble.click(); } catch (e) {}
-          } else if (attempts > 60) {
+          // Chama a API do widget; se a config ainda não carregou, tenta de novo no próximo ciclo
+          if (window.hWidget && typeof window.hWidget.show === 'function') {
+            try { window.hWidget.show('overlay'); } catch (e) {}
+          }
+          if (attempts > 60) {
             clearInterval(timer);
           }
-        }, 250);
+        }, 500);
       })();
     </script>
   </body>
